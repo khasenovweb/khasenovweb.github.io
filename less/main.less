@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic');
+@black: #111111;
+@green: #00CA75;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: @black;
+	outline: none;
+	text-decoration: none;
+}
+.container {
+	max-width: 1170px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.main {
+	padding: 80px 0;
+}
+.title  {
+	font-size: 36px;
+	margin-top: 20px;
+}
+.desc {
+	opacity: 0.7;
+	margin-top: 20px;
+	line-height: 1.4;
+}
+
+.btn__download {
+	margin-top: 40px;
+	background-color: @green;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	//padding: 30px 50px;
+	box-shadow: 0px 4px 0px darken(@green, 5%);
+	cursor: pointer;
+	display: inline-block;
+	display: flex;
+	align-items: center;
+	span {
+		color: white;
+		padding: 0 50px 0 40px;
+	}
+
+	&:active {
+		box-shadow: none;
+		transform: translateY(4px);
+	}
+}
+.btn__download__img {
+	border-right: 1px solid darken(@green, 5%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+}
