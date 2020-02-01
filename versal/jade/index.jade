@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Versal
+	link(rel="stylesheet", href="fonts/stylesheet.css")
+	link(rel="stylesheet", href="css/main.css")
+body
+	section.head
+		.container
+			a.head__logo(href="/")
+				img(src="img/logo.svg", alt="")
+			.head__contact.head__contact__adress
+				.head__contact__title г. Москва, ул. Московская 24
+				a.head__contact__title__link(href="") Показать на карте
+			.head__contact.head__contact__email
+				.head__contact__title waripov@gmail.com
+				a.head__contact__title__link(href="") Написать
+			.head__contact.head__contact__phone
+				.head__contact__title +7 (926) 195 13 10
+				a.head__contact__title__link(href="") Заказать звонок
+	section.hero
+		.container
+			h1.hero__title Производство наружной и интерьерной рекламы, 
+				br 
+				span Разработка дизайна, 
+				br 
+				span Все виды согласования с Москомархитектурой, 
+				br
+				span Регистрация товарного знака
+			ul.hero__list
+				li 
+					img(src="img/hero__list.svg", alt="")
+					span Выезд на замер
+				li 
+					img(src="img/hero__list.svg", alt="")
+					span Макет привязка в подарок
+				li 
+					img(src="img/hero__list.svg", alt="")
+					span Консультация специалистов бесплатно
+				li 
+					img(src="img/hero__list.svg", alt="")
+					span Гарантия 12 месяцев
+				li 
+					img(src="img/hero__list.svg", alt="")
+					span Изготовение в соответствии с 902 пп.
+			.hero__btn__wrapper
+				button.btn Узнать стоимость вывески
+				.hero__price Стоимость от 30 руб./см
+	section.calc
+		.container
+			.section__title.calc__title Расчет стоимости
+			.section__desc Расчитайте стоимость вывески с помощью нашего калькулятора
+			.calc__tab__links
+				.calc__tab__link.calc__tab__link__active Объемные буквы
+				.calc__tab__link Световые короба
+			.calc__tab__content
+				.calc__viveski
+					.calc__viveski__left
+						.calc__viveski__shrift
+							.calc__viveski__shrift__item.calc__viveski__shrift__item__active
+								.calc__viveski__shrift__item__title Абв
+								.calc__viveski__shrift__item__desc Прямой
+							.calc__viveski__shrift__item
+								.calc__viveski__shrift__item__title(style="font-family: 'Roboto Slab';") Абв
+								.calc__viveski__shrift__item__desc С засечками
+							.calc__viveski__shrift__item
+								.calc__viveski__shrift__item__title(style="font-family:'Pacifico';") Абв
+								.calc__viveski__shrift__item__desc Декоративный
+						.calc__viveski__type
+							.select
+								select(name="")
+									option(value="") Объемные буквы световые белые
+									option(value="") Объемные буквы световые цветные
+									option(value="") Объемные буквы световые цветные/белые со светящимимся краями
+									option(value="") Объемные буквы световые с задней "контражурной" подсветкой
+									option(value="") Объемные буквы световые цветные/белые с комбинированной подсветкой
+									option(value="") Объемные буквы в виде фигурного короба
+						.calc__viveski__slova
+							.input
+								input(type="text" placeholder="Слова для вывески")
+								.input__count 0 букв
+						.calc__viveski__visota
+							span Высота букв:
+							.input
+								input(type="number" placeholder="Слова для вывески" value="10" min="10" max="100")
+							
+							span см
+
+					.calc__viveski__right
+						.calc__viveski__right__img
+							img(src="img/calc-1.jpg", alt="")
+						.calc__viveski__right__price
+							.calc__viveski__right__price__title Примерная стоимость
+							.calc__viveski__right__price__num 9 300 руб.
+						.calc__viveski__right__btn
+							button.btn Уточнить стоимость
+	section.services
+		.container
+			.section__title.services__title Полный комплекс услуг 
+			.section__desc Предложим эффективное решение вне зависимости от масштаба, сферы и бюджета вашего проекта
+			.services__content
+				.services__tabs
+					.services__tab.services__tab__active Объемные буквы
+					.services__tab Интерьерная печать
+					.services__tab Широкоформатная печать
+					.services__tab Крышные установки
+					.services__tab Монтаж и согласование
+				.services__items
+					.services__item
+						.services__item__img
+						.services__item__text
+							.services__item__title Буквы из ПВХ не световые
+							.services__item__desc от 30 рублей за 1см высоты
+					.services__item
+						.services__item__img
+						.services__item__text
+							.services__item__title Буквы из ПВХ не световые
+							.services__item__desc от 30 рублей за 1см высоты
+					.services__item
+						.services__item__img
+						.services__item__text
+							.services__item__title Буквы из ПВХ не световые
+							.services__item__desc от 30 рублей за 1см высоты
+					.services__item
+						.services__item__img
+						.services__item__text
+							.services__item__title Буквы из ПВХ не световые
+							.services__item__desc от 30 рублей за 1см высоты
+					.services__item
+						.services__item__img
+						.services__item__text
+							.services__item__title Буквы из ПВХ не световые
+							.services__item__desc от 30 рублей за 1см высоты
+					.services__item
+						.services__item__img
+						.services__item__text
+							.services__item__title Буквы из ПВХ не световые
+							.services__item__desc от 30 рублей за 1см высоты
+	section.soglasovanie
+		.container
+			.section__title Узнайте необходимо ли согласовывать вывеску по вашему адресу
+			.section__desc Это поможет избежать принудительного демонтажа и возможного штрафа за нарушение 902 ПП / регламента № 31 РВ-72 от 2015 г.
+			form.soglasovanie__form(action="")
+				input(type="text" placeholder="Введите адрес, например пр-т Мира, 32 ")
+				button.btn Получить информацию
+	section.formula
+		.container
+			.section__title Формула успешной рекламы
+			.section__desc «Первая рекламная компания» компания основана в 2011 г.
+			p.formula__text Мы занимаемся изготовлением и монтажом наружной рекламы в Москве и Московской области, придерживаясь самых эффективных инструментов в области маркетинга. Производим продукцию только из качественных европейских комплектующих и ипользуем современное инновационное оборудование. За долгие годы работы у нас сформировалась команда настоящих профессионалов, способных реализовать любую вашу идею.
+	section.catalog
+		.container
+			.section__title Примеры наших работ
+			.catalog__items
+				.catalog__item
+				.catalog__item
+				.catalog__item
+				.catalog__item
+				.catalog__item
+				.catalog__item
+				.catalog__item
+				.catalog__item
+				.catalog__item
+	section.contacts
+		.container
+			.section__title Наши контакты
+			ul.contacts__list
+				li.contacts__list__phone +7 (925) 003 17 63
+				li.contacts__list__phone +7 (926) 195 13 10
+				li waripov@gmail.com
+				li г. Дмитров, ул. Загорская, д. 22, этаж 4, оф. 5 (вход в здание ОУФМС)
+	section.map
+		iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;source=constructor", frameborder="0" width="100%" height="500")
+
+
+	//footer
+
+
+
+	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+	script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
+	script(src="js/main.js")
+
