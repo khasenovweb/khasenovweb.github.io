@@ -10,4 +10,17 @@ $(document).ready(function(){
 			$(this).val('100');
 		}
 	});
+
+
+	//Модальное окно
+	$('[data-modal]').click(function(){
+		event.preventDefault();
+		var modal_id = $(this).attr('data-modal-id');
+		$('.modal__wrapper[data-modal-id="'+modal_id+'"]').show();
+		$('.global__wrapper').addClass('global__wrapper__blur');
+	});
+	$('.modal__close').click(function(){
+		$('.modal__wrapper').hide();
+		$('.global__wrapper').removeClass('global__wrapper__blur');
+	});
 });
