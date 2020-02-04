@@ -4,9 +4,31 @@ head
 	meta(charset="UTF-8")
 	title Document
 	link(rel="stylesheet", href="css/jquery.fias.min.css")
+	link(rel="stylesheet", href="css/main.css")
 body
+	.head
+		a.head__logo(href="")
+			img(src="img/logo.svg", alt="")
+		.head__city г. Санкт-Петербург
+		a.head__phone(href="") +7(903)891-09-77
+		.head__callrequest Заказать звонок
+		.head__feedback Обратная связь
+	.nav
+		ul.nav__links
+			li
+				a(href="") Услуги и цены
+			li
+				a(href="") Информация
+			li
+				a(href="") Документы
+			li
+				a(href="") Контакты
+			li
+				a(href="") Реквизиты
+		.nav__calc
+			img(src="img/head__calc__blue.svg", alt="")
+			span Калькулятор стоимости
 
-	input.input(type="text")
 	block content
 	
 	

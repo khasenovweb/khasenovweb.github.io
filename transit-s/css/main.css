@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Rubik Light Italic'), local('Rubik-LightItalic'), url(https://fonts.gstatic.com/s/rubik/v9/iJWBBXyIfDnIV7nEldWYwWb-7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rubik Italic'), local('Rubik-Italic'), url(https://fonts.gstatic.com/s/rubik/v9/iJWEBXyIfDnIV7nEnXq60Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Rubik Medium Italic'), local('Rubik-MediumItalic'), url(https://fonts.gstatic.com/s/rubik/v9/iJWBBXyIfDnIV7nElY2ZwWb-7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Rubik Bold Italic'), local('Rubik-BoldItalic'), url(https://fonts.gstatic.com/s/rubik/v9/iJWBBXyIfDnIV7nElcWfwWb-7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Rubik Black Italic'), local('Rubik-BlackItalic'), url(https://fonts.gstatic.com/s/rubik/v9/iJWBBXyIfDnIV7nElf2dwWb-7A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Rubik Light'), local('Rubik-Light'), url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Fqj2mZ8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v9/iJWKBXyIfDnIV7nFrXk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Rubik Medium'), local('Rubik-Medium'), url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7EyjmmZ8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7F6iGmZ8WU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Rubik Black'), local('Rubik-Black'), url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7FCimmZ8WU.ttf) format('truetype');
+}
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+.head {
+  background-color: black;
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+}
+.head * {
+  color: white;
+}
+.head__logo {
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+.head__city {
+  height: 100%;
+  border-left: 1px solid #313131;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+}
+.head__phone {
+  background-color: #0071FF;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 19rem;
+  font-size: 1.4rem;
+  margin-left: auto;
+}
+.head__callrequest {
+  background-color: #0071FF;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 19rem;
+  font-size: 1.4rem;
+  border-left: 1px solid #4094FF;
+  cursor: pointer;
+}
+.head__feedback {
+  background-color: #0071FF;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 19rem;
+  font-size: 1.4rem;
+  border-left: 1px solid #4094FF;
+  cursor: pointer;
+}
+.nav {
+  height: 6.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.nav__links li {
+  height: 100%;
+}
+.nav__links a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  color: black;
+  border-right: 1px solid #E8E8E8;
+}
+.nav__calc {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 572px;
+  color: white;
+}
+.nav__calc img {
+  margin-right: 20px;
+}
