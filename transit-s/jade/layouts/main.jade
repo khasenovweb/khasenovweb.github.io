@@ -6,6 +6,59 @@ head
 	link(rel="stylesheet", href="css/jquery.fias.min.css")
 	link(rel="stylesheet", href="css/main.css")
 body
+	.calc
+		.calc__title Калькулятор стоимости
+		.calc__sec1
+			.calc__sec1__inputgroup
+				label(for="") Откуда
+				input(type="text") 
+			img(src="img/calc.svg", alt="")
+			.calc__sec1__inputgroup
+				label(for="") Куда
+				input(type="text") 
+		.calc__sec2
+			.calc__sec1__inputgroup
+				label(for="") Объем
+				.calc__sec2__input
+					.calc__sec2__input__label м 
+						sup 3
+					input(type="number")
+			.calc__sec1__inputgroup
+				label(for="") Масса
+				.calc__sec2__input
+					.calc__sec2__input__label тонн
+					input(type="number") 
+			button.btn__border Расчитать
+		.calc__sec3
+			p Итого 
+				span 26 000 руб.
+		.calc__sec4
+			p Для получения более точных расчетов свяжитесь с нами:
+			.calc__sec4__phone +7(903)891-09-77
+			button.btn Написать
+	.modal__wrapper
+		.modal
+			.modal__title Оставьте заявку или 
+				br 
+				span позвоните нам
+			.modal__phone +7(903)891-09-77
+			form.modal__form
+				.modal__form__input
+					input(required type="text" placeholder="ФИО")
+				.modal__form__input
+					input(required type="text" placeholder="Электронная почта")
+				.modal__form__input
+					input(required type="text" placeholder="Мобильный телефон")
+				p.modal__txt * Номер телефона вводится в формате 89012345678 
+					br 
+					span ** Нажимая кнопку «Отправить»,
+					br
+					span вы принимаете условия настоящего соглашения и даете согласие на обработку ваших персональных данных в соответствии с Политикой конфиденциальности.
+				.modal__form__input
+					input(required type="text" placeholder="Комментарий")
+				button.btn Отправить
+
+
 	.head
 		a.head__logo(href="")
 			img(src="img/logo.svg", alt="")
@@ -17,6 +70,14 @@ body
 		ul.nav__links
 			li
 				a(href="") Услуги и цены
+				ul.nav__links__submenu
+					li
+						a(href="") Доставка любых грузов
+					li
+						a(href="") Грузоперевозки по России
+					li
+						a(href="") Цены на грузоперевозки
+
 			li
 				a(href="") Информация
 			li
@@ -25,8 +86,8 @@ body
 				a(href="") Контакты
 			li
 				a(href="") Реквизиты
-		.nav__calc
-			img(src="img/head__calc__blue.svg", alt="")
+		.nav__calc(data-click-calc)
+			.nav__calc__img
 			span Калькулятор стоимости
 
 	block content
