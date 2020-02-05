@@ -1,0 +1,32 @@
+extends layouts/main.jade
+block content
+	.page.contacts
+		ul.page__breadcrumbs
+			li Главная
+			.page__breadcrumbs__separator
+			li Контакты
+		.page__title Контакты
+		.contacts__wrapper
+			ul.contacts__list
+				li
+					.contacts__list__icon
+						img(src="img/contacts__phone__icon.svg", alt="")
+					.contacts__list__text
+						.contacts__list__title Телефон:
+						.contacts__list__desc +7(903)891-09-77
+				li
+					.contacts__list__icon
+						img(src="img/contacts__email__icon.svg", alt="")
+					.contacts__list__text
+						.contacts__list__title Электронный адрес:
+						.contacts__list__desc 8910977@gmail.com
+				li
+					.contacts__list__icon
+						img(src="img/contacts__loc__icon.svg", alt="")
+					.contacts__list__text
+						.contacts__list__title Юридический адрес:
+						.contacts__list__desc Смоленская обл., г.Сафоново, ул.Горняцкая 18
+			.contacts__map
+				iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c3fbe991bd005f675b58125c709488329d89820922a13d6dca941c56effebdd&amp;source=constructor" width="100%" height="450" frameborder="0")
+		.page__footer
+			button.btn Связаться

@@ -1,0 +1,36 @@
+extends layouts/main.jade
+block content
+	.page.requisites
+		ul.page__breadcrumbs
+			li Главная
+			.page__breadcrumbs__separator
+			li Реквизиты
+		.page__title Реквизиты
+		.requisites__wrapper
+			ul.requisites__list
+				li
+					.requisites__list__title ОГРНИП:
+					.requisites__list__desc 304672629900038
+				li
+					.requisites__list__title ИНН:
+					.requisites__list__desc 672602553938
+				li
+					.requisites__list__title Вид предпринимательства:
+					.requisites__list__desc Индивидуальный предприниматель
+				li
+					.requisites__list__title Дата регистрации:
+					.requisites__list__desc 6 ноября 2001 г.	
+				li
+					.requisites__list__title Регистратор:
+					.requisites__list__desc Межрайонная инспекция Федеральной налоговой службы № 5 по Смоленской области
+				li
+					.requisites__list__title Дата постановки на учёт:
+					.requisites__list__desc 6 ноября 2001 г.
+				li
+					.requisites__list__title Наименование налогового органа: 
+					.requisites__list__desc МЕЖРАЙОННАЯ ИНСПЕКЦИЯ ФЕДЕРАЛЬНОЙ НАЛОГОВОЙ СЛУЖБЫ №4 ПО СМОЛЕНСКОЙ ОБЛАСТИ
+			.requisites__img
+				img(src="img/requisites__img.png", alt="")
+	
+		.page__footer
+			button.btn Связаться
