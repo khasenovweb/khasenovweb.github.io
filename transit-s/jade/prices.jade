@@ -1,0 +1,54 @@
+extends layouts/main.jade
+block content
+	.page.prices
+		ul.page__breadcrumbs
+			li Главная
+			.page__breadcrumbs__separator
+			li Цены на грузоперевозки
+		.page__title Цены на грузоперевозки
+		.page__wrapper
+			.page__content
+				.prices__form
+					.prices__inputs
+						.prices__input
+							label(for="") Откуда
+							input(type="text")
+						img(src="img/calc.svg", alt="")
+						.prices__input
+							label(for="") Откуда
+							input(type="text")
+					.prices__inputs
+						.prices__input
+							label(for="") Откуда
+							input(type="text")
+						.prices__input
+							label(for="") Откуда
+							input(type="text")
+				.prices__btnblock
+					button.btn__border Рассчитать 
+					.prices__btnblock__text
+						.prices__btnblock__title Для получения более точных расчетов свяжитесь с нами:
+						.prices__btnblock__phone +7(903)891-09-77
+				.prices__result
+					.prices__result__item.prices__result__summ
+						.prices__result__item__label Итого 
+						.prices__result__item__content 26 000 руб.
+					.prices__result__item.prices__result__time
+						.prices__result__item__label Время  в дороге  
+						.prices__result__item__content 2 суток 
+
+			.page__navbar
+				a.page__navbar__link.page__navbar__link__active(href="/") Доставка любых грузов
+				a.page__navbar__link(href="/") Грузоперевозки по России
+				a.page__navbar__link(href="/") Цены на грузоперевозки
+
+
+
+
+
+
+
+
+
+		.page__footer
+			button.btn Связаться
