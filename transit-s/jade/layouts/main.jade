@@ -2,10 +2,13 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width")
 	title Transit-s
 	link(rel="stylesheet", href="css/jquery.fias.min.css")
 	link(rel="stylesheet", href="css/main.css?v2")
+	link(rel="stylesheet", href="css/media.css")
 body
+
 	.calc
 		.calc__title Калькулятор стоимости
 		.calc__sec1
@@ -57,8 +60,12 @@ body
 				.modal__form__input
 					input(required type="text" placeholder="Комментарий")
 				button.btn Отправить
-
-
+	
+	.mobile__head
+		.mobile__head__hamburger
+		.mobile__head__city г. Санкт-Петербург
+		a.mobile__head__logo(href="")
+			img(src="img/logo.svg", alt="")
 	.head
 		a.head__logo(href="")
 			img(src="img/logo.svg", alt="")
@@ -89,6 +96,30 @@ body
 		.nav__calc(data-click-calc)
 			.nav__calc__img
 			span Калькулятор стоимости
+	.mobile__nav
+		a.mobile__nav__phone(href="") +7(903)891-09-77
+		.mobile__nav__callrequest Заказать звонок
+		.mobile__nav__calc(data-click-calc)
+			.mobile__nav__calc__img
+			span Калькулятор стоимости
+	ul.mobile__links
+		li.mobile__links__haschild
+			a(href="") Услуги и цены
+			ul.mobile__links__submenu
+				li 
+					a(href="dilevery.html") Доставка любых грузов
+				li 
+					a(href="cargo.html") Грузоперевозки по России
+				li 
+					a(href="prices.html") Цены на грузоперевозки
+		li 
+			a(href="inform.html") Информация
+		li 
+			a(href="docs.html") Документы
+		li 
+			a(href="contacts.html") Контакты
+		li 
+			a(href="requisites.html") Реквизиты
 
 	block content
 	
