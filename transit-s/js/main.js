@@ -60,7 +60,9 @@ $(document).ready(function(){
 				'accept': 'application/json'
 			},
 			success: function(otvet) {
-				$('.calc__sec1__input__alert').eq(index).prepend(otvet);
+				// $('.calc__sec1__input__alert__content').eq(index).append();
+				// $('.calc__sec1__input__alert').eq(index).prepend(otvet);
+				console.log(otvet);
 			}
 		});
 	});
