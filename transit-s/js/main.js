@@ -52,9 +52,13 @@ $(document).ready(function(){
 		var val = $(this).val();
 		var index = $(this).index();
 		$.ajax({
-			url: 'http://localhost/transit-s/',	
-			type: 'post',
-			data: {val: val},
+			url: 'https://api.avtodispetcher.ru/v1/cities',	
+			type: 'get',
+			data: {q: val,limit:5},
+			dataType: 'json',
+			headers: {
+				'accept': 'application/json'
+			},
 			success: function(otvet) {
 				$('.calc__sec1__input__alert').eq(index).prepend(otvet);
 			}
