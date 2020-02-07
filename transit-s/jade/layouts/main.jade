@@ -14,11 +14,25 @@ body
 		.calc__sec1
 			.calc__sec1__inputgroup
 				label(for="") Откуда
-				input(type="text") 
+				.calc__sec1__input
+					input(type="text" data-ajax-from) 
+					.calc__sec1__input__alert(data-ajax-from)
+						br
+						//.calc__sec1__input__alert__content
+							.calc__sec1__input__alert__item Москва
+							.calc__sec1__input__alert__item Санкт-Петербург
+							.calc__sec1__input__alert__item Челябинск
 			img(src="img/calc.svg", alt="")
 			.calc__sec1__inputgroup
 				label(for="") Куда
-				input(type="text") 
+				.calc__sec1__input
+					input(type="text" data-ajax-to) 
+					.calc__sec1__input__alert(data-ajax-to)
+						br
+						//.calc__sec1__input__alert__content
+							.calc__sec1__input__alert__item Москва
+							.calc__sec1__input__alert__item Санкт-Петербург
+							.calc__sec1__input__alert__item Челябинск
 		.calc__sec2
 			.calc__sec1__inputgroup
 				label(for="") Объем
@@ -31,7 +45,7 @@ body
 				.calc__sec2__input
 					.calc__sec2__input__label тонн
 					input(type="number") 
-			button.btn__border Расчитать
+			button.btn__border(data-ajax-result) Расчитать
 		.calc__sec3
 			p Итого 
 				span 26 000 руб.

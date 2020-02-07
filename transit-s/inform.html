@@ -14,11 +14,29 @@
     <div class="calc__sec1">
       <div class="calc__sec1__inputgroup">
         <label for="">Откуда</label>
-        <input type="text"/>
+        <div class="calc__sec1__input">
+          <input type="text" data-ajax-from="data-ajax-from"/>
+          <div data-ajax-from="data-ajax-from" class="calc__sec1__input__alert"><br/>
+            <!--.calc__sec1__input__alert__content
+            .calc__sec1__input__alert__item Москва
+            .calc__sec1__input__alert__item Санкт-Петербург
+            .calc__sec1__input__alert__item Челябинск
+            -->
+          </div>
+        </div>
       </div><img src="img/calc.svg" alt=""/>
       <div class="calc__sec1__inputgroup">
         <label for="">Куда</label>
-        <input type="text"/>
+        <div class="calc__sec1__input">
+          <input type="text" data-ajax-to="data-ajax-to"/>
+          <div data-ajax-to="data-ajax-to" class="calc__sec1__input__alert"><br/>
+            <!--.calc__sec1__input__alert__content
+            .calc__sec1__input__alert__item Москва
+            .calc__sec1__input__alert__item Санкт-Петербург
+            .calc__sec1__input__alert__item Челябинск
+            -->
+          </div>
+        </div>
       </div>
     </div>
     <div class="calc__sec2">
@@ -36,7 +54,7 @@
           <input type="number"/>
         </div>
       </div>
-      <button class="btn__border">Расчитать</button>
+      <button data-ajax-result="data-ajax-result" class="btn__border">Расчитать</button>
     </div>
     <div class="calc__sec3">
       <p>Итого <span>26 000 руб.</span></p>

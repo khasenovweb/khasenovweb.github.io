@@ -46,5 +46,19 @@ $(document).ready(function(){
 	// $('.mobile__links__haschild a').click(function(){
 	// 	event.preventDefault();
 	// });
+
+
+	$('[data-ajax-from]').on('input',function(){
+		var val = $(this).val();
+		var index = $(this).index();
+		$.ajax({
+			url: 'http://localhost/transit-s/',	
+			type: 'post',
+			data: {val: val},
+			success: function(otvet) {
+				$('.calc__sec1__input__alert').eq(index).prepend(otvet);
+			}
+		});
+	});
 });
 
