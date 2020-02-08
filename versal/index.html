@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-  <div class="modal__wrapper" data-modal-id="1">
+  <div data-modal-id="1" class="modal__wrapper">
     <div class="modal">
       <div class="modal__close">
         <div class="modal__close__line1"></div>
@@ -25,15 +25,15 @@
   </div>
   <div class="global__wrapper">
     <section class="head">
-      <div class="container"><a class="head__logo" href="/"><img src="img/logo.svg" alt=""/></a>
+      <div class="container"><a href="/" class="head__logo"><img src="img/logo.svg" alt=""/></a>
         <div class="head__contact head__contact__adress">
-          <div class="head__contact__title">г. Москва, ул. Московская 24</div><a class="head__contact__title__link" href="">Показать на карте</a>
+          <div class="head__contact__title">г. Москва, ул. Московская 24</div><a href="" class="head__contact__title__link">Показать на карте</a>
         </div>
         <div class="head__contact head__contact__email">
-          <div class="head__contact__title">waripov@gmail.com</div><a class="head__contact__title__link" href="">Написать</a>
+          <div class="head__contact__title">waripov@gmail.com</div><a href="" class="head__contact__title__link">Написать</a>
         </div>
         <div class="head__contact head__contact__phone">
-          <div class="head__contact__title">+7 (926) 195 13 10</div><a class="head__contact__title__link" href="" data-modal="data-modal" data-modal-id="1">Заказать звонок</a>
+          <div class="head__contact__title">+7 (926) 195 13 10</div><a href="" data-modal="data-modal" data-modal-id="1" class="head__contact__title__link">Заказать звонок</a>
         </div>
       </div>
     </section>
@@ -58,58 +58,98 @@
         <div class="section__title calc__title">Расчет стоимости</div>
         <div class="section__desc">Расчитайте стоимость вывески с помощью нашего калькулятора</div>
         <div class="calc__tab__links">
-          <div class="calc__tab__link calc__tab__link__active">Объемные буквы</div>
-          <div class="calc__tab__link">Световые короба</div>
+          <div data-calc-tab="1" class="calc__tab__link calc__tab__link__active">Объемные буквы</div>
+          <div data-calc-tab="2" class="calc__tab__link">Световые короба</div>
         </div>
-        <div class="calc__tab__content">
+        <div data-calc-tab="1" class="calc__tab__content">
           <div class="calc__viveski">
             <div class="calc__viveski__left">
               <div class="calc__viveski__shrift">
-                <div class="calc__viveski__shrift__item calc__viveski__shrift__item__active">
+                <div data-shrift="sans-serif" class="calc__viveski__shrift__item calc__viveski__shrift__item__active">
                   <div class="calc__viveski__shrift__item__title">Абв</div>
                   <div class="calc__viveski__shrift__item__desc">Прямой</div>
                 </div>
-                <div class="calc__viveski__shrift__item">
-                  <div class="calc__viveski__shrift__item__title" style="font-family: 'Roboto Slab';">Абв</div>
+                <div data-shrift="serif" class="calc__viveski__shrift__item">
+                  <div style="font-family: 'Roboto Slab';" class="calc__viveski__shrift__item__title">Абв</div>
                   <div class="calc__viveski__shrift__item__desc">С засечками</div>
                 </div>
-                <div class="calc__viveski__shrift__item">
-                  <div class="calc__viveski__shrift__item__title" style="font-family:'Pacifico';">Абв</div>
+                <div data-shrift="decor" class="calc__viveski__shrift__item">
+                  <div style="font-family:'Pacifico';" class="calc__viveski__shrift__item__title">Абв</div>
                   <div class="calc__viveski__shrift__item__desc">Декоративный</div>
                 </div>
               </div>
               <div class="calc__viveski__type">
                 <div class="select">
-                  <select name="">
-                    <option value="">Объемные буквы световые белые</option>
-                    <option value="">Объемные буквы световые цветные</option>
-                    <option value="">Объемные буквы световые цветные/белые со светящимимся краями</option>
-                    <option value="">Объемные буквы световые с задней "контражурной" подсветкой</option>
-                    <option value="">Объемные буквы световые цветные/белые с комбинированной подсветкой</option>
-                    <option value="">Объемные буквы в виде фигурного короба</option>
+                  <select name="" class="select__viveski__type">
+                    <option value="1">Объемные буквы световые белые</option>
+                    <option value="2">Объемные буквы световые цветные</option>
+                    <option value="3">Объемные буквы световые цветные/белые со светящимимся краями</option>
+                    <option value="4">Объемные буквы световые с задней "контражурной" подсветкой</option>
+                    <option value="5">Объемные буквы световые цветные/белые с комбинированной подсветкой</option>
+                    <option value="6">Объемные буквы в виде фигурного короба</option>
                   </select>
                 </div>
               </div>
               <div class="calc__viveski__slova">
                 <div class="input">
-                  <input type="text" placeholder="Слова для вывески"/>
+                  <input type="text" placeholder="Слова для вывески" class="input__viveski__slova"/>
                   <div class="input__count">0 букв</div>
                 </div>
               </div>
               <div class="calc__viveski__visota"><span>Высота букв:</span>
                 <div class="input">
-                  <input type="number" placeholder="Слова для вывески" value="10" min="10" max="100"/>
+                  <input type="number" placeholder="Слова для вывески" value="10" min="10" max="100" class="input__viveski__visota"/>
                 </div><span>см</span>
               </div>
             </div>
             <div class="calc__viveski__right">
-              <div class="calc__viveski__right__img"><img src="img/calc-1.jpg" alt=""/></div>
+              <div data-viveski="data-viveski" class="calc__viveski__right__img"><img src="img/calc/sans-serif1.jpg" alt=""/></div>
               <div class="calc__viveski__right__price">
                 <div class="calc__viveski__right__price__title">Примерная стоимость</div>
                 <div class="calc__viveski__right__price__num">9 300 руб.</div>
               </div>
               <div class="calc__viveski__right__btn">
-                <button class="btn" data-modal="data-modal" data-modal-id="1">Уточнить стоимость</button>
+                <button data-modal="data-modal" data-modal-id="1" class="btn">Уточнить стоимость</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-calc-tab="2" class="calc__tab__content">
+          <div class="calc__viveski">
+            <div class="calc__viveski__left">
+              <div class="calc__viveski__type">
+                <div class="select">
+                  <select name="" data-calc-korob-type="data-calc-korob-type">
+                    <option value="1">Короб прямоугольный: поликарбонат + профиль</option>
+                    <option value="2">Короб прямоугольный: акрил + профиль</option>
+                    <option value="3">Короб фигурный: акрил + пластик</option>
+                    <option value="4">Короб из композита</option>
+                    <option value="5">Короб из композита с инкрустацией</option>
+                    <option value="6">Консоль двусторонняя пластиковая</option>
+                    <option value="7">Консоль двусторонняя из композита</option>
+                    <option value="8">Консоль двусторонняя из композита с инкрустацией</option>
+                  </select>
+                </div>
+              </div>
+              <div class="calc__viveski__visota"><span>Высота короба:</span>
+                <div class="input">
+                  <input data-calc-korob-visota="data-calc-korob-visota" type="number" value="1" min="0" max="100"/>
+                </div><span>м</span>
+              </div>
+              <div class="calc__viveski__visota"><span>Ширина короба:</span>
+                <div class="input">
+                  <input data-calc-korob-shirina="data-calc-korob-shirina" type="number" value="1" min="0" max="100"/>
+                </div><span>м</span>
+              </div>
+            </div>
+            <div class="calc__viveski__right">
+              <div class="calc__viveski__right__img"><img src="img/calc/koroba/1.png" alt="" data-calc-korob-img="data-calc-korob-img"/></div>
+              <div class="calc__viveski__right__price">
+                <div class="calc__viveski__right__price__title">Примерная стоимость</div>
+                <div data-calc-korob-result="data-calc-korob-result" class="calc__viveski__right__price__num">9 300 руб.</div>
+              </div>
+              <div class="calc__viveski__right__btn">
+                <button data-modal="data-modal" data-modal-id="1" class="btn">Уточнить стоимость</button>
               </div>
             </div>
           </div>
@@ -179,7 +219,7 @@
       <div class="container">
         <div class="section__title">Узнайте необходимо ли согласовывать вывеску по вашему адресу</div>
         <div class="section__desc">Это поможет избежать принудительного демонтажа и возможного штрафа за нарушение 902 ПП / регламента № 31 РВ-72 от 2015 г.</div>
-        <form class="soglasovanie__form" action="">
+        <form action="" class="soglasovanie__form">
           <input type="text" placeholder="Введите адрес, например пр-т Мира, 32 "/>
           <button class="btn">Получить информацию</button>
         </form>
@@ -195,7 +235,7 @@
     <section class="catalog">
       <div class="container">
         <div class="section__title">Примеры наших работ</div>
-        <div class="catalog__items"><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a><a class="catalog__item" data-fancybox="gallery" href="img/service.png"></a></div>
+        <div class="catalog__items"><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a><a data-fancybox="gallery" href="img/service.png" class="catalog__item"></a></div>
       </div>
     </section>
     <section class="contacts">

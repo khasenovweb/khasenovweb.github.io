@@ -48,23 +48,43 @@ $(document).ready(function(){
 	// });
 
 
+	// $('[data-ajax-from]').on('input',function(){
+	// 	var val = $(this).val();
+	// 	var index = $(this).index();
+	// 	$.ajax({
+	// 		url: 'https://api.avtodispetcher.ru/v1/cities',	
+	// 		type: 'get',
+	// 		data: {q: val,limit:5},
+	// 		dataType: 'json',
+	// 		headers: {
+	// 			'accept': 'application/json'
+	// 		},
+	// 		success: function(otvet) {
+	// 			// $('.calc__sec1__input__alert__content').eq(index).append();
+	// 			// $('.calc__sec1__input__alert').eq(index).prepend(otvet);
+	// 			console.log(otvet);
+	// 		}
+	// 	});
+	// });
+
+
+
+
 	$('[data-ajax-from]').on('input',function(){
 		var val = $(this).val();
 		var index = $(this).index();
 		$.ajax({
-			url: 'https://api.avtodispetcher.ru/v1/cities',	
-			type: 'get',
-			data: {q: val,limit:5},
-			dataType: 'json',
-			headers: {
-				'accept': 'application/json'
-			},
+			url: 'http://localhost/transit-s/index.php',	
+			type: 'post',
+			data: {val:val},
 			success: function(otvet) {
 				// $('.calc__sec1__input__alert__content').eq(index).append();
 				// $('.calc__sec1__input__alert').eq(index).prepend(otvet);
 				console.log(otvet);
 			}
 		});
+
+		console.log(val);
 	});
 });
 

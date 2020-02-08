@@ -65,49 +65,83 @@ body
 				.section__title.calc__title Расчет стоимости
 				.section__desc Расчитайте стоимость вывески с помощью нашего калькулятора
 				.calc__tab__links
-					.calc__tab__link.calc__tab__link__active Объемные буквы
-					.calc__tab__link Световые короба
-				.calc__tab__content
+					.calc__tab__link.calc__tab__link__active(data-calc-tab="1") Объемные буквы
+					.calc__tab__link(data-calc-tab="2") Световые короба
+				.calc__tab__content(data-calc-tab="1")
 					.calc__viveski
 						.calc__viveski__left
 							.calc__viveski__shrift
-								.calc__viveski__shrift__item.calc__viveski__shrift__item__active
+								.calc__viveski__shrift__item.calc__viveski__shrift__item__active(data-shrift="sans-serif")
 									.calc__viveski__shrift__item__title Абв
 									.calc__viveski__shrift__item__desc Прямой
-								.calc__viveski__shrift__item
+								.calc__viveski__shrift__item(data-shrift="serif")
 									.calc__viveski__shrift__item__title(style="font-family: 'Roboto Slab';") Абв
 									.calc__viveski__shrift__item__desc С засечками
-								.calc__viveski__shrift__item
+								.calc__viveski__shrift__item(data-shrift="decor")
 									.calc__viveski__shrift__item__title(style="font-family:'Pacifico';") Абв
 									.calc__viveski__shrift__item__desc Декоративный
 							.calc__viveski__type
 								.select
-									select(name="")
-										option(value="") Объемные буквы световые белые
-										option(value="") Объемные буквы световые цветные
-										option(value="") Объемные буквы световые цветные/белые со светящимимся краями
-										option(value="") Объемные буквы световые с задней "контражурной" подсветкой
-										option(value="") Объемные буквы световые цветные/белые с комбинированной подсветкой
-										option(value="") Объемные буквы в виде фигурного короба
+									select.select__viveski__type(name="")
+										option(value="1") Объемные буквы световые белые
+										option(value="2") Объемные буквы световые цветные
+										option(value="3") Объемные буквы световые цветные/белые со светящимимся краями
+										option(value="4") Объемные буквы световые с задней "контражурной" подсветкой
+										option(value="5") Объемные буквы световые цветные/белые с комбинированной подсветкой
+										option(value="6") Объемные буквы в виде фигурного короба
 							.calc__viveski__slova
 								.input
-									input(type="text" placeholder="Слова для вывески")
+									input.input__viveski__slova(type="text" placeholder="Слова для вывески")
 									.input__count 0 букв
 							.calc__viveski__visota
 								span Высота букв:
 								.input
-									input(type="number" placeholder="Слова для вывески" value="10" min="10" max="100")
+									input.input__viveski__visota(type="number" placeholder="Слова для вывески" value="10" min="10" max="100")
 								
 								span см
 
 						.calc__viveski__right
-							.calc__viveski__right__img
-								img(src="img/calc-1.jpg", alt="")
+							.calc__viveski__right__img(data-viveski)
+								img(src="img/calc/sans-serif1.jpg", alt="")
 							.calc__viveski__right__price
 								.calc__viveski__right__price__title Примерная стоимость
 								.calc__viveski__right__price__num 9 300 руб.
 							.calc__viveski__right__btn
 								button.btn(data-modal data-modal-id="1") Уточнить стоимость
+				.calc__tab__content(data-calc-tab="2")
+					.calc__viveski
+						.calc__viveski__left
+							.calc__viveski__type
+								.select
+									select(name="" data-calc-korob-type)
+										option(value="1") Короб прямоугольный: поликарбонат + профиль
+										option(value="2") Короб прямоугольный: акрил + профиль
+										option(value="3") Короб фигурный: акрил + пластик
+										option(value="4") Короб из композита
+										option(value="5") Короб из композита с инкрустацией
+										option(value="6") Консоль двусторонняя пластиковая
+										option(value="7") Консоль двусторонняя из композита
+										option(value="8") Консоль двусторонняя из композита с инкрустацией
+							.calc__viveski__visota
+								span Высота короба:
+								.input
+									input( data-calc-korob-visota type="number"  value="1" min="0" max="100")
+								span м
+							.calc__viveski__visota
+								span Ширина короба:
+								.input
+									input( data-calc-korob-shirina type="number"  value="1" min="0" max="100")
+								span м
+
+						.calc__viveski__right
+							.calc__viveski__right__img
+								img(src="img/calc/koroba/1.png", alt="" data-calc-korob-img)
+							.calc__viveski__right__price
+								.calc__viveski__right__price__title Примерная стоимость
+								.calc__viveski__right__price__num(data-calc-korob-result) 9 300 руб.
+							.calc__viveski__right__btn
+								button.btn(data-modal data-modal-id="1") Уточнить стоимость
+
 		section.services
 			.container
 				.section__title.services__title Полный комплекс услуг 

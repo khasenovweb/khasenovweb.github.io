@@ -17,14 +17,14 @@
         <div class="calc__sec1__input">
           <input type="text" data-ajax-from="data-ajax-from"/>
           <div data-ajax-from="data-ajax-from" class="calc__sec1__input__alert"><br/>
-            <div class="calc__sec1__input__alert__content">
-              <div data-result-from="data-result-from" class="calc__sec1__input__alert__item">Москва</div>
-              <div data-result-from="data-result-from" class="calc__sec1__input__alert__item">Санкт-Петербург</div>
-              <div data-result-from="data-result-from" class="calc__sec1__input__alert__item">Челябинск</div>
-            </div>
+            <!--.calc__sec1__input__alert__content
+            .calc__sec1__input__alert__item(data-result-from) Москва
+            .calc__sec1__input__alert__item(data-result-from) Санкт-Петербург
+            .calc__sec1__input__alert__item(data-result-from) Челябинск
+            -->
           </div>
         </div>
-      </div><img src="img/calc.svg" alt=""/>
+      </div><img src="img/calc.svg" alt="" data-calc-reverse="data-calc-reverse"/>
       <div class="calc__sec1__inputgroup">
         <label for="">Куда</label>
         <div class="calc__sec1__input">
@@ -57,12 +57,12 @@
       <button data-ajax-result="data-ajax-result" class="btn__border">Расчитать</button>
     </div>
     <div class="calc__sec3">
-      <p>Итого <span>26 000 руб.</span></p>
+      <p>Итого <span data-ajax-sum="data-ajax-sum">0 руб.</span></p>
     </div>
     <div class="calc__sec4">
       <p>Для получения более точных расчетов свяжитесь с нами:</p>
       <div class="calc__sec4__phone">+7(903)891-09-77</div>
-      <button class="btn">Написать</button>
+      <button data-click-modal__wrapper="data-click-modal__wrapper" class="btn">Написать</button>
     </div>
   </div>
   <div class="modal__wrapper">
@@ -71,38 +71,39 @@
       <div class="modal__phone">+7(903)891-09-77</div>
       <form class="modal__form">
         <div class="modal__form__input">
-          <input required="required" type="text" placeholder="ФИО"/>
+          <input required="required" type="text" placeholder="ФИО" name="name"/>
         </div>
         <div class="modal__form__input">
-          <input required="required" type="text" placeholder="Электронная почта"/>
+          <input required="required" type="text" placeholder="Электронная почта" name="email"/>
         </div>
         <div class="modal__form__input">
-          <input required="required" type="text" placeholder="Мобильный телефон"/>
+          <input required="required" type="text" placeholder="Мобильный телефон" name="phone"/>
         </div>
         <p class="modal__txt">* Номер телефона вводится в формате 89012345678 <br/><span>** Нажимая кнопку «Отправить»,</span><br/><span>вы принимаете условия настоящего соглашения и даете согласие на обработку ваших персональных данных в соответствии с Политикой конфиденциальности.</span></p>
         <div class="modal__form__input">
-          <input required="required" type="text" placeholder="Комментарий"/>
+          <input required="required" type="text" placeholder="Комментарий" name="comment"/>
         </div>
-        <button class="btn">Отправить</button>
+        <button modal-form-submit="modal-form-submit" class="btn">Отправить</button>
       </form>
     </div>
   </div>
+  <div class="modal__success__wrapper"><img src="img/modal__success.svg" alt=""/></div>
   <div class="mobile__head">
     <div class="mobile__head__hamburger"></div>
     <div class="mobile__head__city">г. Санкт-Петербург</div><a href="" class="mobile__head__logo"><img src="img/logo.svg" alt=""/></a>
   </div>
-  <div class="head"><a href="" class="head__logo"><img src="img/logo.svg" alt=""/></a>
+  <div class="head"><a href="/" class="head__logo"><img src="img/logo.svg" alt=""/></a>
     <div class="head__city">г. Санкт-Петербург</div><a href="" class="head__phone">+7(903)891-09-77</a>
-    <div class="head__callrequest">Заказать звонок</div>
-    <div class="head__feedback">Обратная связь</div>
+    <div data-click-modal__wrapper="data-click-modal__wrapper" class="head__callrequest">Заказать звонок</div>
+    <div data-click-modal__wrapper="data-click-modal__wrapper" class="head__feedback">Обратная связь</div>
   </div>
   <div class="nav">
     <ul class="nav__links">
-      <li><a href="">Услуги и цены</a>
+      <li><a href="dilevery.html">Услуги и цены</a>
         <ul class="nav__links__submenu">
-          <li><a href="">Доставка любых грузов</a></li>
-          <li><a href="">Грузоперевозки по России</a></li>
-          <li><a href="">Цены на грузоперевозки</a></li>
+          <li><a href="dilevery.html">Доставка любых грузов</a></li>
+          <li><a href="cargo.html">Грузоперевозки по России</a></li>
+          <li><a href="prices.html">Цены на грузоперевозки</a></li>
         </ul>
       </li>
       <li><a href="inform.html">Информация</a></li>
@@ -169,7 +170,7 @@
       </div>
     </div>
     <div class="page__footer">
-      <button class="btn">Связаться</button>
+      <button data-click-modal__wrapper="data-click-modal__wrapper" class="btn">Связаться</button>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

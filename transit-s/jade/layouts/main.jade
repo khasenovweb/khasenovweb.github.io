@@ -18,11 +18,11 @@ body
 					input(type="text" data-ajax-from) 
 					.calc__sec1__input__alert(data-ajax-from)
 						br
-						.calc__sec1__input__alert__content
+						//.calc__sec1__input__alert__content
 							.calc__sec1__input__alert__item(data-result-from) Москва
 							.calc__sec1__input__alert__item(data-result-from) Санкт-Петербург
 							.calc__sec1__input__alert__item(data-result-from) Челябинск
-			img(src="img/calc.svg", alt="")
+			img(src="img/calc.svg", alt="" data-calc-reverse)
 			.calc__sec1__inputgroup
 				label(for="") Куда
 				.calc__sec1__input
@@ -48,11 +48,11 @@ body
 			button.btn__border(data-ajax-result) Расчитать
 		.calc__sec3
 			p Итого 
-				span 26 000 руб.
+				span(data-ajax-sum) 0 руб.
 		.calc__sec4
 			p Для получения более точных расчетов свяжитесь с нами:
 			.calc__sec4__phone +7(903)891-09-77
-			button.btn Написать
+			button.btn(data-click-modal__wrapper) Написать
 	.modal__wrapper
 		.modal
 			.modal__title Оставьте заявку или 
@@ -61,19 +61,21 @@ body
 			.modal__phone +7(903)891-09-77
 			form.modal__form
 				.modal__form__input
-					input(required type="text" placeholder="ФИО")
+					input(required type="text" placeholder="ФИО" name="name")
 				.modal__form__input
-					input(required type="text" placeholder="Электронная почта")
+					input(required type="text" placeholder="Электронная почта" name="email") 
 				.modal__form__input
-					input(required type="text" placeholder="Мобильный телефон")
+					input(required type="text" placeholder="Мобильный телефон" name="phone")
 				p.modal__txt * Номер телефона вводится в формате 89012345678 
 					br 
 					span ** Нажимая кнопку «Отправить»,
 					br
 					span вы принимаете условия настоящего соглашения и даете согласие на обработку ваших персональных данных в соответствии с Политикой конфиденциальности.
 				.modal__form__input
-					input(required type="text" placeholder="Комментарий")
-				button.btn Отправить
+					input(required type="text" placeholder="Комментарий" name="comment")
+				button.btn(modal-form-submit) Отправить
+	.modal__success__wrapper
+		img(src="img/modal__success.svg", alt="")
 	
 	.mobile__head
 		.mobile__head__hamburger
@@ -81,23 +83,23 @@ body
 		a.mobile__head__logo(href="")
 			img(src="img/logo.svg", alt="")
 	.head
-		a.head__logo(href="")
+		a.head__logo(href="/")
 			img(src="img/logo.svg", alt="")
 		.head__city г. Санкт-Петербург
 		a.head__phone(href="") +7(903)891-09-77
-		.head__callrequest Заказать звонок
-		.head__feedback Обратная связь
+		.head__callrequest(data-click-modal__wrapper) Заказать звонок
+		.head__feedback(data-click-modal__wrapper) Обратная связь
 	.nav
 		ul.nav__links
 			li
-				a(href="") Услуги и цены
+				a(href="dilevery.html") Услуги и цены
 				ul.nav__links__submenu
 					li
-						a(href="") Доставка любых грузов
+						a(href="dilevery.html") Доставка любых грузов
 					li
-						a(href="") Грузоперевозки по России
+						a(href="cargo.html") Грузоперевозки по России
 					li
-						a(href="") Цены на грузоперевозки
+						a(href="prices.html") Цены на грузоперевозки
 
 			li
 				a(href="inform.html") Информация
