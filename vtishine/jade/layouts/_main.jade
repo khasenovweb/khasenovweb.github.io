@@ -2,9 +2,11 @@
 html(lang="en")
 head
 	meta(charset="UTF-8")
-	title Document
+	title Vtishine
+	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
 	link(rel="stylesheet", href="css/main.css")
 body
+	//-========HEAD==============
 	.head
 		.container
 			//-head__nav
@@ -25,9 +27,146 @@ body
 				.head__location__title Университетская набережная, 88
 
 			//-END head__location
+	//-========END HEAD==============
+
+	//-========HERO==============
+	.hero
+		.container
+			.hero__top
+				a.hero__logo(href="/")
+					img(src="img/hero__logo.png", alt="")
+				.hero__logo__desc Продажа материалов. Подбор решения.
+					br
+					span Звукоизоляция под ключ.
+				.hero__phone
+					a(href="tel: +7 (351) 750 39 51") +7 (351) 750 39 51
+					button.btn__border Заказать звонок
+				.hero__city
+					.hero__city__select Челябинск
+						.hero__city__select__arrow
+					.hero__city__working
+						.hero__city__working__clock
+						.hero__city__working__title с 10 до 19:00 (пн-пт);
+							br
+							span до 16:00 (сб)
+			.hero__slider.owl-carousel
+				//-.hero__slide
+				.hero__slide
+					.hero__slide__text
+						.hero__slide__title От 45 000 Р 
+							br 
+							span за комнату *
+						hr
+						.hero__slide__desc Доступная звукоизоляция квартир.
+							br 
+							span * Средняя цена услуги под ключ, гарантия
+						button.btn Рассчитать для меня
+					.hero__slide__img
+						img(src="img/hero__slider__img.png", alt="")
+				//-.hero__slide
+				.hero__slide
+					.hero__slide__text
+						.hero__slide__title От 45 000 Р 
+							br 
+							span за комнату *
+						hr
+						.hero__slide__desc Доступная звукоизоляция квартир.
+							br 
+							span * Средняя цена услуги под ключ, гарантия
+						button.btn Рассчитать для меня
+					.hero__slide__img
+						img(src="img/hero__slider__img.png", alt="")
+				//-.hero__slide
+				.hero__slide
+					.hero__slide__text
+						.hero__slide__title От 45 000 Р 
+							br 
+							span за комнату *
+						hr
+						.hero__slide__desc Доступная звукоизоляция квартир.
+							br 
+							span * Средняя цена услуги под ключ, гарантия
+						button.btn Рассчитать для меня
+					.hero__slide__img
+						img(src="img/hero__slider__img.png", alt="")
+	//-========END HERO==============
+	
+	//-========SECTION-1==============
+	.section-1
+		.container
+			img(src="img/section-1.svg", alt="")
+			p Мы «ЗА» спокойную жизнь «В тишине», где приходя домой Вы наконец сможете расслабиться, 
+				br 
+				span выспаться и отдохнуть от суеты и повседневных забот.
+			p Звукоизоляция - ключ к решению в вопросах тишины.
+	//-========END SECTION-1==============
+
+	//-========SECTION-2==============
+	.section-2
+		.container
+			.section-2__title Люди ценят нас ЗА
+			.section-2__mainimg__wrapper
+				img.section-2__mainimg(src="img/section-2__bg.png", alt="")
+				//-section-2__item
+				.section-2__item.section-2__item-1
+					img.section-2__item__img(src="img/section-2__item__img.svg", alt="")
+					.section-2__item__title Качество
+					.section-2__item__desc звукоизолировано за 3 года
+					.section-2__item__num > 15 000 кв.м.
+				//-section-2__item
+				.section-2__item.section-2__item-2
+					img.section-2__item__img(src="img/section-2__item__img.svg", alt="")
+					.section-2__item__title Опыт
+					.section-2__item__desc произведено работ на
+					.section-2__item__num > 700 объектах
+				//-section-2__item
+				.section-2__item.section-2__item-3
+					img.section-2__item__img(src="img/section-2__item__img.svg", alt="")
+					.section-2__item__title Надежность
+					.section-2__item__desc Работаем по договору с гарантией
+					.section-2__item__num 1,5 года
+	//-========END SECTION-2==============
+
+	//-========SECTION-3==============
+	.section-3
+		.container
+			.section__title Решим любые проблемы 
+				br
+				span с неприятными источниками шума 
+				img(src="img/section-3__img-1.svg", alt="")
+			.section-3__lists
+				.section-3__list
+					.section-3__list__title У соседей
+					hr
+					ul
+						li лай собаки
+						li перфоратор
+						li плач грудного ребёнка	
+						li топот, крики, ругань, застолья за стенкой
+						li звук работающего телевизора
+						li игра на пианино и др. музыкальных инструментах
+						li стоны, скрипы, звуки секса
+						li звуки при уборке, от работы пылесоса
+						li вечный ремонт
+				.section-3__list
+					.section-3__list__title У соседей
+					hr
+					ul
+						li лай собаки
+						li перфоратор
+						li плач грудного ребёнка	
+						li топот, крики, ругань, застолья за стенкой
+						li звук работающего телевизора
+						li игра на пианино и др. музыкальных инструментах
+						li стоны, скрипы, звуки секса
+						li звуки при уборке, от работы пылесоса
+						li вечный ремонт
+	//-========END SECTION-3==============
+	
 	block content
 	
 
 	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
 	script(src="js/main.js")
 	
