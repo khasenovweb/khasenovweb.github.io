@@ -67,6 +67,7 @@
   </div>
   <div class="modal__wrapper">
     <div class="modal">
+      <div class="modal__close"></div>
       <div class="modal__title">Оставьте заявку или <br/><span>позвоните нам</span></div>
       <div class="modal__phone">+7(903)891-09-77</div>
       <form class="modal__form">
@@ -81,7 +82,7 @@
         </div>
         <p class="modal__txt">* Номер телефона вводится в формате 89012345678 <br/><span>** Нажимая кнопку «Отправить»,</span><br/><span>вы принимаете условия настоящего соглашения и даете согласие на обработку ваших персональных данных в соответствии с Политикой конфиденциальности.</span></p>
         <div class="modal__form__input">
-          <input required="required" type="text" placeholder="Комментарий" name="comment"/>
+          <textarea rows="1" required="required" type="text" placeholder="Комментарий" name="comment"></textarea>
         </div>
         <button modal-form-submit="modal-form-submit" class="btn">Отправить</button>
       </form>
@@ -90,10 +91,10 @@
   <div class="modal__success__wrapper"><img src="img/modal__success.svg" alt=""/></div>
   <div class="mobile__head">
     <div class="mobile__head__hamburger"></div>
-    <div class="mobile__head__city">г. Санкт-Петербург</div><a href="" class="mobile__head__logo"><img src="img/logo.svg" alt=""/></a>
+    <div class="mobile__head__city"></div><a href="/" class="mobile__head__logo"><img src="img/logo.svg" alt=""/></a>
   </div>
   <div class="head"><a href="/" class="head__logo"><img src="img/logo.svg" alt=""/></a>
-    <div class="head__city">г. Санкт-Петербург</div><a href="" class="head__phone">+7(903)891-09-77</a>
+    <div class="head__city"></div><a href="tel:+7(903)891-09-77" class="head__phone">+7(903)891-09-77</a>
     <div data-click-modal__wrapper="data-click-modal__wrapper" class="head__callrequest">Заказать звонок</div>
     <div data-click-modal__wrapper="data-click-modal__wrapper" class="head__feedback">Обратная связь</div>
   </div>
@@ -115,8 +116,8 @@
       <div class="nav__calc__img"></div><span>Калькулятор стоимости</span>
     </div>
   </div>
-  <div class="mobile__nav"><a href="" class="mobile__nav__phone">+7(903)891-09-77</a>
-    <div class="mobile__nav__callrequest">Заказать звонок</div>
+  <div class="mobile__nav"><a href="tel:+7(903)891-09-77" class="mobile__nav__phone">+7(903)891-09-77</a>
+    <div data-click-modal__wrapper="data-click-modal__wrapper" class="mobile__nav__callrequest">Заказать звонок</div>
     <div data-click-calc="data-click-calc" class="mobile__nav__calc">
       <div class="mobile__nav__calc__img"></div><span>Калькулятор стоимости</span>
     </div>
@@ -175,5 +176,6 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fias.min.js"></script>
+  <script src="js/autosize.min.js"></script>
   <script src="js/main.js?v"></script>
 </body>

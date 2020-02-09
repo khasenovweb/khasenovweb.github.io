@@ -482,6 +482,14 @@ input {
   border-bottom: 1px solid #9E9E9E;
   padding: 1.4rem 0;
 }
+.modal__form textarea {
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #9E9E9E;
+  padding: 1.4rem 0;
+}
 .modal__form .btn {
   display: inline-block;
   margin-top: 18rem;
@@ -1063,4 +1071,41 @@ input {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+.modal {
+  position: relative;
+}
+.modal__close {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #0071FF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+.modal__close:before {
+  content: '';
+  display: block;
+  width: 1.3rem;
+  height: 1px;
+  background-color: white;
+  -webkit-transform: rotate(45deg) translateX(0.5rem) translateY(-0.4rem);
+          transform: rotate(45deg) translateX(0.5rem) translateY(-0.4rem);
+}
+.modal__close:after {
+  content: '';
+  display: block;
+  width: 1.3rem;
+  height: 1px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg) translateX(-0.5rem) translateY(-0.4rem);
+          transform: rotate(-45deg) translateX(-0.5rem) translateY(-0.4rem);
 }

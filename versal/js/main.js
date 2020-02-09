@@ -59,7 +59,7 @@ $(document).ready(function(){
 		var slova = $('.input__viveski__slova').val().replace(/[^a-zа-я0-9]+/g,'').length;
 		var visota = $('.input__viveski__visota').val();
 		var price = 80;
-		var sum = price * visota * slova;
+		var sum = Number(price) * Number(visota) * Number(slova);
 		console.log(font, type, slova, visota, sum);
 		$('.calc__viveski__right__price__num').text(sum+' руб.');
 		$('.calc__viveski__right__img[data-viveski] img').attr('src','img/calc/'+font+type+'.jpg');
@@ -82,7 +82,7 @@ $(document).ready(function(){
 		var visota = $('[data-calc-korob-visota]').val();
 		var shirina = $('[data-calc-korob-shirina]').val();
 		var price = 1100;
-		var sum = visota * shirina * price;
+		var sum = Number(visota) * Number(shirina) * Number(price);
 		$('[data-calc-korob-result]').text(sum+' руб.');
 		$('[data-calc-korob-img]').attr('src', 'img/calc/koroba/'+type+'.png');
 		if(type === '7' || type === '8') {

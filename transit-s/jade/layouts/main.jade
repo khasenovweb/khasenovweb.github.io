@@ -55,6 +55,7 @@ body
 			button.btn(data-click-modal__wrapper) Написать
 	.modal__wrapper
 		.modal
+			.modal__close
 			.modal__title Оставьте заявку или 
 				br 
 				span позвоните нам
@@ -72,21 +73,21 @@ body
 					br
 					span вы принимаете условия настоящего соглашения и даете согласие на обработку ваших персональных данных в соответствии с Политикой конфиденциальности.
 				.modal__form__input
-					input(required type="text" placeholder="Комментарий" name="comment")
+					textarea(rows="1" required type="text" placeholder="Комментарий" name="comment")
 				button.btn(modal-form-submit) Отправить
 	.modal__success__wrapper
 		img(src="img/modal__success.svg", alt="")
 	
 	.mobile__head
 		.mobile__head__hamburger
-		.mobile__head__city г. Санкт-Петербург
-		a.mobile__head__logo(href="")
+		.mobile__head__city
+		a.mobile__head__logo(href="/")
 			img(src="img/logo.svg", alt="")
 	.head
 		a.head__logo(href="/")
 			img(src="img/logo.svg", alt="")
-		.head__city г. Санкт-Петербург
-		a.head__phone(href="") +7(903)891-09-77
+		.head__city
+		a.head__phone(href="tel:+7(903)891-09-77") +7(903)891-09-77
 		.head__callrequest(data-click-modal__wrapper) Заказать звонок
 		.head__feedback(data-click-modal__wrapper) Обратная связь
 	.nav
@@ -113,8 +114,8 @@ body
 			.nav__calc__img
 			span Калькулятор стоимости
 	.mobile__nav
-		a.mobile__nav__phone(href="") +7(903)891-09-77
-		.mobile__nav__callrequest Заказать звонок
+		a.mobile__nav__phone(href="tel:+7(903)891-09-77") +7(903)891-09-77
+		.mobile__nav__callrequest(data-click-modal__wrapper) Заказать звонок
 		.mobile__nav__calc(data-click-calc)
 			.mobile__nav__calc__img
 			span Калькулятор стоимости
@@ -142,4 +143,5 @@ body
 	
 	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 	script(src="js/jquery.fias.min.js")
+	script(src="js/autosize.min.js")
 	script(src="js/main.js?v")

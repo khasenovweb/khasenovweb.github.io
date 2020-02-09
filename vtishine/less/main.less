@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic');
+
+@black: #4C4C4C;
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+body {
+	background-color: #FAFAFA;
+}
+html {
+	font-size: 17px;
+}
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.head {
+	height: 48px;
+	.container {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		justify-content: flex-end;
+	}
+
+}
+.head__nav {
+	display: flex;
+	align-items: center;
+	display: grid;
+	grid-template-columns: auto;
+	a {
+		font-size: 14px;
+		color: @black;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.head__location {
+	display: flex;
+	align-items: center;
+}

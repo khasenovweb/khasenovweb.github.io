@@ -87,6 +87,10 @@
   }
 }
 @media screen and (max-width: 840px) {
+  .modal__close {
+    display: -webkit-box;
+    display: flex;
+  }
   .prices__inputs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -409,6 +413,9 @@
     margin-top: 1rem;
   }
   .calc__sec1__input__alert {
+    font-size: 1rem;
+  }
+  .calc__sec1__input__alert__item {
     font-size: 1rem;
   }
 }

@@ -389,6 +389,14 @@ input {
 		border-bottom: 1px solid #9E9E9E;
 		padding: 1.4rem 0;
 	}
+	textarea {
+		width: 100%;
+		border: none;
+		box-shadow: none;
+		border-radius: 0;
+		border-bottom: 1px solid #9E9E9E;
+		padding: 1.4rem 0;
+	}
 	.btn {
 		display: inline-block;
 		margin-top: 18rem;
@@ -943,5 +951,37 @@ input {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+	}
+}
+.modal {
+	position: relative;
+}
+.modal__close {
+	width: 3.6rem;
+	height: 3.6rem;
+	background-color: @blue;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	display: none;
+	&:before {
+		content: '';
+		display: block;
+		width: 1.3rem;
+		height: 1px;
+		background-color: white;
+		transform: rotate(45deg) translateX(0.5rem) translateY(-0.4rem);
+	}
+	&:after {
+		content: '';
+		display: block;
+		width: 1.3rem;
+		height: 1px;
+		background-color: white;
+		transform: rotate(-45deg) translateX(-0.5rem) translateY(-0.4rem);;
 	}
 }

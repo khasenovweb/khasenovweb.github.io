@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 	$('[data-click-calc]').click(function(){
 		$('.calc').toggleClass('calc__show');
 		$(this).addClass('nav__calc__active');
@@ -86,5 +88,9 @@ $(document).ready(function(){
 
 		console.log(val);
 	});
+
+
+
+	autosize($('.modal__form__input textarea'));
 });
 
