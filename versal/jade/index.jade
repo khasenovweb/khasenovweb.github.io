@@ -4,8 +4,8 @@ head
 	meta(charset="UTF-8")
 	title Versal
 	link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
-	link(rel="stylesheet", href="fonts/stylesheet.css?v2")
-	link(rel="stylesheet", href="css/main.css?v2")
+	link(rel="stylesheet", href="fonts/stylesheet.css?v3")
+	link(rel="stylesheet", href="css/main.css?v3")
 body
 	.modal__wrapper(data-modal-id="1")
 		.modal
@@ -148,11 +148,11 @@ body
 				.section__desc Предложим эффективное решение вне зависимости от масштаба, сферы и бюджета вашего проекта
 				.services__content
 					.services__tabs
-						a(href="#services").services__tab.services__tab__active(data-tab="1") Объемные буквы
-						a(href="#services").services__tab(data-tab="2") Интерьерные и не стандартные конструкции
-						a(href="#services").services__tab(data-tab="3") Вывески из неона
-						a(href="#services").services__tab(data-tab="4") Крышные установки
-						a(href="#services").services__tab(data-tab="5") Монтаж и согласование
+						a(href="#services" data-tab="1").services__tab.services__tab__active Объемные буквы
+						a(href="#services" data-tab="2").services__tab Интерьерные и не стандартные конструкции
+						a(href="#services" data-tab="3").services__tab Вывески из неона
+						a(href="#services" data-tab="4").services__tab Крышные установки
+						a(href="#services" data-tab="5").services__tab Монтаж и согласование
 					.services__items(data-tab="1")
 						.services__item
 							.services__item__img(style="background-image: url(img/services/volumetric-letters/1.jpg)")
@@ -235,7 +235,7 @@ body
 				.section__title Примеры наших работ
 				.catalog__items
 					-for(i=1;i<=101;i++){
-						a(data-fancybox="gallery" href="img/works/"+i+".jpeg").catalog__item(style="background-image: url(img/works/"+i+".jpeg);")
+						a(data-fancybox="gallery" href="img/works/"+i+".jpeg" style="background-image: url(img/works/"+i+".jpeg);").catalog__item
 					-}
 		section.contacts
 			.container
@@ -252,5 +252,5 @@ body
 
 	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 	script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
-	script(src="js/main.js?v2")
+	script(src="js/main.js?v3")
 
