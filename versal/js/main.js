@@ -1,16 +1,4 @@
-$(document).ready(function(){
-	// $('.calc__viveski__visota input').on('focusout',function(){
-	// 	var val = $(this).val();
-	// 	if(val < 10) {
-	// 		alert('Минимальная высота букв 10 см');
-	// 		$(this).val('10');
-	// 	}
-	// 	if(val > 100) {
-	// 		alert('Максимальная высота букв 100 см');
-	// 		$(this).val('100');
-	// 	}
-	// });
-
+$(document).ready(function(){	
 
 	//Модальное окно
 	$('[data-modal]').click(function(){
@@ -49,6 +37,7 @@ $(document).ready(function(){
 	});
 	$('.input__viveski__slova').on('input',function(){
 		calc__viceski();
+
 	});
 	$('.input__viveski__visota').on('input', function(){
 		calc__viceski();
@@ -56,11 +45,12 @@ $(document).ready(function(){
 	function calc__viceski(){
 		var font = $('.calc__viveski__shrift__item__active').attr('data-shrift');
 		var type = $('.select__viveski__type').val();
-		var slova = $('.input__viveski__slova').val().replace(/[^a-zа-я0-9]+/g,'').length;
+		var slova = $('.input__viveski__slova').val().replace(/[^a-zа-я0-9]+/gi,'').length;
 		var visota = $('.input__viveski__visota').val();
 		var price = 80;
-		var sum = Math.round( Number(price) * Number(visota) * Number(slova) );
-		console.log(font, type, slova, visota, sum);
+		var sum = Number(price) * Number(visota) * Number(slova);
+		$('.input__count').text(slova+' букв');
+		console.log(font, type, slova, Number(visota), sum);
 		$('.calc__viveski__right__price__num[data-viveski]').text(sum+' руб.');
 		$('.calc__viveski__right__img[data-viveski] img').attr('src','img/calc/'+font+type+'.jpg');
 		if(type === '6') {
