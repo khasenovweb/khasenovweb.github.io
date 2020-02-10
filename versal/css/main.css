@@ -348,6 +348,8 @@ a {
   color: white;
   margin-bottom: 1px;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 .services__tab:hover {
   background-color: #009E88;

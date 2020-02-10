@@ -142,48 +142,82 @@ body
 							.calc__viveski__right__btn
 								button.btn(data-modal data-modal-id="1") Уточнить стоимость
 
-		section.services
+		section.services#services
 			.container
 				.section__title.services__title Полный комплекс услуг 
 				.section__desc Предложим эффективное решение вне зависимости от масштаба, сферы и бюджета вашего проекта
 				.services__content
 					.services__tabs
-						.services__tab.services__tab__active Объемные буквы
-						.services__tab Интерьерные и не стандартные конструкции
-						.services__tab Вывески из неона
-						.services__tab Крышные установки
-						.services__tab Монтаж и согласование
-					.services__items
+						a(href="#services").services__tab.services__tab__active(data-tab="1") Объемные буквы
+						a(href="#services").services__tab(data-tab="2") Интерьерные и не стандартные конструкции
+						a(href="#services").services__tab(data-tab="3") Вывески из неона
+						a(href="#services").services__tab(data-tab="4") Крышные установки
+						a(href="#services").services__tab(data-tab="5") Монтаж и согласование
+					.services__items(data-tab="1")
 						.services__item
-							.services__item__img
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/1.jpg)")
 							.services__item__text
 								.services__item__title Буквы из ПВХ не световые
 								.services__item__desc от 30 рублей за 1см высоты
 						.services__item
-							.services__item__img
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/2.jpg)")
 							.services__item__text
-								.services__item__title Буквы из ПВХ не световые
-								.services__item__desc от 30 рублей за 1см высоты
+								.services__item__title Буквы с фронтальным свечением
+								.services__item__desc от 80 руб. за 1 см
 						.services__item
-							.services__item__img
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/3.jpg)")
 							.services__item__text
-								.services__item__title Буквы из ПВХ не световые
-								.services__item__desc от 30 рублей за 1см высоты
+								.services__item__title Буквы с фронтальным свечением
+								.services__item__desc от 110 руб. за 1 см
 						.services__item
-							.services__item__img
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/4.jpg)")
 							.services__item__text
-								.services__item__title Буквы из ПВХ не световые
-								.services__item__desc от 30 рублей за 1см высоты
+								.services__item__title Буквы с полным свечением
+								.services__item__desc от 130 руб. за 1 см
 						.services__item
-							.services__item__img
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/5.jpg)")
 							.services__item__text
-								.services__item__title Буквы из ПВХ не световые
-								.services__item__desc от 30 рублей за 1см высоты
+								.services__item__title Буквы с полным свечением
+								.services__item__desc от 155 руб. за 1 см
 						.services__item
-							.services__item__img
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/6.jpg)")
+							.services__item__text
+								.services__item__title Объемные не световые буквы
+								.services__item__desc от 70 руб. за 1 см
+						.services__item
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/7.jpg)")
+							.services__item__text
+								.services__item__title Световые короба
+								.services__item__desc от 8000 р. / 9900 р. за 1м2
+						.services__item
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/8.jpg)")
+							.services__item__text
+								.services__item__title Композитные световые короба
+								.services__item__desc от 15000 рублей за 1м2
+						.services__item
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/9.jpg)")
+							.services__item__text
+								.services__item__title Композитные световые короба
+								.services__item__desc от 17500 рублей за 1м2
+						.services__item
+							.services__item__img(style="background-image: url(img/services/volumetric-letters/9.jpg)")
 							.services__item__text
 								.services__item__title Буквы из ПВХ не световые
-								.services__item__desc от 30 рублей за 1см высоты
+								.services__item__desc от 55 рублей за 1см высоты
+					.services__items(data-tab="2")
+					.services__items(data-tab="3")
+					.services__items(data-tab="4")
+						.services__item
+							.services__item__img(style="background-image: url(img/services/roof-installations/1.jpg)")
+							.services__item__text
+								.services__item__title Крышные установки
+								.services__item__desc Цена рассчитывается индивидуально
+					.services__items(data-tab="5")
+						.services__item
+							.services__item__img(style="background-image: url(img/services/montazh/1.jpg)")
+							.services__item__text
+								.services__item__title Монтаж и согласование
+								.services__item__desc Цена рассчитывается индивидуально
 		section.soglasovanie
 			.container
 				.section__title Узнайте необходимо ли согласовывать вывеску по вашему адресу

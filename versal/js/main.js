@@ -102,4 +102,16 @@ $(document).ready(function(){
 		calc__koroba();
 	});
 	//END Калькулятор вывески
+
+	//Каталог услуг
+	$('.services__items').hide();
+	$('.services__items').eq(0).show();
+	$('.services__tab').click(function(){
+		var id = $(this).attr('data-tab');
+		$('.services__tab').removeClass('services__tab__active');
+		$(this).addClass('services__tab__active');
+		$('.services__items').hide();
+		$('.services__items[data-tab="'+id+'"]').show();
+	});	
+	//END Каталог услуг
 });
