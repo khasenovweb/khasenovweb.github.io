@@ -105,7 +105,7 @@ body
 								img(src="img/calc/sans-serif1.jpg", alt="")
 							.calc__viveski__right__price
 								.calc__viveski__right__price__title Примерная стоимость
-								.calc__viveski__right__price__num 9 300 руб.
+								.calc__viveski__right__price__num(data-viveski) 0 руб.
 							.calc__viveski__right__btn
 								button.btn(data-modal data-modal-id="1") Уточнить стоимость
 				.calc__tab__content(data-calc-tab="2")
@@ -138,7 +138,7 @@ body
 								img(src="img/calc/koroba/1.png", alt="" data-calc-korob-img)
 							.calc__viveski__right__price
 								.calc__viveski__right__price__title Примерная стоимость
-								.calc__viveski__right__price__num(data-calc-korob-result) 9 300 руб.
+								.calc__viveski__right__price__num(data-calc-korob-result) 11000 руб.
 							.calc__viveski__right__btn
 								button.btn(data-modal data-modal-id="1") Уточнить стоимость
 
@@ -149,8 +149,8 @@ body
 				.services__content
 					.services__tabs
 						.services__tab.services__tab__active Объемные буквы
-						.services__tab Интерьерная печать
-						.services__tab Широкоформатная печать
+						.services__tab Интерьерные и не стандартные конструкции
+						.services__tab Вывески из неона
 						.services__tab Крышные установки
 						.services__tab Монтаж и согласование
 					.services__items
@@ -200,15 +200,9 @@ body
 			.container
 				.section__title Примеры наших работ
 				.catalog__items
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
-					a(data-fancybox="gallery" href="img/service.png").catalog__item
+					-for(i=1;i<=101;i++){
+						a(data-fancybox="gallery" href="img/works/"+i+".jpeg").catalog__item(style="background-image: url(img/works/"+i+".jpeg);")
+					-}
 		section.contacts
 			.container
 				.section__title Наши контакты

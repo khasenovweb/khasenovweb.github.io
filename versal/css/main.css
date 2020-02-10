@@ -334,9 +334,7 @@ a {
 .services__tabs {
   border-radius: 5px;
   overflow: hidden;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  max-width: 300px;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
