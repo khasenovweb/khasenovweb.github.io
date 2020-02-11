@@ -2,10 +2,12 @@
 <html lang="en"></html>
 <head>
   <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width"/>
   <title>Versal</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
   <link rel="stylesheet" href="fonts/stylesheet.css?v4"/>
   <link rel="stylesheet" href="css/main.css?v4"/>
+  <link rel="stylesheet" href="css/media.css?v4"/>
 </head>
 <body>
   <div data-modal-id="1" class="modal__wrapper">
@@ -27,10 +29,10 @@
     <section class="head">
       <div class="container"><a href="/" class="head__logo"><img src="img/logo.svg" alt=""/></a>
         <div class="head__contact head__contact__adress">
-          <div class="head__contact__title">г. Москва, ул. Московская 24</div><a href="" class="head__contact__title__link">Показать на карте</a>
+          <div class="head__contact__title">г. Москва, ул. Московская 24</div><a href="#map" class="head__contact__title__link">Показать на карте</a>
         </div>
         <div class="head__contact head__contact__email">
-          <div class="head__contact__title">waripov@gmail.com</div><a href="" class="head__contact__title__link">Написать</a>
+          <div class="head__contact__title">waripov@gmail.com</div><a href="mailto:waripov@gmail.com" class="head__contact__title__link">Написать</a>
         </div>
         <div class="head__contact head__contact__phone">
           <div class="head__contact__title">+7 (926) 195 13 10</div><a href="" data-modal="data-modal" data-modal-id="1" class="head__contact__title__link">Заказать звонок</a>
@@ -48,7 +50,7 @@
           <li> <img src="img/hero__list.svg" alt=""/><span>Изготовение в соответствии с 902 пп.</span></li>
         </ul>
         <div class="hero__btn__wrapper">
-          <button class="btn">Узнать стоимость вывески</button>
+          <button data-modal="data-modal" data-modal-id="1" class="btn">Узнать стоимость вывески</button>
           <div class="hero__price">Стоимость от 30 руб./см</div>
         </div>
       </div>
@@ -161,7 +163,9 @@
         <div class="section__title services__title">Полный комплекс услуг </div>
         <div class="section__desc">Предложим эффективное решение вне зависимости от масштаба, сферы и бюджета вашего проекта</div>
         <div class="services__content">
-          <div class="services__tabs"><a href="#services" data-tab="1" class="services__tab services__tab__active">Объемные буквы</a><a href="#services" data-tab="2" class="services__tab">Интерьерные и не стандартные конструкции</a><a href="#services" data-tab="3" class="services__tab">Вывески из неона</a><a href="#services" data-tab="4" class="services__tab">Крышные установки</a><a href="#services" data-tab="5" class="services__tab">Монтаж и согласование</a></div>
+          <div class="services__tabs__wrapper">
+            <div class="services__tabs"><a href="#services" data-tab="1" class="services__tab services__tab__active">Объемные буквы</a><a href="#services" data-tab="2" class="services__tab">Интерьерные и не стандартные конструкции</a><a href="#services" data-tab="3" class="services__tab">Вывески из неона</a><a href="#services" data-tab="4" class="services__tab">Крышные установки</a><a href="#services" data-tab="5" class="services__tab">Монтаж и согласование</a></div>
+          </div>
           <div data-tab="1" class="services__items">
             <div class="services__item">
               <div style="background-image: url(img/services/volumetric-letters/1.jpg)" class="services__item__img"></div>
@@ -273,14 +277,14 @@
           </div>
           <div data-tab="3" class="services__items">
             <div class="services__item">
-              <div style="background-image: url()" class="services__item__img"></div>
+              <div style="background-image: url(img/services/neon/1.jpg)" class="services__item__img"></div>
               <div class="services__item__text">
                 <div class="services__item__title">Гибкий неон</div>
                 <div class="services__item__desc">Цена рассчитывается индивидуально</div>
               </div>
             </div>
             <div class="services__item">
-              <div style="background-image: url()" class="services__item__img"></div>
+              <div style="background-image: url(img/services/neon/2.jpg)" class="services__item__img"></div>
               <div class="services__item__text">
                 <div class="services__item__title">Стекло</div>
                 <div class="services__item__desc">Цена рассчитывается индивидуально</div>
@@ -343,7 +347,7 @@
         </ul>
       </div>
     </section>
-    <section class="map">
+    <section id="map" class="map">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;amp;source=constructor" frameborder="0" width="100%" height="500"></iframe>
     </section>
   </div>

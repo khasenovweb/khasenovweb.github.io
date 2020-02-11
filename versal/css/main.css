@@ -40,7 +40,7 @@
 body {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -331,15 +331,20 @@ a {
   -webkit-box-align: start;
           align-items: flex-start;
 }
+.services__tabs__wrapper {
+  width: 500px;
+}
+.services__tabs__wrapper::-webkit-scrollbar {
+  width: 0px;
+  /* ширина scrollbar'a */
+  background: transparent;
+}
 .services__tabs {
   border-radius: 5px;
   overflow: hidden;
-  max-width: 300px;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
   position: -webkit-sticky;
   position: sticky;
+  width: 100%;
   top: 30px;
 }
 .services__tab {
