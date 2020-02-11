@@ -71,11 +71,15 @@ $(document).ready(function(){
 		var type = $('[data-calc-korob-type]').val();
 		var visota = $('[data-calc-korob-visota]').val();
 		var shirina = $('[data-calc-korob-shirina]').val();
-		var price = 11000;
+		if(type === '6') {
+			var price = 13000;
+		}else {
+			var price = 11000;
+		}
 		var sum = Math.round( Number(visota) * Number(shirina) * Number(price) );
 		$('[data-calc-korob-result]').text(sum+' руб.');
 		$('[data-calc-korob-img]').attr('src', 'img/calc/koroba/'+type+'.png');
-		if(type === '4' || type === '5' || type === '6' || type === '7' || type === '8' ) {
+		if(type === '4' || type === '5' || type === '7' || type === '8' ) {
 			$('.modal__wrapper[data-modal-id="1"]').show();
 			$('.global__wrapper').addClass('global__wrapper__blur');
 			calc__reset();
