@@ -170,7 +170,39 @@ body
 		.container
 			.section__title Звукоизоляция - дело тонкое
 			.section__desc лучше довериться профи для максимального результата
+			.section-4__wrapper
+				.section-4__video
+					iframe(width="560" height="315" src="https://www.youtube.com/embed/bZNFRIwlQxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+				.section-4__form
+					p Мы построили 4 комнаты, соответствующие обычной квартире, а также создали имитацию шума, как в многоквартирных домах.
+					p Заходя в комнату, Вы сами слышите какое из решений Вам подходит. Посмотрите видео, как это работает.
+					.section-4__form__title Запишитесь на демонстрацию заранее, чтобы не ждать в очереди
+					form(action="")
+						.section-4__form__inputgroup
+							.section-4__form__input
+								input(type="text" placeholder="Укажите телефон")
+							.section-4__form__input
+								input(type="text" placeholder="Удобное время")
+								span пн-пт с 10 до 19, сб с 10 до 16
+						button.btn Хочу на демонстрацию
+
 	//-========END SECTION-4==============
+
+	//-========SECTION-5==============
+	.section-5
+		.container
+			.section__title Обращайтесь за советом
+			.section__desc и мы подберем оптимальное решение
+			.section-5__tabs
+				.section-5__tab__wrapper.section-5__tab__wrapper__active
+					.section-5__tab Звукоизолируемые поверхности
+				.section-5__tab__wrapper
+					.section-5__tab «Пирог» материалов
+				.section-5__tab__wrapper
+					.section-5__tab Выезд замерщика
+				.section-5__tab__wrapper
+					.section-5__tab Пример готового решения
+	//-========END SECTION-5==============
 
 	
 	block content
