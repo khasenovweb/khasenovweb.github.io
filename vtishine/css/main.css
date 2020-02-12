@@ -642,6 +642,7 @@ select {
   font-size: 14px;
   position: relative;
   cursor: pointer;
+  background-color: #fff;
 }
 .calc__form {
   display: -webkit-box;
