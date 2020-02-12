@@ -862,4 +862,5 @@ select {
 .objects__map {
   width: 100%;
   height: 575px;
+  margin-top: 30px;
 }
