@@ -545,6 +545,7 @@ input {
   padding: 16px 21px;
   border: none;
   border-radius: 9px;
+  font-size: 14px;
 }
 .section-5 {
   margin-top: 150px;
@@ -571,4 +572,63 @@ input {
   border-radius: 18px;
   background-color: #FAFAFA;
   color: #4C4C4C;
+}
+.section-5__tabs__content {
+  margin-top: 30px;
+  background: #FFFFFF;
+  box-shadow: 2px 4px 20px rgba(202, 222, 242, 0.52606);
+  border-radius: 18px;
+  padding: 40px 105px;
+  margin-left: -105px;
+  margin-right: -105px;
+}
+.section-5__tabs__content__title {
+  color: #4C4C4C;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.section-5__tabs__content__title img {
+  margin-left: 23px;
+}
+.section-5__tabs__content-1 p {
+  color: #4C4C4C;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.section-5__tabs__content-1__item__img {
+  width: 457px;
+  height: 206px;
+  background-image: url(../img/soundproofing-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 45px;
+}
+.section-5__tabs__content-1__item__content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 120px;
+  margin-top: 40px;
+}
+.section-5__tabs__content-1__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 70px;
+  margin-bottom: 15px;
+}
+.section-5__tabs__content-1__item__list {
+  line-height: 2;
+  color: #4C4C4C;
+}
+.calc {
+  margin-top: 100px;
+}
+.calc .section__title {
+  color: #BD6B2A;
+  text-align: center;
 }
