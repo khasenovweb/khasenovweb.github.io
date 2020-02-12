@@ -759,6 +759,10 @@ select {
 .comand {
   padding: 70px 0;
   background-color: #F4F7F9;
+  background-image: url(../img/comand__bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .comand__slider {
   margin-top: 70px;
@@ -808,4 +812,54 @@ select {
 .comand__slider__item__desc .section-3__alert__icon {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+}
+.objects {
+  padding: 70px 0;
+}
+.objects__filter {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+.objects__filter select {
+  margin-left: auto;
+  border: 1px solid #DBDBDB;
+}
+.objects__filter__colors {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+}
+.objects__filter__color {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.objects__filter__color__circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.objects__filter__color__circle_1 {
+  background-color: #FF506E;
+}
+.objects__filter__color__circle_2 {
+  background-color: #F3AB4A;
+}
+.objects__filter__color__circle_3 {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 4px #5E7F9C;
+}
+.objects__filter__color__title {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.objects__map {
+  width: 100%;
+  height: 575px;
 }

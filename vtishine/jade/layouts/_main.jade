@@ -4,7 +4,7 @@ head
 	meta(charset="UTF-8")
 	title Vtishine
 	link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
-	link(rel="stylesheet", href="css/main.css?v2")
+	link(rel="stylesheet", href="css/main.css?v3")
 body
 	//-========HEAD==============
 	.head
@@ -347,11 +347,45 @@ body
 						.section-3__alert__text Обеспечивает максимум пользы клиенту
 	//-========END COMAND==============
 
+	//-========OBJECTS==============
+	.objects
+		.container
+			.section__title Выполненные объекты и отзывы
+			.objects__filter
+				.objects__filter__colors
+					//-objects__filter__color
+					.objects__filter__color
+						.objects__filter__color__circle.objects__filter__color__circle_1
+						.objects__filter__color__title наши объекты
+					//-objects__filter__color
+					.objects__filter__color
+						.objects__filter__color__circle.objects__filter__color__circle_2
+						.objects__filter__color__title с отзывом
+					//-objects__filter__color
+					.objects__filter__color
+						.objects__filter__color__circle.objects__filter__color__circle_3
+						.objects__filter__color__title проведена экспертиза
+				select(name="")
+					option(value="Проведена экспертиза") Проведена экспертиза
+			.objects__map#objects__map
+
+
+
+	//-========END OBJECTS==============
+
 	
 	block content
 	
-
+	
 	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
-	script(src="js/main.js?v2")
+	script(src="js/main.js?v3")
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=fed58e3e-122a-4b9a-9b1c-60d19ebb0a39&lang=ru_RU")
+	script.
+		ymaps.ready(function () {
+		    var myMap = new ymaps.Map('map', {
+		            center: [55.751574, 37.573856],
+		            zoom: 9
+		        });
+		});
 	
