@@ -62,6 +62,7 @@
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
   outline: none;
+  color: #4C4C4C;
 }
 body {
   background-color: #FAFAFA;
@@ -450,6 +451,7 @@ html {
 }
 .section-3__alert__icon {
   width: 30px;
+  min-width: 30px;
   height: 40px;
   background-image: url(../img/section-3__alert__icon.svg);
   background-repeat: no-repeat;
@@ -627,8 +629,183 @@ input {
 }
 .calc {
   margin-top: 100px;
+  padding-bottom: 70px;
 }
 .calc .section__title {
   color: #BD6B2A;
   text-align: center;
+}
+select {
+  padding: 16px 21px;
+  border: none;
+  border-radius: 9px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.calc__form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+.calc__form * {
+  position: relative;
+}
+.calc__form label {
+  font-weight: 300;
+  font-size: 17px;
+  color: #4C4C4C;
+  margin-bottom: 8px;
+}
+.calc__form select {
+  margin-left: 30px;
+  width: 360px;
+}
+.calc__form input {
+  width: 360px;
+  margin-left: 30px;
+}
+.calc__form .btn {
+  margin-right: auto;
+}
+.calc__form .btn__wrapper {
+  width: 360px;
+  margin-top: 15px;
+}
+.calc__form__img {
+  position: absolute;
+  top: -40px;
+  left: -140px;
+}
+.calc__form__price__title {
+  font-weight: bold;
+  font-size: 17px;
+  color: #4C4C4C;
+  margin-top: 15px;
+  text-align: left;
+  width: 360px;
+}
+.calc__form__price {
+  font-weight: bold;
+  font-size: 28px;
+  color: #BD6B2A;
+  text-shadow: 0px 2px 4px #FFFFFF;
+  text-align: left;
+  width: 360px;
+  line-height: 40px;
+  margin-top: 4px;
+}
+.calc__form__checkbox__wrapper {
+  border-radius: 9px;
+  background-color: white;
+  padding: 22px;
+  width: 360px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+}
+.calc__form__checkbox__wrapper label {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.calc__form__checkbox__wrapper label span {
+  font-size: 14px;
+  font-weight: normal;
+}
+.calc__form__checkbox__wrapper input {
+  width: initial;
+  margin-left: 0;
+  display: none;
+}
+.calc__form__checkbox__wrapper input:checked + .calc__form__box {
+  background-image: url(../img/checkbox__bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.calc__form__box {
+  width: 18px;
+  height: 18px;
+  border: 0.75px solid #BD6B2A;
+  background: #FFFFFF;
+  border-radius: 2.25px;
+  margin-right: 10px;
+}
+.calc__form__alert {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 12px;
+  color: #4C4C4C;
+  width: 360px;
+  margin-top: 8px;
+}
+.comand {
+  padding: 70px 0;
+  background-color: #F4F7F9;
+}
+.comand__slider {
+  margin-top: 70px;
+}
+.comand__slider .owl-stage-outer {
+  overflow: hidden;
+}
+.comand__slider .owl-nav button.owl-prev {
+  position: absolute;
+  left: -62px;
+  top: 75px;
+}
+.comand__slider .owl-nav button.owl-next {
+  position: absolute;
+  right: -62px;
+  top: 75px;
+}
+.comand__slider__item__img {
+  width: 100%;
+  padding-bottom: 72%;
+  background-image: url(../img/comand__slider_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.23);
+}
+.comand__slider__item__name {
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.comand__slider__item__role {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 10px;
+}
+.comand__slider__item__desc {
+  display: -webkit-box;
+  display: flex;
+  margin-top: 12px;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+.comand__slider__item__desc .section-3__alert__icon {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }

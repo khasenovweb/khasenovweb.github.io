@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <title>Vtishine</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-  <link rel="stylesheet" href="css/main.css"/>
+  <link rel="stylesheet" href="css/main.css?v2"/>
 </head>
 <body>
   <div class="head">
@@ -232,9 +232,107 @@
   <div class="calc">
     <div class="container">
       <div class="section__title">Расчитайте стоимость звукоизоляции под ключ</div>
+      <div class="calc__form">
+        <div class="calc__form__img"><img src="img/calc__form__bg.png" alt=""/></div>
+        <label for="">Вид дома
+          <select name="" id="">
+            <option value="Монолит">Монолит</option><span class="select__fake"> </span>
+          </select>
+        </label>
+        <label for="">Состояние ремонта
+          <select name="">
+            <option value="Монолит">Монолит</option>
+          </select>
+        </label>
+        <label for="">Что беспокоит
+          <select name="">
+            <option value="Монолит">Монолит</option>
+          </select>
+        </label>
+        <label for="">Какой приоритет
+          <select name="">
+            <option value="Монолит">Монолит</option>
+          </select>
+        </label>
+        <label for="">Общая площадь квартиры
+          <input type="text" placeholder="100 кв.м."/>
+        </label>
+        <div class="calc__form__price__title">Предварительная стоимость:</div>
+        <div class="calc__form__price">120 000 Р</div>
+        <div class="calc__form__checkbox__wrapper">
+          <label for="1"> 
+            <input type="checkbox" id="1"/>
+            <div class="calc__form__box"></div><span>Хочу сэкономить, монтаж буду делать сам</span>
+          </label>
+          <label for="2"> 
+            <input type="checkbox" id="2"/>
+            <div class="calc__form__box"></div><span>Хочу получить рассрочку 0% на 6 месяцев</span>
+          </label>
+          <label for="3"> 
+            <input type="checkbox" id="3"/>
+            <div class="calc__form__box"></div><span>Требуется выезд замерщика</span>
+          </label>
+        </div>
+        <div class="btn__wrapper">
+          <button class="btn">Получить консультацию</button>
+        </div>
+        <div class="calc__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
+      </div>
+    </div>
+  </div>
+  <div class="comand"> 
+    <div class="container">
+      <div class="section__title">С Вами работает команда профессионалов</div>
+      <div class="comand__slider owl-carousel">
+        <div class="comand__slider__item">
+          <div style="background-image: url(../img/comand__slider_1.jpg);" class="comand__slider__item__img"></div>
+          <div class="comand__slider__item__name">Павел Таксубаев</div>
+          <div class="comand__slider__item__role">Генеральный директор</div>
+          <div class="comand__slider__item__desc"> 
+            <div class="section-3__alert__icon"></div>
+            <div class="section-3__alert__text">Обладает огромным практическим опытом</div>
+          </div>
+        </div>
+        <div class="comand__slider__item">
+          <div style="background-image: url(../img/comand__slider_2.jpg);" class="comand__slider__item__img"></div>
+          <div class="comand__slider__item__name">Александр Некрасов</div>
+          <div class="comand__slider__item__role">Технический директор</div>
+          <div class="comand__slider__item__desc"> 
+            <div class="section-3__alert__icon"></div>
+            <div class="section-3__alert__text">Соединяет теорию и практику</div>
+          </div>
+        </div>
+        <div class="comand__slider__item">
+          <div style="background-image: url(../img/comand__slider_1.jpg);" class="comand__slider__item__img"></div>
+          <div class="comand__slider__item__name">Татьяна Некрасова</div>
+          <div class="comand__slider__item__role">Консультант</div>
+          <div class="comand__slider__item__desc"> 
+            <div class="section-3__alert__icon"></div>
+            <div class="section-3__alert__text">Объясняет сложное простым языком</div>
+          </div>
+        </div>
+        <div class="comand__slider__item">
+          <div style="background-image: url(../img/comand__slider_4.jpg);" class="comand__slider__item__img"></div>
+          <div class="comand__slider__item__name">Мария Звездина</div>
+          <div class="comand__slider__item__role">Представитель клиента</div>
+          <div class="comand__slider__item__desc"> 
+            <div class="section-3__alert__icon"></div>
+            <div class="section-3__alert__text">Обеспечивает максимум пользы клиенту</div>
+          </div>
+        </div>
+        <div class="comand__slider__item">
+          <div style="background-image: url(../img/comand__slider_4.jpg);" class="comand__slider__item__img"></div>
+          <div class="comand__slider__item__name">Мария Звездина</div>
+          <div class="comand__slider__item__role">Представитель клиента</div>
+          <div class="comand__slider__item__desc"> 
+            <div class="section-3__alert__icon"></div>
+            <div class="section-3__alert__text">Обеспечивает максимум пользы клиенту</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v2"></script>
 </body>
