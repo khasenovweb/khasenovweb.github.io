@@ -865,3 +865,82 @@ select {
   height: 575px;
   margin-top: 30px;
 }
+.reviews .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 38px;
+}
+.reviews__flamp {
+  box-shadow: 3px 5px 21px rgba(0, 0, 0, 0.254589);
+}
+.reviews__smi__title {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.reviews__smi hr {
+  border: none;
+  background-color: #F2CB9C;
+  height: 1px;
+  margin-top: 15px;
+}
+.reviews__smi__content * {
+  font-weight: 300;
+  font-size: 17px;
+  color: #D27C37;
+}
+.reviews__smi__content a {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: underline;
+}
+.reviews__smi__content p {
+  margin-top: 15px;
+}
+.reviews__contacts {
+  background-color: white;
+  border-radius: 12px;
+  margin-top: 47px;
+}
+.reviews__contacts__text {
+  padding: 25px 38px;
+}
+.reviews__contacts__phone {
+  font-weight: bold;
+  font-size: 20px;
+  color: #BD6B2A;
+}
+.reviews__contacts__city {
+  margin-top: 15px;
+  font-weight: 300;
+}
+.reviews__contacts__street {
+  font-weight: 300;
+  margin-top: 6px;
+}
+.reviews__contacts__worktime {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  margin-top: 11px;
+}
+.reviews__contacts__email {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.reviews__contacts__email span {
+  font-weight: 300;
+  color: #D27C37;
+}
+.reviews__contacts__email__icon {
+  width: 34px;
+  height: 26px;
+  background-image: url(../img/envelope.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 13px;
+}

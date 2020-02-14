@@ -365,13 +365,42 @@ body
 					.objects__filter__color
 						.objects__filter__color__circle.objects__filter__color__circle_3
 						.objects__filter__color__title проведена экспертиза
-				select(name="")
-					option(value="Проведена экспертиза") Проведена экспертиза
+				select#objects__filter__select(name="")
+					option(value="1") Все
+					option(value="2") Наши объекты
+					option(value="3") С отзывом
+					option(value="4") Проведена экспертиза
 			.objects__map#map
-
-
-
 	//-========END OBJECTS==============
+
+	//-========REVIEWS==============
+	.reviews
+		.container
+			.reviews__left
+				.reviews__flamp
+					a(class="flamp-widget" href="//chelyabinsk.flamp.ru/firm/tikho_74_salon_magazin_po_zvukoizolyacii-70000001029785965"  data-flamp-widget-type="responsive-new" data-flamp-widget-id="70000001029785965" data-flamp-widget-width="100%" data-flamp-widget-count="1")Отзывы о нас на Флампе
+					script.
+						!function(d,s){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);js.async=1;js.src="//widget.flamp.ru/loader.js";fjs.parentNode.insertBefore(js,fjs);}(document,"script")
+			.reviews__right
+				.reviews__smi
+					.reviews__smi__title СМИ о нас
+					hr 
+					.reviews__smi__content
+						a(href="") Финалист конкурса “Сделано в Челябинске 2018” от “ЭХО Москвы”
+						p Победитель конкурса от газеты Комсомольская Правда “Лучший строитель Южного Урала 2018” в номинациях: «Лучшая компания, оказывающая услуги в сфере ремонта и благоустройства зданий» и «Прорыв года» 
+				.reviews__contacts
+					.reviews__contacts__text
+						a.reviews__contacts__phone(href="tel:+7 (351) 750 39 51") +7 (351) 750 39 51
+						.reviews__contacts__city г. Челябинск
+						.reviews__contacts__street ул. Университетская
+							br 
+							span набережная, 88
+						.reviews__contacts__worktime пн-пт с 10 до 19:00, сб с 10 до 16:00
+						a.reviews__contacts__email(href="mailto:mail@vtiho.ru") 
+							.reviews__contacts__email__icon 
+							span mail@vtiho.ru
+					.reviews__contacts__map
+	//-========END REVIEWS==============
 
 	
 	block content
