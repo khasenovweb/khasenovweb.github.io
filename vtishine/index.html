@@ -28,8 +28,9 @@
           <button class="btn__border">Заказать звонок</button>
         </div>
         <div class="hero__city">
-          <div class="hero__city__select">Челябинск
+          <div data-click="select_city" class="hero__city__select">Челябинск
             <div class="hero__city__select__arrow"></div>
+            <div class="hero__city__select__submenu"><a href="">Москва	</a><a href="">Екатеринбург	</a></div>
           </div>
           <div class="hero__city__working">
             <div class="hero__city__working__clock"></div>
@@ -382,9 +383,34 @@
             <div class="reviews__contacts__worktime">пн-пт с 10 до 19:00, сб с 10 до 16:00</div><a href="mailto:mail@vtiho.ru" class="reviews__contacts__email"> 
               <div class="reviews__contacts__email__icon"> </div><span>mail@vtiho.ru</span></a>
           </div>
-          <div class="reviews__contacts__map"></div>
+          <div id="reviews__contacts__map" class="reviews__contacts__map"></div>
         </div>
       </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container"><a href="" class="footer__logo"><img src="img/footer__logo.png" alt=""/></a>
+      <div class="footer__navs">
+        <ul class="footer__navs__citys">
+          <li> <a href="">Москва</a></li>
+          <li> <a href="">Екатеринбург</a></li>
+          <li> <a href="">Челябинск</a></li>
+        </ul>
+        <ul class="footer__navs__menu">
+          <li> <a href="">Статьи</a></li>
+          <li> <a href="">Магазин</a></li>
+          <li> <a href="">Способы оплаты</a></li>
+          <li> <a href="">Реквизиты</a></li>
+        </ul>
+      </div>
+      <div class="footer__contacts"><a href="tel:+7 (351) 750 39 51" class="footer__phone">+7 (351) 750 39 51</a>
+        <div class="footer__social"><a href=""><img src="img/footer__fb.svg" alt=""/></a><a href=""><img src="img/footer__vk.svg" alt=""/></a><a href=""><img src="img/footer__inst.svg" alt=""/></a><a href=""><img src="img/footer__youtube.svg" alt=""/></a></div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <div class="container">
+      <div class="copyright__text">© Все права защищены.</div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

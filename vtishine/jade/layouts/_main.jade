@@ -42,8 +42,11 @@ body
 					a(href="tel: +7 (351) 750 39 51") +7 (351) 750 39 51
 					button.btn__border Заказать звонок
 				.hero__city
-					.hero__city__select Челябинск
+					.hero__city__select(data-click="select_city") Челябинск
 						.hero__city__select__arrow
+						.hero__city__select__submenu
+							a(href="") Москва	
+							a(href="") Екатеринбург	
 					.hero__city__working
 						.hero__city__working__clock
 						.hero__city__working__title с 10 до 19:00 (пн-пт);
@@ -399,8 +402,49 @@ body
 						a.reviews__contacts__email(href="mailto:mail@vtiho.ru") 
 							.reviews__contacts__email__icon 
 							span mail@vtiho.ru
-					.reviews__contacts__map
+					.reviews__contacts__map#reviews__contacts__map
 	//-========END REVIEWS==============
+
+	//-========FOOTER==============
+	footer
+		.container
+			a.footer__logo(href="")
+				img(src="img/footer__logo.png", alt="")
+			.footer__navs
+				ul.footer__navs__citys
+					li 
+						a(href="") Москва
+					li 
+						a(href="") Екатеринбург
+					li 
+						a(href="") Челябинск
+				ul.footer__navs__menu
+					li 
+						a(href="") Статьи
+					li 
+						a(href="") Магазин
+					li 
+						a(href="") Способы оплаты
+					li 
+						a(href="") Реквизиты
+			.footer__contacts
+				a.footer__phone(href="tel:+7 (351) 750 39 51") +7 (351) 750 39 51
+				.footer__social
+					a(href="")
+						img(src="img/footer__fb.svg", alt="")
+					a(href="")
+						img(src="img/footer__vk.svg", alt="")
+					a(href="")
+						img(src="img/footer__inst.svg", alt="")
+					a(href="")
+						img(src="img/footer__youtube.svg", alt="")
+	//-========END FOOTER==============
+
+	//-========COPYRIGHT==============
+	.copyright
+		.container
+			.copyright__text © Все права защищены.
+	//-========END COPYRIGHT==============
 
 	
 	block content

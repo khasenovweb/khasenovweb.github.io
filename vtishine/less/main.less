@@ -126,8 +126,24 @@ html {
 	font-weight: bold;
 	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.23);
 	cursor: pointer;
-
+	position: relative;
 }
+.hero__city__select__submenu {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	display: none;
+	a {
+		margin-bottom: 10px;
+		display: block;
+		&:hover {
+			text-decoration: underline;
+		}
+		
+	}
+}
+
+
 .hero__city__select__arrow {
 	width: 13px;
 	height: 13px;
@@ -137,7 +153,13 @@ html {
 	background-size: contain;
 	margin-left: 15px;
 }
-
+	
+.hero__city__select__submenu__active {
+	display: block;
+	.hero__city__select__arrow {
+		background-image: url(../img/hero__city__arrow__reverse.svg);
+	}
+}
 
 .hero__city__working {
 	display: flex;
@@ -853,7 +875,11 @@ select {
 .reviews__contacts {
 	background-color: white;
 	border-radius: 12px;
+	overflow: hidden;
 	margin-top: 47px;
+	display: grid;
+	grid-template-columns: auto 214px;
+	grid-gap: 40px;
 }
 .reviews__contacts__text {
 	padding: 25px 38px;
@@ -894,4 +920,80 @@ select {
 	background-size: contain;
 	background-position: center;
 	margin-right: 13px;
+}
+.reviews__contacts__map {
+	max-width: 214px;
+	width: 214px;
+	height: 263px;
+}
+footer {
+	margin-top: 140px;
+	background-color: @black;
+	padding: 40px 0;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	* {
+		color: white;
+	}
+}
+.footer__navs {
+	* {
+		color: white;
+	}
+	a {
+		&:hover {
+			color:  #F7BA60;
+		}
+	}
+}
+.footer__navs__citys {
+	display: flex;
+	justify-content: flex-end;
+	a {
+		font-weight: bold;
+	}
+	li {
+		margin-left: 34px;
+	}
+}
+.footer__navs__menu {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+	li {
+		margin-left: 34px;
+	}
+}
+.footer__contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.footer__phone {
+	font-weight: bold;
+	font-size: 28px;
+	text-align: right;
+}
+.footer__social {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 18px;
+	a {
+		margin-left: 23px;
+	}
+}
+//===================.copyright=================
+.copyright {
+	background-color: #F3AD4E;
+	padding: 10px 0;
+	* {
+		color: white;
+	}
+}
+.copyright__text {
+	text-align: right;
 }

@@ -85,9 +85,23 @@ function init() {
                 myMapAll.geoObjects.add(myPlacemark_3);
             }
         });
+
+
+
+
+        var myMap2 = new ymaps.Map("reviews__contacts__map", {
+                center: [55.159897, 61.402554],
+                zoom: 10
+            });
+
+            var myPlacemark_1_1 = new ymaps.Placemark([ 55.152557, 61.411573],{
+                      balloonContentHeader: "Название объекта",
+                      balloonContentBody: 'Описание объекта',
+                      balloonContentFooter: "",
+                      hintContent: "Кликните для более подробной информации"
+                  });
+
+                myMap2.geoObjects.add(myPlacemark_1_1);
         
 }
 //==============END Все Маркеры=================
-
-
-

@@ -12,4 +12,8 @@ $(document).ready(function(){
 		loop: true,
 		navText: ["<img src=\"img/comand__slider__prev.svg\">","<img src=\"img/comand__slider__next.svg\" >"]
 	});
+
+	$('[data-click="select_city"]').click(function(){
+		$('.hero__city__select__submenu').toggleClass('hero__city__select__submenu__active');
+	});
 });
