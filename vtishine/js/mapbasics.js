@@ -17,7 +17,7 @@ function init() {
               {
                   iconLayout: 'default#image',
                   iconImageHref: 'img/map__marker__red.png',
-                  iconImageSize: [110, 116],
+                  iconImageSize: [32, 53],
               });
         
         //настройки для метки на карте
@@ -30,7 +30,7 @@ function init() {
               {
                   iconLayout: 'default#image',
                   iconImageHref: 'img/map__marker__yellow.png',
-                  iconImageSize: [110, 116],
+                  iconImageSize: [32, 53],
               });
         
         //настройки для метки на карте
@@ -43,7 +43,7 @@ function init() {
               {
                   iconLayout: 'default#image',
                   iconImageHref: 'img/map__marker__blue.png',
-                  iconImageSize: [110, 116],
+                  iconImageSize: [32, 53],
               });
 
             //Показываем все метки на карте
