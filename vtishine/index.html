@@ -25,7 +25,7 @@
         <div class="hero__top"><a href="/" class="hero__logo"><img src="img/hero__logo.png" alt=""/></a>
           <div class="hero__logo__desc">Продажа материалов. Подбор решения.<br/><span>Звукоизоляция под ключ.</span></div>
           <div class="hero__phone"><a href="tel: +7 (351) 750 39 51">+7 (351) 750 39 51</a>
-            <button class="btn__border">Заказать звонок</button>
+            <button data-modal-link="data-modal-link" data-modal="1" class="btn__border">Заказать звонок</button>
           </div>
           <div class="hero__city">
             <div data-click="select_city" class="hero__city__select">Челябинск
@@ -44,7 +44,7 @@
               <div class="hero__slide__title">От 45 000 Р <br/><span>за комнату *</span></div>
               <hr/>
               <div class="hero__slide__desc">Доступная звукоизоляция квартир.<br/><span>* Средняя цена услуги под ключ, гарантия</span></div>
-              <button class="btn">Рассчитать для меня</button>
+              <button data-modal-link="data-modal-link" data-modal="2" class="btn">Рассчитать для меня</button>
             </div>
             <div class="hero__slide__img"><img src="img/hero__slider__img.png" alt=""/></div>
           </div>
@@ -53,7 +53,7 @@
               <div class="hero__slide__title">От 45 000 Р <br/><span>за комнату *</span></div>
               <hr/>
               <div class="hero__slide__desc">Доступная звукоизоляция квартир.<br/><span>* Средняя цена услуги под ключ, гарантия</span></div>
-              <button class="btn">Рассчитать для меня</button>
+              <button data-modal-link="data-modal-link" data-modal="2" class="btn">Рассчитать для меня</button>
             </div>
             <div class="hero__slide__img"><img src="img/hero__slider__img.png" alt=""/></div>
           </div>
@@ -62,7 +62,7 @@
               <div class="hero__slide__title">От 45 000 Р <br/><span>за комнату *</span></div>
               <hr/>
               <div class="hero__slide__desc">Доступная звукоизоляция квартир.<br/><span>* Средняя цена услуги под ключ, гарантия</span></div>
-              <button class="btn">Рассчитать для меня</button>
+              <button data-modal-link="data-modal-link" data-modal="2" class="btn">Рассчитать для меня</button>
             </div>
             <div class="hero__slide__img"><img src="img/hero__slider__img.png" alt=""/></div>
           </div>
@@ -165,21 +165,21 @@
         <div class="section__title">Обращайтесь за советом</div>
         <div class="section__desc">и мы подберем оптимальное решение</div>
         <div class="section-5__tabs">
-          <div data-tab="soundproofing" class="section-5__tab__wrapper section-5__tab__wrapper__active">
+          <div data-tab-link="soundproofing" class="section-5__tab__wrapper section-5__tab__wrapper__active">
             <div class="section-5__tab">Звукоизолируемые поверхности</div>
           </div>
-          <div data-tab="pirog" class="section-5__tab__wrapper">
+          <div data-tab-link="pirog" class="section-5__tab__wrapper">
             <div class="section-5__tab">«Пирог» материалов</div>
           </div>
-          <div class="section-5__tab__wrapper">
+          <div data-tab-link="zamer" class="section-5__tab__wrapper">
             <div class="section-5__tab">Выезд замерщика</div>
           </div>
-          <div class="section-5__tab__wrapper">
+          <div data-tab-link="primer" class="section-5__tab__wrapper">
             <div class="section-5__tab">Пример готового решения</div>
           </div>
         </div>
         <div class="section-5__tabs__content">
-          <div data-tab="soundproofing" style="display: none;" class="section-5__tabs__content-1">
+          <div data-tab="soundproofing" class="section-5__tabs__content__item section-5__tabs__content-1">
             <div class="section-5__tabs__content-1__items">
               <div class="section-5__tabs__content-1__item">
                 <div class="section-5__tabs__content__title">Звукоизоляция пола<img src="img/tabs__content__title__icon-1.svg" alt=""/></div>
@@ -227,7 +227,7 @@
             <p>В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.</p>
             <p>В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.				</p>
           </div>
-          <div data-tab="pirog" style="display: none;" class="section-5__tabs__content__pirog">
+          <div data-tab="pirog" style="display: none;" class="section-5__tabs__content__item section-5__tabs__content__pirog">
             <div class="section-5__tabs__content__pirog__items">
               <div class="section-5__tabs__content__pirog__item">
                 <div class="section-5__tabs__content__pirog__item__img"></div>
@@ -266,11 +266,186 @@
             </div>
             <p>В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.</p>
           </div>
-          <div class="section-5__tabs__content__zamer">
-            <div class="section-5__tabs__content__zamer__main"></div>
-            <div class="alert">
+          <div data-tab="zamer" style="display: none;" class="section-5__tabs__content__item section-5__tabs__content__zamer">
+            <div class="section-5__tabs__content__zamer__main">
+              <div class="section-5__tabs__content__zamer__galery owl-carousel">
+                <div style="background-image: url(img/zamer__galery-1.jpg)" data-thumb="img/zamer__galery-1.jpg" class="section-5__tabs__content__zamer__galery__big"></div>
+                <div style="background-image: url(img/zamer__galery-2.jpg)" data-thumb="img/zamer__galery-2.jpg" class="section-5__tabs__content__zamer__galery__big"></div>
+                <div style="background-image: url(img/zamer__galery-3.jpg)" data-thumb="img/zamer__galery-3.jpg" class="section-5__tabs__content__zamer__galery__big"></div>
+              </div>
+              <div class="section-5__tabs__content__zamer__text">
+                <div class="section-5__tabs__content__zamer__bold">Цель выезда:</div>
+                <div class="section-5__tabs__content__zamer__p">визуальный осмотр , определение материалов и конструкций здания , стресс-тест звукопроизводящих поверхностей , замеры помещений, чертежи и фотофиксация . Уточняющие вопросы по планировке , размещению розеток и люстр , финишной отделки . Составление сметы всех материалов . Согласование доп. услуг по доставке стройматериалов , вывозу мусора и так далее.</div>
+                <div class="section-5__tabs__content__zamer__form">
+                  <div class="section-5__tabs__content__zamer__form__title">Записаться на замер</div>
+                  <form action="">
+                    <input type="text" placeholder="Ваше имя" class="input__border"/>
+                    <input type="text" placeholder="Телефон" class="input__border"/>
+                    <input type="text" placeholder="Удобное время" class="input__border"/>
+                    <button class="btn">Отправить</button>
+                    <div class="alert">* Мы не рассылаем спам и номер никому не передаем</div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="zamershiki">
+              <div class="zamershiki__title">Наши замерщики</div>
+              <div class="zamershiki__items">
+                <div class="zamershiki__item">
+                  <div style="background-image: url(../img/comand__slider_1.jpg)" class="zamershiki__item__img"></div>
+                  <div class="zamershiki__item__name">Александр</div>
+                  <div class="zamershiki__item__experience">опыт 11 лет</div>
+                </div>
+                <div class="zamershiki__item">
+                  <div style="background-image: url(../img/comand__slider_2.jpg)" class="zamershiki__item__img"></div>
+                  <div class="zamershiki__item__name">Александр</div>
+                  <div class="zamershiki__item__experience">опыт 11 лет</div>
+                </div>
+                <div class="zamershiki__item">
+                  <div style="background-image: url(../img/comand__slider_4.jpg)" class="zamershiki__item__img"></div>
+                  <div class="zamershiki__item__name">Александр</div>
+                  <div class="zamershiki__item__experience">опыт 11 лет</div>
+                </div>
+              </div>
+            </div>
+            <div class="alert border">
               <div class="alert__icon"></div>
               <div class="alert__text">В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.<br/><br/><span>При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.</span></div>
+            </div>
+          </div>
+          <div data-tab="primer" style="display: none;" class="section-5__tabs__content__item section-5__tabs__content__primer">
+            <div class="title">Детали кейса</div>
+            <div class="top">
+              <div class="top__left"><img src="img/primer__img.png" alt=""/>
+                <ul class="top__left__list">
+                  <li> 
+                    <div style="background-image: url(../img/primer__icon-1.svg)" class="top__left__list__icon"></div>
+                    <div class="top__left__list__text">Звукоизоляция стены решением «Стандарт»</div>
+                  </li>
+                  <li> 
+                    <div style="background-image: url(../img/primer__icon-2.svg)" class="top__left__list__icon"></div>
+                    <div class="top__left__list__text">Звукоизоляция стены решением «Профилактика»</div>
+                  </li>
+                  <li> 
+                    <div style="background-image: url(../img/primer__icon-3.svg)" class="top__left__list__icon"></div>
+                    <div class="top__left__list__text">Звукоизоляция потолка решением «Стандарт»</div>
+                  </li>
+                  <li> 
+                    <div style="background-image: url(../img/primer__icon-4.svg)" class="top__left__list__icon"></div>
+                    <div class="top__left__list__text">Звукоизоляция потолка решением «Профилактика»</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="top__right">
+                <ul>
+                  <li>История обращения:<span>В апреле 2019г. к нам обратилась девушка Кристина, купившая квартиру в ЖК Ньютон. Она с мужем и ребенком прибрели квартиру в монолитно-каркасном доме на этапе строительства у одного из топовых застройщиков. Жалобы на хорошую «слышимость соседей».</span></li>
+                  <li>Проблема:<span>детский крик, телевизор , негромкая музыка.</span></li>
+                  <li>Выполнены работы по звукоизоляции:<span>стена с соседями и потолок в детской , потолок в спальне, стояки канализации</span></li>
+                  <li>По согласованию сделан шеф-монтаж потолка и выдан сертификат о звукоизоляции квартиры.</li>
+                  <li>Адрес объекта: <span>ул . Героя России Е. Родионова, г. Челябинск</span></li>
+                  <li>Планировка квартиры:<span>3 комнаты + коридор + кухня + 2 ванные (82 м2)</span></li>
+                  <li>Отзыв клиента:<span>«Ожидания оправдались, но сейчас сделали бы стену между нашей спальней и соседей, а то по ночам быват шумно»</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert border">
+              <div class="alert__icon"></div>
+              <div class="alert__text">В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.<br/><br/><span>При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.</span></div>
+            </div>
+            <div class="tables">
+              <div class="table">
+                <div class="table__title">Стены</div>
+                <table>
+                  <tr>
+                    <td> <span>Материал стен:</span></td>
+                    <td>кирпич</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Особенности:</span></td>
+                    <td>пластиковые канализац. трубы</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Площадь:</span></td>
+                    <td>16 м2</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Звукоизоляция:</span></td>
+                    <td>Эксперт</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Толщина пирога:</span></td>
+                    <td>8 см</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Сумма:</span></td>
+                    <td>45 000 Р</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Доп. работы:</span></td>
+                    <td>подрозетники, закладные под телевизор</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="table">
+                <div class="table__title">Потолок</div>
+                <table>
+                  <tr>
+                    <td> <span>Вид потолков:</span></td>
+                    <td>натяжные</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Площадь:</span></td>
+                    <td>39 м2</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Звукоизоляция:</span></td>
+                    <td>Стандарт</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Сумма:</span></td>
+                    <td>67 000 Р</td>
+                  </tr>
+                  <tr>
+                    <td> <span>Доп. работы:</span></td>
+                    <td>закладные под люстру</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="primer__footer">
+              <div class="primer__footer__item">
+                <div style="background-image: url(../img/primer__footer-1.svg);" class="primer__footer__item__icon"></div>
+                <div class="primer__footer__item__text"> 
+                  <div class="primer__footer__item__title">общая — 55 м2</div>
+                </div>
+              </div>
+              <div class="primer__footer__item">
+                <div style="background-image: url(../img/primer__footer-2.svg);" class="primer__footer__item__icon"></div>
+                <div class="primer__footer__item__text"> 
+                  <div class="primer__footer__item__title">общая — 112 000 Р</div>
+                </div>
+              </div>
+              <div class="primer__footer__item">
+                <div style="background-image: url(../img/primer__footer-3.svg);" class="primer__footer__item__icon"></div>
+                <div class="primer__footer__item__text"> 
+                  <div class="primer__footer__item__title">монтаж — 3 дня</div>
+                  <div class="primer__footer__item__desc">с 8.00 до 18.00</div>
+                </div>
+              </div>
+              <div class="primer__footer__item">
+                <div style="background-image: url(../img/primer__footer-4.svg);" class="primer__footer__item__icon"></div>
+                <div class="primer__footer__item__text"> 
+                  <div class="primer__footer__item__title">доставка — 2 500 Р</div>
+                  <div class="primer__footer__item__desc">и подъем материалов</div>
+                </div>
+              </div>
+              <div class="primer__footer__item">
+                <div style="background-image: url(../img/primer__footer-5.svg);" class="primer__footer__item__icon"></div>
+                <div class="primer__footer__item__text"> 
+                  <div class="primer__footer__item__title">оценка качества — 5</div>
+                  <div class="primer__footer__item__desc">и звукоизоляции</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -282,30 +457,41 @@
         <div class="calc__form">
           <div class="calc__form__img"><img src="img/calc__form__bg.png" alt=""/></div>
           <label for="">Вид дома
-            <select name="" id="">
-              <option value="Монолит">Монолит</option><span class="select__fake"> </span>
+            <select name="type__build" id="">
+              <option value="1.05">Монолит</option>
+              <option value="0.95">Панельный</option>
+              <option value="1">Кирпичный</option>
             </select>
           </label>
           <label for="">Состояние ремонта
-            <select name="">
-              <option value="Монолит">Монолит</option>
+            <select name="remont">
+              <option value="1">Ремонт сделан</option>
+              <option value="1">Буду делать капитальный ремонт</option>
+              <option value="1">Ремонт только будем делать (новостройка)</option>
             </select>
           </label>
           <label for="">Что беспокоит
-            <select name="">
-              <option value="Монолит">Монолит</option>
+            <select name="type__sound">
+              <option value="0.8">Телевизор</option>
+              <option value="1">Ргуаются / громкие разговоры / плач ребенка</option>
+              <option value="1.4">Громкая музыка / резкте громкие звуки / лай собаки</option>
+              <option value="2">Топот</option>
+              <option value="3">Перфоратор</option>
             </select>
           </label>
           <label for="">Какой приоритет
-            <select name="">
-              <option value="Монолит">Монолит</option>
+            <select name="type__priority">
+              <option value="1.05">Минимальная толщина</option>
+              <option value="1">Минимальная стоимость</option>
+              <option value="1.15">Максимальное качество</option>
             </select>
           </label>
           <label for="">Общая площадь квартиры
-            <input type="text" placeholder="100 кв.м."/>
+            <input name="s" type="number" placeholder="100 кв.м." value="0"/>
           </label>
+          <input type="hidden" name="k" value="42000"/>
           <div class="calc__form__price__title">Предварительная стоимость:</div>
-          <div class="calc__form__price">120 000 Р</div>
+          <div data-calc-result="data-calc-result" class="calc__form__price">0 Р</div>
           <div class="calc__form__checkbox__wrapper">
             <label for="1"> 
               <input type="checkbox" id="1"/>
@@ -457,6 +643,32 @@
     <div class="copyright">
       <div class="container">
         <div class="copyright__text">© Все права защищены.</div>
+      </div>
+    </div>
+    
+    <div data-modal="1" class="modal__wrapper">
+      <div class="modal">
+        <div class="modal__close"></div>
+        <div class="modal__title">Заказать звонок</div>
+        <form action="">
+          <input type="text" placeholder="Ваше имя" class="input__border"/>
+          <input type="text" placeholder="Телефон" class="input__border"/>
+          <button class="btn">Получить консультацию</button>
+          <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
+        </form>
+      </div>
+    </div>
+    
+    <div data-modal="2" class="modal__wrapper">
+      <div class="modal">
+        <div class="modal__close"></div>
+        <div class="modal__title">Расчет решения</div>
+        <form action="">
+          <input type="text" placeholder="Ваше имя" class="input__border"/>
+          <input type="text" placeholder="Телефон" class="input__border"/>
+          <button class="btn">Получить консультацию</button>
+          <div class="modal__form__alert">* Мы не рассылаем спам и номер никому не передаем</div>
+        </form>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
