@@ -14,6 +14,8 @@ $(document).ready(function(){
 	});
 
 	$('[data-click="select_city"]').click(function(){
+		$('.hero__city__select__arrow').toggleClass('hero__city__select__arrow__active');
 		$('.hero__city__select__submenu').toggleClass('hero__city__select__submenu__active');
+		$('.hero__city__working').toggleClass('hero__city__working__hide');
 	});
 });
