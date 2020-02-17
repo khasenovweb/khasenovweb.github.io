@@ -108,4 +108,7 @@ $(document).ready(function(){
 		$('.services__items[data-tab="'+id+'"]').show();
 	});	
 	//END Каталог услуг
+
+
+	$("a[data-role='scroll']").mPageScroll2id();
 });

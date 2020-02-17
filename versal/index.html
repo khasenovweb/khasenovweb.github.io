@@ -4,10 +4,11 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width"/>
   <title>Versal</title>
+  <link rel="icon" href="img/favicon.png" type="image/png"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-  <link rel="stylesheet" href="fonts/stylesheet.css?v4"/>
-  <link rel="stylesheet" href="css/main.css?v4"/>
-  <link rel="stylesheet" href="css/media.css?v4"/>
+  <link rel="stylesheet" href="fonts/stylesheet.css?v5"/>
+  <link rel="stylesheet" href="css/main.css?v5"/>
+  <link rel="stylesheet" href="css/media.css?v5"/>
 </head>
 <body>
   <div data-modal-id="1" class="modal__wrapper">
@@ -49,13 +50,13 @@
           <li> <img src="img/hero__list.svg" alt=""/><span>Гарантия 12 месяцев</span></li>
           <li> <img src="img/hero__list.svg" alt=""/><span>Изготовение в соответствии с 902 пп.</span></li>
         </ul>
-        <div class="hero__btn__wrapper">
-          <button data-modal="data-modal" data-modal-id="1" class="btn">Узнать стоимость вывески</button>
+        <div class="hero__btn__wrapper"><a href="#calc" data-role="scroll">
+            <button class="btn">Узнать стоимость вывески</button></a>
           <div class="hero__price">Стоимость от 30 руб./см</div>
         </div>
       </div>
     </section>
-    <section class="calc">
+    <section id="calc" class="calc">
       <div class="container">
         <div class="section__title calc__title">Расчет стоимости</div>
         <div class="section__desc">Расчитайте стоимость вывески с помощью нашего калькулятора</div>
@@ -164,148 +165,265 @@
         <div class="section__desc">Предложим эффективное решение вне зависимости от масштаба, сферы и бюджета вашего проекта</div>
         <div class="services__content">
           <div class="services__tabs__wrapper">
-            <div class="services__tabs"><a href="#services" data-tab="1" class="services__tab services__tab__active">Объемные буквы</a><a href="#services" data-tab="2" class="services__tab">Интерьерные и не стандартные конструкции</a><a href="#services" data-tab="3" class="services__tab">Вывески из неона</a><a href="#services" data-tab="4" class="services__tab">Крышные установки</a><a href="#services" data-tab="5" class="services__tab">Монтаж и согласование</a></div>
+            <div class="services__tabs"><a href="#services" data-tab="1" class="services__tab services__tab__active">Буквы и логотипы из пластика, металла, дерева</a><a href="#services" data-tab="2" class="services__tab">Буквы не световые</a><a href="#services" data-tab="3" class="services__tab">Буквы с комбинированным свечением</a><a href="#services" data-tab="4" class="services__tab">Буквы с лицевым свечением</a><a href="#services" data-tab="5" class="services__tab">Изделия по индивидуальным эскизам</a><a href="#services" data-tab="6" class="services__tab">Информационные таблички и стенды</a><a href="#services" data-tab="7" class="services__tab">Композитный короб с инкрустацией</a><a href="#services" data-tab="8" class="services__tab">Крышные конструкции</a><a href="#services" data-tab="9" class="services__tab">Монтаж и согласование</a><a href="#services" data-tab="10" class="services__tab">Навигация</a><a href="#services" data-tab="11" class="services__tab">Неон, гибкий и из стекла</a><a href="#services" data-tab="12" class="services__tab">Оформление витрин и интерьера</a><a href="#services" data-tab="13" class="services__tab">Световые короба</a></div>
           </div>
           <div data-tab="1" class="services__items">
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/1.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/1/1.jpeg)" href="img/services/1/1.jpeg" data-fancybox="1" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Буквы из ПВХ не световые</div>
-                <div class="services__item__desc">от 30 рублей за 1см высоты</div>
+                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
               </div>
             </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/2.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/1/2.jpeg)" href="img/services/1/2.jpeg" data-fancybox="1" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Буквы с фронтальным свечением</div>
-                <div class="services__item__desc">от 80 руб. за 1 см</div>
+                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
               </div>
             </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/3.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/1/3.jpeg)" href="img/services/1/3.jpeg" data-fancybox="1" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Буквы с фронтальным свечением</div>
-                <div class="services__item__desc">от 110 руб. за 1 см</div>
+                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
               </div>
             </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/4.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/1/4.jpeg)" href="img/services/1/4.jpeg" data-fancybox="1" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Буквы с полным свечением</div>
-                <div class="services__item__desc">от 130 руб. за 1 см</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/5.jpg)" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы с полным свечением</div>
-                <div class="services__item__desc">от 155 руб. за 1 см</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/6.jpg)" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Объемные не световые буквы</div>
-                <div class="services__item__desc">от 70 руб. за 1 см</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/7.jpg)" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Световые короба</div>
-                <div class="services__item__desc">от 8000 р. / 9900 р. за 1м2</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/8.jpg)" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Композитные световые короба</div>
-                <div class="services__item__desc">от 15000 рублей за 1м2</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/9.jpg)" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Композитные световые короба</div>
-                <div class="services__item__desc">от 17500 рублей за 1м2</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/volumetric-letters/9.jpg)" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы из ПВХ не световые</div>
-                <div class="services__item__desc">от 55 рублей за 1см высоты</div>
+                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
               </div>
             </div>
           </div>
           <div data-tab="2" class="services__items">
-            <div class="services__item">
-              <div style="background-image: url()" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/2/1.jpeg)" href="img/services/2/1.jpeg" data-fancybox="2" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
+                <div class="services__item__title">Буквы не световые</div>
               </div>
             </div>
-            <div class="services__item">
-              <div style="background-image: url()" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/2/2.jpeg)" href="img/services/2/2.jpeg" data-fancybox="2" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
+                <div class="services__item__title">Буквы не световые</div>
               </div>
             </div>
-            <div class="services__item">
-              <div style="background-image: url()" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/2/3.jpeg)" href="img/services/2/3.jpeg" data-fancybox="2" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Навигация</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url()" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Информационные таблички и стенды</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
-              </div>
-            </div>
-            <div class="services__item">
-              <div style="background-image: url()" class="services__item__img"></div>
-              <div class="services__item__text">
-                <div class="services__item__title">Оформление витрин и интерьера</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
+                <div class="services__item__title">Буквы не световые</div>
               </div>
             </div>
           </div>
           <div data-tab="3" class="services__items">
-            <div class="services__item">
-              <div style="background-image: url(img/services/neon/1.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/3/1.jpeg)" href="img/services/3/1.jpeg" data-fancybox="3" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Гибкий неон</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
+                <div class="services__item__title">Буквы с комбинированным свечением</div>
               </div>
             </div>
-            <div class="services__item">
-              <div style="background-image: url(img/services/neon/2.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/3/2.jpeg)" href="img/services/3/2.jpeg" data-fancybox="3" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Стекло</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
+                <div class="services__item__title">Буквы с комбинированным свечением</div>
               </div>
             </div>
           </div>
           <div data-tab="4" class="services__items">
-            <div class="services__item">
-              <div style="background-image: url(img/services/roof-installations/1.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/4/1.jpeg)" href="img/services/4/1.jpeg" data-fancybox="4" class="services__item__img"></a>
               <div class="services__item__text">
-                <div class="services__item__title">Крышные установки</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
+                <div class="services__item__title">Буквы с лицевым свечением</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/4/2.jpeg)" href="img/services/4/2.jpeg" data-fancybox="4" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Буквы с лицевым свечением</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/4/3.jpeg)" href="img/services/4/3.jpeg" data-fancybox="4" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Буквы с лицевым свечением</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/4/4.jpeg)" href="img/services/4/4.jpeg" data-fancybox="4" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Буквы с лицевым свечением</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/4/5.jpeg)" href="img/services/4/5.jpeg" data-fancybox="4" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Буквы с лицевым свечением</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/4/6.jpeg)" href="img/services/4/6.jpeg" data-fancybox="4" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Буквы с лицевым свечением</div>
               </div>
             </div>
           </div>
           <div data-tab="5" class="services__items">
-            <div class="services__item">
-              <div style="background-image: url(img/services/montazh/1.jpg)" class="services__item__img"></div>
+            <div class="services__item"><a style="background-image: url(img/services/5/1.jpeg)" href="img/services/5/1.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/5/2.jpeg)" href="img/services/5/2.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/5/3.jpeg)" href="img/services/5/3.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/5/4.jpeg)" href="img/services/5/4.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/5/5.jpeg)" href="img/services/5/5.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/5/6.jpeg)" href="img/services/5/6.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/5/7.jpeg)" href="img/services/5/7.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/5/8.jpeg)" href="img/services/5/8.jpeg" data-fancybox="5" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
+              </div>
+            </div>
+          </div>
+          <div data-tab="6" class="services__items"></div>
+          <div data-tab="7" class="services__items">
+            <div class="services__item"><a style="background-image: url(img/services/7/1.jpeg)" href="img/services/7/1.jpeg" data-fancybox="7" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Композитный короб с инкрустацией</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/7/2.jpeg)" href="img/services/7/2.jpeg" data-fancybox="7" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Композитный короб с инкрустацией</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/7/3.jpeg)" href="img/services/7/3.jpeg" data-fancybox="7" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Композитный короб с инкрустацией</div>
+              </div>
+            </div>
+          </div>
+          <div data-tab="8" class="services__items">
+            <div class="services__item"><a style="background-image: url(img/services/8/1.jpeg)" href="img/services/8/1.jpeg" data-fancybox="8" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Крышные конструкции</div>
+              </div>
+            </div>
+          </div>
+          <div data-tab="9" class="services__items">
+            <div class="services__item"><a style="background-image: url(img/services/9/1.jpeg)" href="img/services/9/1.jpeg" data-fancybox="9" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Монтаж и согласование</div>
-                <div class="services__item__desc">Цена рассчитывается индивидуально</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/9/2.jpeg)" href="img/services/9/2.jpeg" data-fancybox="9" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Монтаж и согласование</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/9/3.jpeg)" href="img/services/9/3.jpeg" data-fancybox="9" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Монтаж и согласование</div>
+              </div>
+            </div>
+          </div>
+          <div data-tab="10" class="services__items">
+            <div class="services__item"><a style="background-image: url(img/services/10/1.jpeg)" href="img/services/10/1.jpeg" data-fancybox="10" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Навигация</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/10/2.jpeg)" href="img/services/10/2.jpeg" data-fancybox="10" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Навигация</div>
+              </div>
+            </div>
+          </div>
+          <div data-tab="11" class="services__items">
+            <div class="services__item"><a style="background-image: url(img/services/11/1.jpeg)" href="img/services/11/1.jpeg" data-fancybox="11" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Неон, гибкий и из стекла</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/11/2.jpeg)" href="img/services/11/2.jpeg" data-fancybox="11" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Неон, гибкий и из стекла</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/11/3.jpeg)" href="img/services/11/3.jpeg" data-fancybox="11" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Неон, гибкий и из стекла</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/11/4.jpeg)" href="img/services/11/4.jpeg" data-fancybox="11" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Неон, гибкий и из стекла</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/11/5.jpeg)" href="img/services/11/5.jpeg" data-fancybox="11" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Неон, гибкий и из стекла</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/11/6.jpeg)" href="img/services/11/6.jpeg" data-fancybox="11" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Неон, гибкий и из стекла</div>
+              </div>
+            </div>
+          </div>
+          <div data-tab="12" class="services__items">
+            <div class="services__item"><a style="background-image: url(img/services/12/1.jpeg)" href="img/services/12/1.jpeg" data-fancybox="12" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Оформление витрин и интерьера</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/12/2.jpeg)" href="img/services/12/2.jpeg" data-fancybox="12" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Оформление витрин и интерьера</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/12/3.jpeg)" href="img/services/12/3.jpeg" data-fancybox="12" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Оформление витрин и интерьера</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/12/4.jpeg)" href="img/services/12/4.jpeg" data-fancybox="12" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Оформление витрин и интерьера</div>
+              </div>
+            </div>
+          </div>
+          <div data-tab="13" class="services__items">
+            <div class="services__item"><a style="background-image: url(img/services/13/1.jpeg)" href="img/services/13/1.jpeg" data-fancybox="13" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Световые короба</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/13/2.jpeg)" href="img/services/13/2.jpeg" data-fancybox="13" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Световые короба</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/13/3.jpeg)" href="img/services/13/3.jpeg" data-fancybox="13" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Световые короба</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/13/4.jpeg)" href="img/services/13/4.jpeg" data-fancybox="13" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Световые короба</div>
+              </div>
+            </div>
+            <div class="services__item"><a style="background-image: url(img/services/13/5.jpeg)" href="img/services/13/5.jpeg" data-fancybox="13" class="services__item__img"></a>
+              <div class="services__item__text">
+                <div class="services__item__title">Световые короба</div>
               </div>
             </div>
           </div>
@@ -332,7 +450,7 @@
     <section class="catalog">
       <div class="container">
         <div class="section__title">Примеры наших работ</div>
-        <div class="catalog__items"><a data-fancybox="gallery" href="img/works/1.jpeg" style="background-image: url(img/works/1.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/2.jpeg" style="background-image: url(img/works/2.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/3.jpeg" style="background-image: url(img/works/3.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/4.jpeg" style="background-image: url(img/works/4.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/5.jpeg" style="background-image: url(img/works/5.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/6.jpeg" style="background-image: url(img/works/6.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/7.jpeg" style="background-image: url(img/works/7.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/8.jpeg" style="background-image: url(img/works/8.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/9.jpeg" style="background-image: url(img/works/9.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/10.jpeg" style="background-image: url(img/works/10.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/11.jpeg" style="background-image: url(img/works/11.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/12.jpeg" style="background-image: url(img/works/12.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/13.jpeg" style="background-image: url(img/works/13.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/14.jpeg" style="background-image: url(img/works/14.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/15.jpeg" style="background-image: url(img/works/15.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/16.jpeg" style="background-image: url(img/works/16.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/17.jpeg" style="background-image: url(img/works/17.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/18.jpeg" style="background-image: url(img/works/18.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/19.jpeg" style="background-image: url(img/works/19.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/20.jpeg" style="background-image: url(img/works/20.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/21.jpeg" style="background-image: url(img/works/21.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/22.jpeg" style="background-image: url(img/works/22.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/23.jpeg" style="background-image: url(img/works/23.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/24.jpeg" style="background-image: url(img/works/24.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/25.jpeg" style="background-image: url(img/works/25.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/26.jpeg" style="background-image: url(img/works/26.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/27.jpeg" style="background-image: url(img/works/27.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/28.jpeg" style="background-image: url(img/works/28.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/29.jpeg" style="background-image: url(img/works/29.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/30.jpeg" style="background-image: url(img/works/30.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/31.jpeg" style="background-image: url(img/works/31.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/32.jpeg" style="background-image: url(img/works/32.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/33.jpeg" style="background-image: url(img/works/33.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/34.jpeg" style="background-image: url(img/works/34.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/35.jpeg" style="background-image: url(img/works/35.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/36.jpeg" style="background-image: url(img/works/36.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/37.jpeg" style="background-image: url(img/works/37.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/38.jpeg" style="background-image: url(img/works/38.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/39.jpeg" style="background-image: url(img/works/39.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/40.jpeg" style="background-image: url(img/works/40.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/41.jpeg" style="background-image: url(img/works/41.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/42.jpeg" style="background-image: url(img/works/42.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/43.jpeg" style="background-image: url(img/works/43.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/44.jpeg" style="background-image: url(img/works/44.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/45.jpeg" style="background-image: url(img/works/45.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/46.jpeg" style="background-image: url(img/works/46.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/47.jpeg" style="background-image: url(img/works/47.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/48.jpeg" style="background-image: url(img/works/48.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/49.jpeg" style="background-image: url(img/works/49.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/50.jpeg" style="background-image: url(img/works/50.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/51.jpeg" style="background-image: url(img/works/51.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/52.jpeg" style="background-image: url(img/works/52.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/53.jpeg" style="background-image: url(img/works/53.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/54.jpeg" style="background-image: url(img/works/54.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/55.jpeg" style="background-image: url(img/works/55.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/56.jpeg" style="background-image: url(img/works/56.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/57.jpeg" style="background-image: url(img/works/57.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/58.jpeg" style="background-image: url(img/works/58.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/59.jpeg" style="background-image: url(img/works/59.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/60.jpeg" style="background-image: url(img/works/60.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/61.jpeg" style="background-image: url(img/works/61.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/62.jpeg" style="background-image: url(img/works/62.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/63.jpeg" style="background-image: url(img/works/63.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/64.jpeg" style="background-image: url(img/works/64.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/65.jpeg" style="background-image: url(img/works/65.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/66.jpeg" style="background-image: url(img/works/66.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/67.jpeg" style="background-image: url(img/works/67.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/68.jpeg" style="background-image: url(img/works/68.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/69.jpeg" style="background-image: url(img/works/69.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/70.jpeg" style="background-image: url(img/works/70.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/71.jpeg" style="background-image: url(img/works/71.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/72.jpeg" style="background-image: url(img/works/72.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/73.jpeg" style="background-image: url(img/works/73.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/74.jpeg" style="background-image: url(img/works/74.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/75.jpeg" style="background-image: url(img/works/75.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/76.jpeg" style="background-image: url(img/works/76.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/77.jpeg" style="background-image: url(img/works/77.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/78.jpeg" style="background-image: url(img/works/78.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/79.jpeg" style="background-image: url(img/works/79.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/80.jpeg" style="background-image: url(img/works/80.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/81.jpeg" style="background-image: url(img/works/81.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/82.jpeg" style="background-image: url(img/works/82.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/83.jpeg" style="background-image: url(img/works/83.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/84.jpeg" style="background-image: url(img/works/84.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/85.jpeg" style="background-image: url(img/works/85.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/86.jpeg" style="background-image: url(img/works/86.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/87.jpeg" style="background-image: url(img/works/87.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/88.jpeg" style="background-image: url(img/works/88.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/89.jpeg" style="background-image: url(img/works/89.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/90.jpeg" style="background-image: url(img/works/90.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/91.jpeg" style="background-image: url(img/works/91.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/92.jpeg" style="background-image: url(img/works/92.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/93.jpeg" style="background-image: url(img/works/93.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/94.jpeg" style="background-image: url(img/works/94.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/95.jpeg" style="background-image: url(img/works/95.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/96.jpeg" style="background-image: url(img/works/96.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/97.jpeg" style="background-image: url(img/works/97.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/98.jpeg" style="background-image: url(img/works/98.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/99.jpeg" style="background-image: url(img/works/99.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/100.jpeg" style="background-image: url(img/works/100.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/101.jpeg" style="background-image: url(img/works/101.jpeg);" class="catalog__item"></a>
+        <div class="catalog__items"><a data-fancybox="gallery" href="img/works/1.jpeg" style="background-image: url(img/works/1.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/2.jpeg" style="background-image: url(img/works/2.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/3.jpeg" style="background-image: url(img/works/3.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/4.jpeg" style="background-image: url(img/works/4.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/5.jpeg" style="background-image: url(img/works/5.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/6.jpeg" style="background-image: url(img/works/6.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/7.jpeg" style="background-image: url(img/works/7.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/8.jpeg" style="background-image: url(img/works/8.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/9.jpeg" style="background-image: url(img/works/9.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/10.jpeg" style="background-image: url(img/works/10.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/11.jpeg" style="background-image: url(img/works/11.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/12.jpeg" style="background-image: url(img/works/12.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/13.jpeg" style="background-image: url(img/works/13.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/14.jpeg" style="background-image: url(img/works/14.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/15.jpeg" style="background-image: url(img/works/15.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/16.jpeg" style="background-image: url(img/works/16.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/17.jpeg" style="background-image: url(img/works/17.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/18.jpeg" style="background-image: url(img/works/18.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/19.jpeg" style="background-image: url(img/works/19.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/20.jpeg" style="background-image: url(img/works/20.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/21.jpeg" style="background-image: url(img/works/21.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/22.jpeg" style="background-image: url(img/works/22.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/23.jpeg" style="background-image: url(img/works/23.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/24.jpeg" style="background-image: url(img/works/24.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/25.jpeg" style="background-image: url(img/works/25.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/26.jpeg" style="background-image: url(img/works/26.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/27.jpeg" style="background-image: url(img/works/27.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/28.jpeg" style="background-image: url(img/works/28.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/29.jpeg" style="background-image: url(img/works/29.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/30.jpeg" style="background-image: url(img/works/30.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/31.jpeg" style="background-image: url(img/works/31.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/32.jpeg" style="background-image: url(img/works/32.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/33.jpeg" style="background-image: url(img/works/33.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/34.jpeg" style="background-image: url(img/works/34.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/35.jpeg" style="background-image: url(img/works/35.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/36.jpeg" style="background-image: url(img/works/36.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/37.jpeg" style="background-image: url(img/works/37.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/38.jpeg" style="background-image: url(img/works/38.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/39.jpeg" style="background-image: url(img/works/39.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/40.jpeg" style="background-image: url(img/works/40.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/41.jpeg" style="background-image: url(img/works/41.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/42.jpeg" style="background-image: url(img/works/42.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/43.jpeg" style="background-image: url(img/works/43.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/44.jpeg" style="background-image: url(img/works/44.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/45.jpeg" style="background-image: url(img/works/45.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/46.jpeg" style="background-image: url(img/works/46.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/47.jpeg" style="background-image: url(img/works/47.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/48.jpeg" style="background-image: url(img/works/48.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/49.jpeg" style="background-image: url(img/works/49.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/50.jpeg" style="background-image: url(img/works/50.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/51.jpeg" style="background-image: url(img/works/51.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/52.jpeg" style="background-image: url(img/works/52.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/53.jpeg" style="background-image: url(img/works/53.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/54.jpeg" style="background-image: url(img/works/54.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/55.jpeg" style="background-image: url(img/works/55.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/56.jpeg" style="background-image: url(img/works/56.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/57.jpeg" style="background-image: url(img/works/57.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/58.jpeg" style="background-image: url(img/works/58.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/59.jpeg" style="background-image: url(img/works/59.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/60.jpeg" style="background-image: url(img/works/60.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/61.jpeg" style="background-image: url(img/works/61.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/62.jpeg" style="background-image: url(img/works/62.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/63.jpeg" style="background-image: url(img/works/63.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/64.jpeg" style="background-image: url(img/works/64.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/65.jpeg" style="background-image: url(img/works/65.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/66.jpeg" style="background-image: url(img/works/66.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/67.jpeg" style="background-image: url(img/works/67.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/68.jpeg" style="background-image: url(img/works/68.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/69.jpeg" style="background-image: url(img/works/69.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/70.jpeg" style="background-image: url(img/works/70.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/71.jpeg" style="background-image: url(img/works/71.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/72.jpeg" style="background-image: url(img/works/72.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/73.jpeg" style="background-image: url(img/works/73.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/74.jpeg" style="background-image: url(img/works/74.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/75.jpeg" style="background-image: url(img/works/75.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/76.jpeg" style="background-image: url(img/works/76.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/77.jpeg" style="background-image: url(img/works/77.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/78.jpeg" style="background-image: url(img/works/78.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/79.jpeg" style="background-image: url(img/works/79.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/80.jpeg" style="background-image: url(img/works/80.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/81.jpeg" style="background-image: url(img/works/81.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/82.jpeg" style="background-image: url(img/works/82.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/83.jpeg" style="background-image: url(img/works/83.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/84.jpeg" style="background-image: url(img/works/84.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/85.jpeg" style="background-image: url(img/works/85.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/86.jpeg" style="background-image: url(img/works/86.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/87.jpeg" style="background-image: url(img/works/87.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/88.jpeg" style="background-image: url(img/works/88.jpeg);" class="catalog__item"></a><a data-fancybox="gallery" href="img/works/89.jpeg" style="background-image: url(img/works/89.jpeg);" class="catalog__item"></a>
         </div>
       </div>
     </section>
@@ -343,15 +461,16 @@
           <li class="contacts__list__phone">+7 (925) 003 17 63</li>
           <li class="contacts__list__phone">+7 (926) 195 13 10</li>
           <li>waripov@gmail.com</li>
-          <li>г. Дмитров, ул. Загорская, д. 22, этаж 4, оф. 5 (вход в здание ОУФМС)</li>
+          <li>Г. Москва варшавское шоссе д. 125 к 3</li>
         </ul>
       </div>
     </section>
     <section id="map" class="map">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;amp;source=constructor" frameborder="0" width="100%" height="500"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
     </section>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="js/main.js?v4"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/main.js?v5"></script>
 </body>

@@ -4,6 +4,7 @@ head
 	meta(charset="UTF-8")
 	meta(name="viewport" content="width=device-width")
 	title Versal
+	link(rel="icon" href="img/favicon.png" type="image/png")
 	link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
 	link(rel="stylesheet", href="fonts/stylesheet.css?v5")
 	link(rel="stylesheet", href="css/main.css?v5")
@@ -60,9 +61,10 @@ body
 						img(src="img/hero__list.svg", alt="")
 						span Изготовение в соответствии с 902 пп.
 				.hero__btn__wrapper
-					button.btn(data-modal data-modal-id="1") Узнать стоимость вывески
+					a(href="#calc" data-role="scroll")
+						button.btn Узнать стоимость вывески
 					.hero__price Стоимость от 30 руб./см
-		section.calc
+		section.calc#calc
 			.container
 				.section__title.calc__title Расчет стоимости
 				.section__desc Расчитайте стоимость вывески с помощью нашего калькулятора
@@ -151,115 +153,105 @@ body
 				.services__content
 					.services__tabs__wrapper
 						.services__tabs
-							a(href="#services" data-tab="1").services__tab.services__tab__active Объемные буквы
-							a(href="#services" data-tab="2").services__tab Интерьерные и не стандартные конструкции
-							a(href="#services" data-tab="3").services__tab Вывески из неона
-							a(href="#services" data-tab="4").services__tab Крышные установки
-							a(href="#services" data-tab="5").services__tab Монтаж и согласование
+							a(href="#services" data-tab="1").services__tab.services__tab__active Буквы и логотипы из пластика, металла, дерева
+							a(href="#services" data-tab="2").services__tab Буквы не световые
+							a(href="#services" data-tab="3").services__tab Буквы с комбинированным свечением
+							a(href="#services" data-tab="4").services__tab Буквы с лицевым свечением
+							a(href="#services" data-tab="5").services__tab Изделия по индивидуальным эскизам
+							a(href="#services" data-tab="6").services__tab Информационные таблички и стенды
+							a(href="#services" data-tab="7").services__tab Композитный короб с инкрустацией
+							a(href="#services" data-tab="8").services__tab Крышные конструкции
+							a(href="#services" data-tab="9").services__tab Монтаж и согласование
+							a(href="#services" data-tab="10").services__tab Навигация
+							a(href="#services" data-tab="11").services__tab Неон, гибкий и из стекла
+							a(href="#services" data-tab="12").services__tab Оформление витрин и интерьера
+							a(href="#services" data-tab="13").services__tab Световые короба
 					.services__items(data-tab="1")
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/1.jpg)")
-							.services__item__text
-								.services__item__title Буквы из ПВХ не световые
-								.services__item__desc от 30 рублей за 1см высоты
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/2.jpg)")
-							.services__item__text
-								.services__item__title Буквы с фронтальным свечением
-								.services__item__desc от 80 руб. за 1 см
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/3.jpg)")
-							.services__item__text
-								.services__item__title Буквы с фронтальным свечением
-								.services__item__desc от 110 руб. за 1 см
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/4.jpg)")
-							.services__item__text
-								.services__item__title Буквы с полным свечением
-								.services__item__desc от 130 руб. за 1 см
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/5.jpg)")
-							.services__item__text
-								.services__item__title Буквы с полным свечением
-								.services__item__desc от 155 руб. за 1 см
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/6.jpg)")
-							.services__item__text
-								.services__item__title Объемные не световые буквы
-								.services__item__desc от 70 руб. за 1 см
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/7.jpg)")
-							.services__item__text
-								.services__item__title Световые короба
-								.services__item__desc от 8000 р. / 9900 р. за 1м2
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/8.jpg)")
-							.services__item__text
-								.services__item__title Композитные световые короба
-								.services__item__desc от 15000 рублей за 1м2
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/9.jpg)")
-							.services__item__text
-								.services__item__title Композитные световые короба
-								.services__item__desc от 17500 рублей за 1м2
-						.services__item
-							.services__item__img(style="background-image: url(img/services/volumetric-letters/9.jpg)")
-							.services__item__text
-								.services__item__title Буквы из ПВХ не световые
-								.services__item__desc от 55 рублей за 1см высоты
-					
+						-for(i=1;i<=4;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/1/"+i+".jpeg)" href="img/services/1/"+i+".jpeg" data-fancybox="1")
+								.services__item__text
+									.services__item__title Буквы и логотипы из пластика, металла, дерева
+						-}
 					.services__items(data-tab="2")
-						.services__item
-							.services__item__img(style="background-image: url()")
-							.services__item__text
-								.services__item__title Буквы и логотипы из пластика, металла, дерева
-								.services__item__desc Цена рассчитывается индивидуально
-						.services__item
-							.services__item__img(style="background-image: url()")
-							.services__item__text
-								.services__item__title Изделия по индивидуальным эскизам
-								.services__item__desc Цена рассчитывается индивидуально
-						.services__item
-							.services__item__img(style="background-image: url()")
-							.services__item__text
-								.services__item__title Навигация
-								.services__item__desc Цена рассчитывается индивидуально
-						.services__item
-							.services__item__img(style="background-image: url()")
-							.services__item__text
-								.services__item__title Информационные таблички и стенды
-								.services__item__desc Цена рассчитывается индивидуально
-						.services__item
-							.services__item__img(style="background-image: url()")
-							.services__item__text
-								.services__item__title Оформление витрин и интерьера
-								.services__item__desc Цена рассчитывается индивидуально
+						-for(i=1;i<=3;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/2/"+i+".jpeg)" href="img/services/2/"+i+".jpeg" data-fancybox="2")
+								.services__item__text
+									.services__item__title Буквы не световые
+						-}
 					
 					.services__items(data-tab="3")
-						.services__item
-							.services__item__img(style="background-image: url(img/services/neon/1.jpg)")
-							.services__item__text
-								.services__item__title Гибкий неон
-								.services__item__desc Цена рассчитывается индивидуально
-						.services__item
-							.services__item__img(style="background-image: url(img/services/neon/2.jpg)")
-							.services__item__text
-								.services__item__title Стекло
-								.services__item__desc Цена рассчитывается индивидуально
-					
+						-for(i=1;i<=2;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/3/"+i+".jpeg)" href="img/services/3/"+i+".jpeg" data-fancybox="3")
+								.services__item__text
+									.services__item__title Буквы с комбинированным свечением
+						-}
 					.services__items(data-tab="4")
-						.services__item
-							.services__item__img(style="background-image: url(img/services/roof-installations/1.jpg)")
-							.services__item__text
-								.services__item__title Крышные установки
-								.services__item__desc Цена рассчитывается индивидуально
-					
+						-for(i=1;i<=6;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/4/"+i+".jpeg)" href="img/services/4/"+i+".jpeg" data-fancybox="4")
+								.services__item__text
+									.services__item__title Буквы с лицевым свечением
+						-}
 					.services__items(data-tab="5")
-						.services__item
-							.services__item__img(style="background-image: url(img/services/montazh/1.jpg)")
-							.services__item__text
-								.services__item__title Монтаж и согласование
-								.services__item__desc Цена рассчитывается индивидуально
+						-for(i=1;i<=8;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/5/"+i+".jpeg)" href="img/services/5/"+i+".jpeg" data-fancybox="5")
+								.services__item__text
+									.services__item__title Изделия по индивидуальным эскизам
+						-}
+					.services__items(data-tab="6")
+					.services__items(data-tab="7")
+						-for(i=1;i<=3;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/7/"+i+".jpeg)" href="img/services/7/"+i+".jpeg" data-fancybox="7")
+								.services__item__text
+									.services__item__title Композитный короб с инкрустацией
+						-}
+					.services__items(data-tab="8")
+						-for(i=1;i<=1;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/8/"+i+".jpeg)" href="img/services/8/"+i+".jpeg" data-fancybox="8")
+								.services__item__text
+									.services__item__title Крышные конструкции
+						-}
+					.services__items(data-tab="9")
+						-for(i=1;i<=3;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/9/"+i+".jpeg)" href="img/services/9/"+i+".jpeg" data-fancybox="9")
+								.services__item__text
+									.services__item__title Монтаж и согласование
+						-}
+					.services__items(data-tab="10")
+						-for(i=1;i<=2;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/10/"+i+".jpeg)" href="img/services/10/"+i+".jpeg" data-fancybox="10")
+								.services__item__text
+									.services__item__title Навигация
+						-}
+					.services__items(data-tab="11")
+						-for(i=1;i<=6;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/11/"+i+".jpeg)" href="img/services/11/"+i+".jpeg" data-fancybox="11")
+								.services__item__text
+									.services__item__title Неон, гибкий и из стекла
+						-}
+					.services__items(data-tab="12")
+						-for(i=1;i<=4;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/12/"+i+".jpeg)" href="img/services/12/"+i+".jpeg" data-fancybox="12")
+								.services__item__text
+									.services__item__title Оформление витрин и интерьера
+						-}
+					.services__items(data-tab="13")
+						-for(i=1;i<=5;i++){
+							.services__item
+								a.services__item__img(style="background-image: url(img/services/13/"+i+".jpeg)" href="img/services/13/"+i+".jpeg" data-fancybox="13")
+								.services__item__text
+									.services__item__title Световые короба
+						-}
 		section.soglasovanie
 			.container
 				.section__title Узнайте необходимо ли согласовывать вывеску по вашему адресу
@@ -276,7 +268,7 @@ body
 			.container
 				.section__title Примеры наших работ
 				.catalog__items
-					-for(i=1;i<=101;i++){
+					-for(i=1;i<=89;i++){
 						a(data-fancybox="gallery" href="img/works/"+i+".jpeg" style="background-image: url(img/works/"+i+".jpeg);").catalog__item
 					-}
 		section.contacts
@@ -286,13 +278,14 @@ body
 					li.contacts__list__phone +7 (925) 003 17 63
 					li.contacts__list__phone +7 (926) 195 13 10
 					li waripov@gmail.com
-					li г. Дмитров, ул. Загорская, д. 22, этаж 4, оф. 5 (вход в здание ОУФМС)
+					li Г. Москва варшавское шоссе д. 125 к 3
 		section.map#map
-			iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;source=constructor", frameborder="0" width="100%" height="500")
+			iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;source=constructor" width="100%" height="500" frameborder="0")
 
 
 
 	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 	script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
+	script(src="js/scroll.js")
 	script(src="js/main.js?v5")
 
