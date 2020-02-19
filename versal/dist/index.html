@@ -6,9 +6,9 @@
   <title>Versal</title>
   <link rel="icon" href="img/favicon.png" type="image/png"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-  <link rel="stylesheet" href="fonts/stylesheet.css?v6"/>
-  <link rel="stylesheet" href="css/main.css?v6"/>
-  <link rel="stylesheet" href="css/media.css?v6"/>
+  <link rel="stylesheet" href="fonts/stylesheet.css?v8"/>
+  <link rel="stylesheet" href="css/main.css?v8"/>
+  <link rel="stylesheet" href="css/media.css?v8"/>
 </head>
 <body>
   <div data-modal-id="1" class="modal__wrapper">
@@ -30,7 +30,7 @@
     <section class="head">
       <div class="container"><a href="/" class="head__logo"><img src="img/logo.svg" alt=""/></a>
         <div class="head__contact head__contact__adress">
-          <div class="head__contact__title">г. Москва, ул. Московская 24</div><a href="#map" class="head__contact__title__link">Показать на карте</a>
+          <div class="head__contact__title">г. Москва, ул. Московская 24</div><a href="#map" data-role="scroll" class="head__contact__title__link">Показать на карте</a>
         </div>
         <div class="head__contact head__contact__email">
           <div class="head__contact__title">waripov@gmail.com</div><a href="mailto:waripov@gmail.com" class="head__contact__title__link">Написать</a>
@@ -165,131 +165,41 @@
         <div class="section__desc">Предложим эффективное решение вне зависимости от масштаба, сферы и бюджета вашего проекта</div>
         <div class="services__content">
           <div class="services__tabs__wrapper">
-            <div class="services__tabs"><a href="#services" data-tab="1" class="services__tab services__tab__active">Буквы и логотипы из пластика, металла, дерева</a><a href="#services" data-tab="2" class="services__tab">Буквы не световые</a><a href="#services" data-tab="3" class="services__tab">Буквы с комбинированным свечением</a><a href="#services" data-tab="4" class="services__tab">Буквы с лицевым свечением</a><a href="#services" data-tab="5" class="services__tab">Изделия по индивидуальным эскизам</a><a href="#services" data-tab="6" class="services__tab">Информационные таблички и стенды</a><a href="#services" data-tab="7" class="services__tab">Композитный короб с инкрустацией</a><a href="#services" data-tab="8" class="services__tab">Крышные конструкции</a><a href="#services" data-tab="9" class="services__tab">Монтаж и согласование</a><a href="#services" data-tab="10" class="services__tab">Навигация</a><a href="#services" data-tab="11" class="services__tab">Неон, гибкий и из стекла</a><a href="#services" data-tab="12" class="services__tab">Оформление витрин и интерьера</a><a href="#services" data-tab="13" class="services__tab">Световые короба</a></div>
+            <div class="services__tabs"><a href="#services" data-tab="2" class="services__tab">Буквы не световые</a><a href="#services" data-tab="4" class="services__tab">Буквы с лицевым свечением</a><a href="#services" data-tab="3" class="services__tab">Буквы с комбинированным свечением</a><a href="#services" data-tab="1" class="services__tab services__tab__active">Буквы и логотипы из пластика, металла, дерева</a><a href="#services" data-tab="5" class="services__tab">Изделия по индивидуальным эскизам</a><a href="#services" data-tab="6" class="services__tab">Информационные таблички и стенды</a><a href="#services" data-tab="7" class="services__tab">Композитный короб с инкрустацией</a><a href="#services" data-tab="8" class="services__tab">Крышные конструкции</a><a href="#services" data-tab="9" class="services__tab">Монтаж и согласование</a><a href="#services" data-tab="10" class="services__tab">Навигация</a><a href="#services" data-tab="11" class="services__tab">Неон, гибкий и из стекла</a><a href="#services" data-tab="12" class="services__tab">Оформление витрин и интерьера</a><a href="#services" data-tab="13" class="services__tab">Световые короба</a></div>
           </div>
           <div data-tab="1" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/1/1.jpeg)" href="img/services/1/1.jpeg" data-fancybox="1" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/1/2.jpeg)" href="img/services/1/2.jpeg" data-fancybox="1" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/1/3.jpeg)" href="img/services/1/3.jpeg" data-fancybox="1" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/1/4.jpeg)" href="img/services/1/4.jpeg" data-fancybox="1" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы и логотипы из пластика, металла, дерева</div>
-              </div>
+              </div><a style="background-image: url(img/services/1/2.jpeg); display:none;" href="img/services/1/2.jpeg" data-fancybox="1" class="services__item__img"></a><a style="background-image: url(img/services/1/3.jpeg); display:none;" href="img/services/1/3.jpeg" data-fancybox="1" class="services__item__img"></a><a style="background-image: url(img/services/1/4.jpeg); display:none;" href="img/services/1/4.jpeg" data-fancybox="1" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="2" class="services__items">
-            <div class="services__item"><a style="background-image: url(img/services/2/1.jpeg)" href="img/services/2/1.jpeg" data-fancybox="2" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы не световые</div>
-              </div>
-            </div>
             <div class="services__item"><a style="background-image: url(img/services/2/2.jpeg)" href="img/services/2/2.jpeg" data-fancybox="2" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Буквы не световые</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/2/3.jpeg)" href="img/services/2/3.jpeg" data-fancybox="2" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы не световые</div>
-              </div>
+              </div><a style="background-image: url(img/services/2/1.jpeg); display:none;" href="img/services/2/1.jpeg" data-fancybox="2" class="services__item__img"></a><a style="background-image: url(img/services/2/3.jpeg); display:none;" href="img/services/2/3.jpeg" data-fancybox="2" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="3" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/3/1.jpeg)" href="img/services/3/1.jpeg" data-fancybox="3" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Буквы с комбинированным свечением</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/3/2.jpeg)" href="img/services/3/2.jpeg" data-fancybox="3" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы с комбинированным свечением</div>
-              </div>
+              </div><a style="background-image: url(img/services/3/2.jpeg); display:none;" href="img/services/3/2.jpeg" data-fancybox="3" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="4" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/4/1.jpeg)" href="img/services/4/1.jpeg" data-fancybox="4" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Буквы с лицевым свечением</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/4/2.jpeg)" href="img/services/4/2.jpeg" data-fancybox="4" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы с лицевым свечением</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/4/3.jpeg)" href="img/services/4/3.jpeg" data-fancybox="4" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы с лицевым свечением</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/4/4.jpeg)" href="img/services/4/4.jpeg" data-fancybox="4" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы с лицевым свечением</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/4/5.jpeg)" href="img/services/4/5.jpeg" data-fancybox="4" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы с лицевым свечением</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/4/6.jpeg)" href="img/services/4/6.jpeg" data-fancybox="4" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Буквы с лицевым свечением</div>
-              </div>
+              </div><a style="background-image: url(img/services/4/2.jpeg); display:none;" href="img/services/4/2.jpeg" data-fancybox="4" class="services__item__img"></a><a style="background-image: url(img/services/4/3.jpeg); display:none;" href="img/services/4/3.jpeg" data-fancybox="4" class="services__item__img"></a><a style="background-image: url(img/services/4/4.jpeg); display:none;" href="img/services/4/4.jpeg" data-fancybox="4" class="services__item__img"></a><a style="background-image: url(img/services/4/5.jpeg); display:none;" href="img/services/4/5.jpeg" data-fancybox="4" class="services__item__img"></a><a style="background-image: url(img/services/4/6.jpeg); display:none;" href="img/services/4/6.jpeg" data-fancybox="4" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="5" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/5/1.jpeg)" href="img/services/5/1.jpeg" data-fancybox="5" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/5/2.jpeg)" href="img/services/5/2.jpeg" data-fancybox="5" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/5/3.jpeg)" href="img/services/5/3.jpeg" data-fancybox="5" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/5/4.jpeg)" href="img/services/5/4.jpeg" data-fancybox="5" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/5/5.jpeg)" href="img/services/5/5.jpeg" data-fancybox="5" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/5/6.jpeg)" href="img/services/5/6.jpeg" data-fancybox="5" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/5/7.jpeg)" href="img/services/5/7.jpeg" data-fancybox="5" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/5/8.jpeg)" href="img/services/5/8.jpeg" data-fancybox="5" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Изделия по индивидуальным эскизам</div>
-              </div>
+              </div><a style="background-image: url(img/services/5/2.jpeg); display:none;" href="img/services/5/2.jpeg" data-fancybox="5" class="services__item__img"></a><a style="background-image: url(img/services/5/3.jpeg); display:none;" href="img/services/5/3.jpeg" data-fancybox="5" class="services__item__img"></a><a style="background-image: url(img/services/5/4.jpeg); display:none;" href="img/services/5/4.jpeg" data-fancybox="5" class="services__item__img"></a><a style="background-image: url(img/services/5/5.jpeg); display:none;" href="img/services/5/5.jpeg" data-fancybox="5" class="services__item__img"></a><a style="background-image: url(img/services/5/6.jpeg); display:none;" href="img/services/5/6.jpeg" data-fancybox="5" class="services__item__img"></a><a style="background-image: url(img/services/5/7.jpeg); display:none;" href="img/services/5/7.jpeg" data-fancybox="5" class="services__item__img"></a><a style="background-image: url(img/services/5/8.jpeg); display:none;" href="img/services/5/8.jpeg" data-fancybox="5" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="6" class="services__items"></div>
@@ -297,17 +207,7 @@
             <div class="services__item"><a style="background-image: url(img/services/7/1.jpeg)" href="img/services/7/1.jpeg" data-fancybox="7" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Композитный короб с инкрустацией</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/7/2.jpeg)" href="img/services/7/2.jpeg" data-fancybox="7" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Композитный короб с инкрустацией</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/7/3.jpeg)" href="img/services/7/3.jpeg" data-fancybox="7" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Композитный короб с инкрустацией</div>
-              </div>
+              </div><a style="background-image: url(img/services/7/2.jpeg); display:none;" href="img/services/7/2.jpeg" data-fancybox="7" class="services__item__img"></a><a style="background-image: url(img/services/7/3.jpeg); display:none;" href="img/services/7/3.jpeg" data-fancybox="7" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="8" class="services__items">
@@ -321,110 +221,35 @@
             <div class="services__item"><a style="background-image: url(img/services/9/1.jpeg)" href="img/services/9/1.jpeg" data-fancybox="9" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Монтаж и согласование</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/9/2.jpeg)" href="img/services/9/2.jpeg" data-fancybox="9" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Монтаж и согласование</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/9/3.jpeg)" href="img/services/9/3.jpeg" data-fancybox="9" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Монтаж и согласование</div>
-              </div>
+              </div><a style="background-image: url(img/services/9/2.jpeg); display:none;" href="img/services/9/2.jpeg" data-fancybox="9" class="services__item__img"></a><a style="background-image: url(img/services/9/3.jpeg); display:none;" href="img/services/9/3.jpeg" data-fancybox="9" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="10" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/10/1.jpeg)" href="img/services/10/1.jpeg" data-fancybox="10" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Навигация</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/10/2.jpeg)" href="img/services/10/2.jpeg" data-fancybox="10" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Навигация</div>
-              </div>
+              </div><a style="background-image: url(img/services/10/2.jpeg); display:none;" href="img/services/10/2.jpeg" data-fancybox="10" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="11" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/11/1.jpeg)" href="img/services/11/1.jpeg" data-fancybox="11" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Неон, гибкий и из стекла</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/11/2.jpeg)" href="img/services/11/2.jpeg" data-fancybox="11" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Неон, гибкий и из стекла</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/11/3.jpeg)" href="img/services/11/3.jpeg" data-fancybox="11" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Неон, гибкий и из стекла</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/11/4.jpeg)" href="img/services/11/4.jpeg" data-fancybox="11" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Неон, гибкий и из стекла</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/11/5.jpeg)" href="img/services/11/5.jpeg" data-fancybox="11" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Неон, гибкий и из стекла</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/11/6.jpeg)" href="img/services/11/6.jpeg" data-fancybox="11" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Неон, гибкий и из стекла</div>
-              </div>
+              </div><a style="background-image: url(img/services/11/2.jpeg); display:none;" href="img/services/11/2.jpeg" data-fancybox="11" class="services__item__img"></a><a style="background-image: url(img/services/11/3.jpeg); display:none;" href="img/services/11/3.jpeg" data-fancybox="11" class="services__item__img"></a><a style="background-image: url(img/services/11/4.jpeg); display:none;" href="img/services/11/4.jpeg" data-fancybox="11" class="services__item__img"></a><a style="background-image: url(img/services/11/5.jpeg); display:none;" href="img/services/11/5.jpeg" data-fancybox="11" class="services__item__img"></a><a style="background-image: url(img/services/11/6.jpeg); display:none;" href="img/services/11/6.jpeg" data-fancybox="11" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="12" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/12/1.jpeg)" href="img/services/12/1.jpeg" data-fancybox="12" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Оформление витрин и интерьера</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/12/2.jpeg)" href="img/services/12/2.jpeg" data-fancybox="12" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Оформление витрин и интерьера</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/12/3.jpeg)" href="img/services/12/3.jpeg" data-fancybox="12" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Оформление витрин и интерьера</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/12/4.jpeg)" href="img/services/12/4.jpeg" data-fancybox="12" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Оформление витрин и интерьера</div>
-              </div>
+              </div><a style="background-image: url(img/services/12/2.jpeg); display:none;" href="img/services/12/2.jpeg" data-fancybox="12" class="services__item__img"></a><a style="background-image: url(img/services/12/3.jpeg); display:none;" href="img/services/12/3.jpeg" data-fancybox="12" class="services__item__img"></a><a style="background-image: url(img/services/12/4.jpeg); display:none;" href="img/services/12/4.jpeg" data-fancybox="12" class="services__item__img"></a>
             </div>
           </div>
           <div data-tab="13" class="services__items">
             <div class="services__item"><a style="background-image: url(img/services/13/1.jpeg)" href="img/services/13/1.jpeg" data-fancybox="13" class="services__item__img"></a>
               <div class="services__item__text">
                 <div class="services__item__title">Световые короба</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/13/2.jpeg)" href="img/services/13/2.jpeg" data-fancybox="13" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Световые короба</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/13/3.jpeg)" href="img/services/13/3.jpeg" data-fancybox="13" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Световые короба</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/13/4.jpeg)" href="img/services/13/4.jpeg" data-fancybox="13" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Световые короба</div>
-              </div>
-            </div>
-            <div class="services__item"><a style="background-image: url(img/services/13/5.jpeg)" href="img/services/13/5.jpeg" data-fancybox="13" class="services__item__img"></a>
-              <div class="services__item__text">
-                <div class="services__item__title">Световые короба</div>
-              </div>
+              </div><a style="background-image: url(img/services/13/2.jpeg); display:none;" href="img/services/13/2.jpeg" data-fancybox="13" class="services__item__img"></a><a style="background-image: url(img/services/13/3.jpeg); display:none;" href="img/services/13/3.jpeg" data-fancybox="13" class="services__item__img"></a><a style="background-image: url(img/services/13/4.jpeg); display:none;" href="img/services/13/4.jpeg" data-fancybox="13" class="services__item__img"></a><a style="background-image: url(img/services/13/5.jpeg); display:none;" href="img/services/13/5.jpeg" data-fancybox="13" class="services__item__img"></a>
             </div>
           </div>
         </div>
@@ -443,8 +268,8 @@
     <section class="formula">
       <div class="container">
         <div class="section__title">Формула успешной рекламы</div>
-        <div class="section__desc">«Первая рекламная компания» компания основана в 2011 г.</div>
-        <p class="formula__text">Мы занимаемся изготовлением и монтажом наружной рекламы в Москве и Московской области, придерживаясь самых эффективных инструментов в области маркетинга. Производим продукцию только из качественных европейских комплектующих и ипользуем современное инновационное оборудование. За долгие годы работы у нас сформировалась команда настоящих профессионалов, способных реализовать любую вашу идею.</p>
+        <!--.section__desc «Первая рекламная компания» компания основана в 2011 г.-->
+        <p class="formula__text">Мы занимаемся изготовлением и монтажом наружной рекламы в Москве и Московской области, ,а так же территории РФ, придерживаясь самых эффективных инструментов в области маркетинга. Производим продукцию только из качественных европейских комплектующих и ипользуем современное инновационное оборудование. За долгие годы работы у нас сформировалась команда настоящих профессионалов, способных реализовать любую вашу идею.</p>
       </div>
     </section>
     <section class="catalog">
@@ -465,12 +290,12 @@
         </ul>
       </div>
     </section>
-    <section id="map" class="map">
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
-    </section>
+    <section id="map" class="map"></section>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="js/scroll.js"></script>
-  <script src="js/main.js?v6"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=&lt;fed58e3e-122a-4b9a-9b1c-60d19ebb0a39&gt;&amp;lang=ru_RU"></script>
+  <script src="js/mapbasics.js"></script>
+  <script src="js/main.js?v8"></script>
 </body>

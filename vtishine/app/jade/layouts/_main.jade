@@ -1,16 +1,703 @@
 <!DOCTYPE html>
-html(lang="en")
+html(lang="ru")
 	head
 		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width")
 		title Vtishine 2
-		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
-		link(rel="stylesheet", href="css/main.css?v4")
+		//-link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/main.css?v9")
+		link(rel="stylesheet", href="css/media.css?v9")
 	body
-		//-========HEAD==============
-		.head
-			.container
-				//-head__nav
-				ul.head__nav
+		.global__wapper
+			//-========MOBILE HEAD==============
+			.mobile__head
+				a.mobile__head__logo(href="")
+				.mobile__head__sity Челябинск
+				a.mobile__head__phone(href="tel:89514518479")
+				.mobile__head__hamburger
+			//-========END MOBILE HEAD==============
+
+			//-========HEAD==============
+			.head
+				.container
+					//-head__nav
+					ul.head__nav
+						li
+							a(href="") Решения
+						li
+							a(href="") Кейсы
+						li
+							a(href="") Статьи
+						li
+							a(href="") Звукоизоляционные материалы
+					//-END head__nav
+
+					//-head__location
+					.head__location
+						img(data-src="img/head__location.svg", alt="")
+						.head__location__title Университетская набережная, 88
+
+					//-END head__location
+			//-========END HEAD==============
+
+			//-========HERO==============
+			.hero
+				.container
+					.hero__top
+						a.hero__logo(href="/")
+							img(data-src="img/hero__logo.png", alt="")
+						.hero__logo__desc Продажа материалов. Подбор решения.
+							br
+							span Звукоизоляция под ключ.
+						.hero__phone
+							a(href="tel: +7 (351) 750 39 51") +7 (351) 750 39 51
+							button.btn__border(data-modal-link data-modal="1") Заказать звонок
+						.hero__city
+							.hero__city__select(data-click="select_city") Челябинск
+								.hero__city__select__arrow 
+								.hero__city__select__submenu
+									a(href="") Москва	
+									a(href="") Екатеринбург	
+							.hero__city__working
+								.hero__city__working__clock
+								.hero__city__working__title с 10 до 19:00 (пн-пт);
+									br
+									span до 16:00 (сб)
+					.hero__slider.owl-carousel
+						//-.hero__slide
+						.hero__slide
+							.hero__slide__text
+								.hero__slide__title От 45 000 Р 
+									br 
+									span за комнату *
+								hr
+								.hero__slide__desc Доступная звукоизоляция квартир.
+									br 
+									span * Средняя цена услуги под ключ, гарантия
+								button.btn(data-modal-link data-modal="2") Рассчитать для меня
+							.hero__slide__img
+								img(src="img/hero__slider__img.png", alt="")
+						//-.hero__slide
+						.hero__slide
+							.hero__slide__text
+								.hero__slide__title От 45 000 Р 
+									br 
+									span за комнату *
+								hr
+								.hero__slide__desc Доступная звукоизоляция квартир.
+									br 
+									span * Средняя цена услуги под ключ, гарантия
+								button.btn(data-modal-link data-modal="2") Рассчитать для меня
+							.hero__slide__img
+								img(src="img/hero__slider__img.png", alt="")
+						//-.hero__slide
+						.hero__slide
+							.hero__slide__text
+								.hero__slide__title От 45 000 Р 
+									br 
+									span за комнату *
+								hr
+								.hero__slide__desc Доступная звукоизоляция квартир.
+									br 
+									span * Средняя цена услуги под ключ, гарантия
+								button.btn(data-modal-link data-modal="2") Рассчитать для меня
+							.hero__slide__img
+								img(src="img/hero__slider__img.png", alt="")
+			//-========END HERO==============
+			
+			//-========SECTION-1==============
+			.section-1
+				.container
+					img(data-src="img/section-1.svg", alt="")
+					p Мы «ЗА» спокойную жизнь «В тишине», где приходя домой Вы наконец сможете расслабиться, 
+						br 
+						span выспаться и отдохнуть от суеты и повседневных забот.
+					p Звукоизоляция - ключ к решению в вопросах тишины.
+			//-========END SECTION-1==============
+
+			//-========SECTION-2==============
+			.section-2
+				.container
+					.section-2__title Люди ценят нас ЗА
+					.section-2__mainimg__wrapper
+						img.section-2__mainimg(data-src="img/section-2__bg.png", alt="")
+						//-section-2__item
+						.section-2__item.section-2__item-1
+							img.section-2__item__img(data-src="img/section-2__item__img.svg", alt="")
+							.section-2__item__title Качество
+							.section-2__item__desc звукоизолировано за 3 года
+							.section-2__item__num > 15 000 кв.м.
+						//-section-2__item
+						.section-2__item.section-2__item-2
+							img.section-2__item__img(data-src="img/section-2__item__img.svg", alt="")
+							.section-2__item__title Опыт
+							.section-2__item__desc произведено работ на
+							.section-2__item__num > 700 объектах
+						//-section-2__item
+						.section-2__item.section-2__item-3
+							img.section-2__item__img(data-src="img/section-2__item__img.svg", alt="")
+							.section-2__item__title Надежность
+							.section-2__item__desc Работаем по договору с гарантией
+							.section-2__item__num 1,5 года
+			//-========END SECTION-2==============
+
+			//-========SECTION-3==============
+			.section-3
+				.container
+					.section__title Решим любые проблемы 
+						br
+						span с неприятными источниками шума 
+					.section-3__lists
+						.section-3__list
+							.section-3__list__title У соседей
+							hr
+							ul
+								li лай собаки
+								li перфоратор
+								li плач грудного ребёнка	
+								li топот, крики, ругань, застолья за стенкой
+								li звук работающего телевизора
+								li игра на пианино и др. музыкальных инструментах
+								li стоны, скрипы, звуки секса
+								li звуки при уборке, от работы пылесоса
+								li вечный ремонт
+						.section-3__list
+							.section-3__list__title В своей квартире
+							hr
+							ul
+								li звуки от стояка
+								li домашний кинотеатр в другой комнате
+								li звуки из ванной комнаты
+								li звуки из туалета
+					.alert 
+						.alert__icon
+						.alert__text Если правильно подобрать «пирог» из современных материалов,  эффективность звукоизоляции возрастает от 45 до 90%.
+							br
+							span Обычно достаточно снизить громкость звуков в 2-3 раза, чтобы Вы перестали их замечать. 
+					img.section-3__img.section-3__img-1(data-src="img/section-3__img-1.svg")
+					img.section-3__img.section-3__img-2(data-src="img/section-3__img-2.svg")
+					img.section-3__img.section-3__img-3(data-src="img/section-3__img-3.svg")
+			//-========END SECTION-3==============
+
+			//-========SECTION-4==============
+			.section-4
+				.container
+					.section__title Звукоизоляция - дело тонкое
+					.section__desc лучше довериться профи для максимального результата
+					.section-4__wrapper
+						.section-4__video
+							iframe(width="100%" height="315" src="https://www.youtube.com/embed/bZNFRIwlQxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+						.section-4__form
+							p Мы построили 4 комнаты, соответствующие обычной квартире, а также создали имитацию шума, как в многоквартирных домах.
+							p Заходя в комнату, Вы сами слышите какое из решений Вам подходит. Посмотрите видео, как это работает.
+							.section-4__form__title Запишитесь на демонстрацию заранее, чтобы не ждать в очереди
+							form(action="")
+								.section-4__form__inputgroup
+									.section-4__form__input
+										input(type="text" placeholder="Укажите телефон")
+									.section-4__form__input
+										input(type="text" placeholder="Удобное время")
+										span пн-пт с 10 до 19, сб с 10 до 16
+								button.btn Хочу на демонстрацию
+
+			//-========END SECTION-4==============
+
+			//-========SECTION-5==============
+			.section-5
+				.container
+					.section__title Обращайтесь за советом
+					.section__desc и мы подберем оптимальное решение
+					.section-5__tabs
+						.section-5__tab__wrapper.section-5__tab__wrapper__active(data-tab-link="soundproofing")
+							.section-5__tab Звукоизолируемые поверхности
+						.section-5__tab__wrapper(data-tab-link="pirog")
+							.section-5__tab «Пирог» материалов
+						.section-5__tab__wrapper(data-tab-link="zamer")
+							.section-5__tab Выезд замерщика
+						.section-5__tab__wrapper(data-tab-link="primer")
+							.section-5__tab Пример готового решения
+					.section-5__tabs__content
+						.section-5__tabs__content__item.section-5__tabs__content-1(data-tab="soundproofing")
+							.section-5__tabs__content-1__items
+								//-section-5__tabs__content-1__item
+								.section-5__tabs__content-1__item
+									.section-5__tabs__content__title Звукоизоляция пола
+										img(data-src="img/tabs__content__title__icon-1.svg", alt="")
+									.section-5__tabs__content-1__item__content
+										.section-5__tabs__content-1__item__img(style="background-image: url(img/soundproofing-1.jpg)")
+										ul.section-5__tabs__content-1__item__list
+											li
+												strong Избавит Вас от высокочастотного шума:
+											li детский плач, лай маленькой собаки, стоны, скрипы
+											li
+												strong Толщина:
+											li 3-5 см
+											li
+												strong Эффективность:
+											li 45-55 %
+								//-section-5__tabs__content-1__item
+								.section-5__tabs__content-1__item
+									.section-5__tabs__content__title Звукоизоляция потолка
+										img(data-src="img/tabs__content__title__icon-2.svg", alt="")
+									.section-5__tabs__content-1__item__content
+										.section-5__tabs__content-1__item__img(style="background-image: url(img/soundproofing-2.jpg)")
+										ul.section-5__tabs__content-1__item__list
+											li
+												strong Избавит Вас от среднечастотного шума:
+											li звуки телевизора, крики женщин, фортепиано
+											li
+												strong Толщина:
+											li 8,5 см
+											li
+												strong Эффективность:
+											li 65-70 %
+								//-section-5__tabs__content-1__item
+								.section-5__tabs__content-1__item
+									.section-5__tabs__content__title Звукоизоляция стен
+										img(data-src="img/tabs__content__title__icon-3.svg", alt="")
+									.section-5__tabs__content-1__item__content
+										.section-5__tabs__content-1__item__img(style="background-image: url(img/soundproofing-3.jpg)")
+										ul.section-5__tabs__content-1__item__list
+											li
+												strong Избавит Вас от среднечастотного шума:
+											li лай собаки, басгитара, вечеринки соседей
+											li
+												strong Толщина:
+											li 6,5 см
+											li
+												strong Эффективность:
+											li 85 - 90%
+							br
+							p В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.
+							p В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.				
+						.section-5__tabs__content__item.section-5__tabs__content__pirog(data-tab="pirog" style="display: none;")
+							.section-5__tabs__content__pirog__items
+								//-.section-5__tabs__content__pirog__item
+								.section-5__tabs__content__pirog__item
+									.section-5__tabs__content__pirog__item__img(style="background-image: url(img/pirog-1.jpg)")
+									.section-5__tabs__content__pirog__item__title Профилактика
+									ul.section-5__tabs__content__pirog__item__specifications
+										li Толщина:
+											span 3-5 см (в видео 6,5 см)
+										li Эффективность:
+											span 45-55 %
+										li Цена:
+											span 387 Р / м2 (в видео 700)
+										li Улучшение изоляции:
+											span ~ 8Дб
+								//-.section-5__tabs__content__pirog__item
+								.section-5__tabs__content__pirog__item
+									.section-5__tabs__content__pirog__item__img(style="background-image: url(img/pirog-2.jpg)")
+									.section-5__tabs__content__pirog__item__title Профилактика
+									ul.section-5__tabs__content__pirog__item__specifications
+										li Толщина:
+											span 3-5 см (в видео 6,5 см)
+										li Эффективность:
+											span 45-55 %
+										li Цена:
+											span 387 Р / м2 (в видео 700)
+										li Улучшение изоляции:
+											span ~ 8Дб
+								//-.section-5__tabs__content__pirog__item
+								.section-5__tabs__content__pirog__item
+									.section-5__tabs__content__pirog__item__img(style="background-image: url(img/pirog-3.jpg)")
+									.section-5__tabs__content__pirog__item__title Профилактика
+									ul.section-5__tabs__content__pirog__item__specifications
+										li Толщина:
+											span 3-5 см (в видео 6,5 см)
+										li Эффективность:
+											span 45-55 %
+										li Цена:
+											span 387 Р / м2 (в видео 700)
+										li Улучшение изоляции:
+											span ~ 8Дб
+							.alert
+								.alert__icon
+								.alert__text В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.
+									br
+									br
+									span При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.
+							p В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.
+						.section-5__tabs__content__item.section-5__tabs__content__zamer(data-tab="zamer" style="display: none;")
+							.section-5__tabs__content__zamer__main
+								.section-5__tabs__content__zamer__galery.owl-carousel
+									.section-5__tabs__content__zamer__galery__big(style="background-image: url(img/zamer__galery-1.jpg)" data-thumb="img/zamer__galery-1.jpg")
+									.section-5__tabs__content__zamer__galery__big(style="background-image: url(img/zamer__galery-2.jpg)" data-thumb="img/zamer__galery-2.jpg")
+									.section-5__tabs__content__zamer__galery__big(style="background-image: url(img/zamer__galery-3.jpg)" data-thumb="img/zamer__galery-3.jpg")
+								.section-5__tabs__content__zamer__text
+									.section-5__tabs__content__zamer__bold Цель выезда:
+									.section-5__tabs__content__zamer__p визуальный осмотр , определение материалов и конструкций здания , стресс-тест звукопроизводящих поверхностей , замеры помещений, чертежи и фотофиксация . Уточняющие вопросы по планировке , размещению розеток и люстр , финишной отделки . Составление сметы всех материалов . Согласование доп. услуг по доставке стройматериалов , вывозу мусора и так далее.
+									.section-5__tabs__content__zamer__form
+										.section-5__tabs__content__zamer__form__title Записаться на замер
+										form(action="")
+											input.input__border(type="text" placeholder="Ваше имя")
+											input.input__border(type="text" placeholder="Телефон")
+											input.input__border(type="text" placeholder="Удобное время")
+											button.btn Отправить
+											.alert * Мы не рассылаем спам и номер никому не передаем
+							.zamershiki
+								.zamershiki__title Наши замерщики
+								.zamershiki__items
+									//-zamershiki__item
+									.zamershiki__item
+										.zamershiki__item__img(style="background-image: url(img/comand__slider_1.jpg)")
+										.zamershiki__item__name Александр
+										.zamershiki__item__experience опыт 11 лет
+									//-zamershiki__item
+									.zamershiki__item
+										.zamershiki__item__img(style="background-image: url(img/comand__slider_2.jpg)")
+										.zamershiki__item__name Александр
+										.zamershiki__item__experience опыт 11 лет
+									//-zamershiki__item
+									.zamershiki__item
+										.zamershiki__item__img(style="background-image: url(img/comand__slider_4.jpg)")
+										.zamershiki__item__name Александр
+										.zamershiki__item__experience опыт 11 лет
+							.alert.border
+								.alert__icon
+								.alert__text В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.
+									br
+									br
+									span При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.
+						.section-5__tabs__content__item.section-5__tabs__content__primer(data-tab="primer" style="display: none;")
+							.title Детали кейса
+							.top
+								.top__left
+									img(data-src="img/primer__img.png", alt="")
+									ul.top__left__list
+										li 
+											.top__left__list__icon(style="background-image: url(img/primer__icon-1.svg)")
+											.top__left__list__text Звукоизоляция стены решением «Стандарт»
+										li 
+											.top__left__list__icon(style="background-image: url(img/primer__icon-2.svg)")
+											.top__left__list__text Звукоизоляция стены решением «Профилактика»
+										li 
+											.top__left__list__icon(style="background-image: url(img/primer__icon-3.svg)")
+											.top__left__list__text Звукоизоляция потолка решением «Стандарт»
+										li 
+											.top__left__list__icon(style="background-image: url(img/primer__icon-4.svg)")
+											.top__left__list__text Звукоизоляция потолка решением «Профилактика»
+								.top__right
+									ul
+										li История обращения:
+											span В апреле 2019г. к нам обратилась девушка Кристина, купившая квартиру в ЖК Ньютон. Она с мужем и ребенком прибрели квартиру в монолитно-каркасном доме на этапе строительства у одного из топовых застройщиков. Жалобы на хорошую «слышимость соседей».
+										li Проблема:
+											span детский крик, телевизор , негромкая музыка.
+										li Выполнены работы по звукоизоляции:
+											span стена с соседями и потолок в детской , потолок в спальне, стояки канализации
+										li По согласованию сделан шеф-монтаж потолка и выдан сертификат о звукоизоляции квартиры.
+										li Адрес объекта: 
+											span ул . Героя России Е. Родионова, г. Челябинск
+										li Планировка квартиры:
+											span 3 комнаты + коридор + кухня + 2 ванные (82 м2)
+										li Отзыв клиента:
+											span «Ожидания оправдались, но сейчас сделали бы стену между нашей спальней и соседей, а то по ночам быват шумно»
+							.alert.border
+								.alert__icon
+								.alert__text В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.
+									br
+									br
+									span При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.
+							.tables
+								.table
+									.table__title Стены
+									table
+										tr
+											td 
+												span Материал стен:
+											td кирпич
+										tr
+											td 
+												span Особенности:
+											td пластиковые канализац. трубы
+										tr
+											td 
+												span Площадь:
+											td 16 м2
+										tr
+											td 
+												span Звукоизоляция:
+											td Эксперт
+										tr
+											td 
+												span Толщина пирога:
+											td 8 см
+										tr
+											td 
+												span Сумма:
+											td 45 000 Р
+										tr
+											td 
+												span Доп. работы:
+											td подрозетники, закладные под телевизор
+								.table
+									.table__title Потолок
+									table
+										tr
+											td 
+												span Вид потолков:
+											td натяжные
+										tr
+											td 
+												span Площадь:
+											td 39 м2
+										tr
+											td 
+												span Звукоизоляция:
+											td Стандарт
+										tr
+											td 
+												span Сумма:
+											td 67 000 Р
+										tr
+											td 
+												span Доп. работы:
+											td закладные под люстру
+							.primer__footer
+								//-primer__footer__item
+								.primer__footer__item
+									.primer__footer__item__icon(style="background-image: url(../img/primer__footer-1.svg);")
+									.primer__footer__item__text 
+										.primer__footer__item__title общая — 55 м2
+								//-primer__footer__item
+								.primer__footer__item
+									.primer__footer__item__icon(style="background-image: url(../img/primer__footer-2.svg);")
+									.primer__footer__item__text 
+										.primer__footer__item__title общая — 112 000 Р
+								//-primer__footer__item
+								.primer__footer__item
+									.primer__footer__item__icon(style="background-image: url(../img/primer__footer-3.svg);")
+									.primer__footer__item__text 
+										.primer__footer__item__title монтаж — 3 дня
+										.primer__footer__item__desc с 8.00 до 18.00
+								//-primer__footer__item
+								.primer__footer__item
+									.primer__footer__item__icon(style="background-image: url(../img/primer__footer-4.svg);")
+									.primer__footer__item__text 
+										.primer__footer__item__title доставка — 2 500 Р
+										.primer__footer__item__desc и подъем материалов
+								//-primer__footer__item
+								.primer__footer__item
+									.primer__footer__item__icon(style="background-image: url(../img/primer__footer-5.svg);")
+									.primer__footer__item__text 
+										.primer__footer__item__title оценка качества — 5
+										.primer__footer__item__desc и звукоизоляции
+
+
+			//-========END SECTION-5==============
+
+			//-========CALC==============
+			.calc
+				.container
+					.section__title Расчитайте стоимость звукоизоляции под ключ
+					.calc__form
+						.calc__form__img
+							img(data-src="img/calc__form__bg.png", alt="")
+						label(for="") Вид дома
+							select(name="type__build" id="")
+								option(value="1.05") Монолит
+								option(value="0.95") Панельный
+								option(value="1") Кирпичный
+						label(for="") Состояние ремонта
+							select(name="remont")
+								option(value="1") Ремонт сделан
+								option(value="1") Буду делать капитальный ремонт
+								option(value="1") Ремонт только будем делать (новостройка)
+						label(for="") Что беспокоит
+							select(name="type__sound")
+								option(value="0.8") Телевизор
+								option(value="1") Ргуаются / громкие разговоры / плач ребенка
+								option(value="1.4") Громкая музыка / резкте громкие звуки / лай собаки
+								option(value="2") Топот
+								option(value="3") Перфоратор
+						label(for="") Какой приоритет
+							select(name="type__priority")
+								option(value="1.05") Минимальная толщина
+								option(value="1") Минимальная стоимость
+								option(value="1.15") Максимальное качество
+						label(for="") По какой причине делаете звукоизоляцию?
+							select(name="type__problem")
+								option(value="0.015" selected) Я знаю о влиянии шума на здоровье, поэтому хочу защитить себя
+								option(value="0.01") У меня шумные соседи. Я хочу перестать их слышать
+								option(value="0.02") Опыт прошлой квартиры, заставил понять важность звукоизоляции
+								option(value="0.03") Я сам люблю пошуметь и не хочу проблем с соседями
+						label(for="") Общая площадь квартиры
+							input(name="s" type="number" placeholder="100 кв.м." value="0")
+						input(type="hidden" name="k" value="42000")
+						.calc__form__price__title Предварительная стоимость:
+						.calc__form__price(data-calc-result) 0 Р
+						.calc__form__checkbox__wrapper
+							label(for="1") 
+								input(type="checkbox" id="1")
+								.calc__form__box
+								span Хочу сэкономить, монтаж буду делать сам
+							label(for="2") 
+								input(type="checkbox" id="2")
+								.calc__form__box
+								span Хочу получить рассрочку 0% на 6 месяцев
+							label(for="3") 
+								input(type="checkbox" id="3")
+								.calc__form__box
+								span Требуется выезд замерщика
+						.btn__wrapper
+							button.btn Получить консультацию
+						.calc__form__alert * Мы не рассылаем спам и номер никому не передаем
+			//-========END CALC==============
+			
+			//-========COMAND==============
+			.comand 
+				.container
+					.section__title С Вами работает команда профессионалов
+					.comand__slider.owl-carousel
+						//-comand__slider__item
+						.comand__slider__item
+							.comand__slider__item__img(style="background-image: url(img/comand__slider_1.jpg);")
+							.comand__slider__item__name Павел Таксубаев
+							.comand__slider__item__role Генеральный директор
+							.comand__slider__item__desc 
+								.alert__icon
+								.alert__text Обладает огромным практическим опытом
+						//-comand__slider__item
+						.comand__slider__item
+							.comand__slider__item__img(style="background-image: url(img/comand__slider_2.jpg);")
+							.comand__slider__item__name Александр Некрасов
+							.comand__slider__item__role Технический директор
+							.comand__slider__item__desc 
+								.alert__icon
+								.alert__text Соединяет теорию и практику
+						//-comand__slider__item
+						.comand__slider__item
+							.comand__slider__item__img(style="background-image: url(img/comand__slider_1.jpg);")
+							.comand__slider__item__name Татьяна Некрасова
+							.comand__slider__item__role Консультант
+							.comand__slider__item__desc 
+								.alert__icon
+								.alert__text Объясняет сложное простым языком
+						//-comand__slider__item
+						.comand__slider__item
+							.comand__slider__item__img(style="background-image: url(img/comand__slider_4.jpg);")
+							.comand__slider__item__name Мария Звездина
+							.comand__slider__item__role Представитель клиента
+							.comand__slider__item__desc 
+								.alert__icon
+								.alert__text Обеспечивает максимум пользы клиенту
+						//-comand__slider__item
+						.comand__slider__item
+							.comand__slider__item__img(style="background-image: url(img/comand__slider_4.jpg);")
+							.comand__slider__item__name Мария Звездина
+							.comand__slider__item__role Представитель клиента
+							.comand__slider__item__desc 
+								.alert__icon
+								.alert__text Обеспечивает максимум пользы клиенту
+			//-========END COMAND==============
+
+			//-========OBJECTS==============
+			.objects
+				.container
+					.section__title Выполненные объекты и отзывы
+					.objects__filter
+						.objects__filter__colors
+							//-objects__filter__color
+							.objects__filter__color
+								.objects__filter__color__circle.objects__filter__color__circle_1
+								.objects__filter__color__title наши объекты
+							//-objects__filter__color
+							.objects__filter__color
+								.objects__filter__color__circle.objects__filter__color__circle_2
+								.objects__filter__color__title с отзывом
+							//-objects__filter__color
+							.objects__filter__color
+								.objects__filter__color__circle.objects__filter__color__circle_3
+								.objects__filter__color__title проведена экспертиза
+						select#objects__filter__select(name="")
+							option(value="1") Все
+							option(value="2") Наши объекты
+							option(value="3") С отзывом
+							option(value="4") Проведена экспертиза
+					.objects__map#map
+			//-========END OBJECTS==============
+
+			//-========REVIEWS==============
+			.reviews
+				.container
+					.reviews__left
+						.reviews__flamp
+							a(class="flamp-widget" href="//chelyabinsk.flamp.ru/firm/tikho_74_salon_magazin_po_zvukoizolyacii-70000001029785965"  data-flamp-widget-type="responsive-new" data-flamp-widget-id="70000001029785965" data-flamp-widget-width="100%" data-flamp-widget-count="1")Отзывы о нас на Флампе
+							script.
+								!function(d,s){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);js.async=1;js.src="//widget.flamp.ru/loader.js";fjs.parentNode.insertBefore(js,fjs);}(document,"script")
+					.reviews__right
+						.reviews__smi
+							.reviews__smi__title СМИ о нас
+							hr 
+							.reviews__smi__content
+								a(href="") Финалист конкурса “Сделано в Челябинске 2018” от “ЭХО Москвы”
+								p Победитель конкурса от газеты Комсомольская Правда “Лучший строитель Южного Урала 2018” в номинациях: «Лучшая компания, оказывающая услуги в сфере ремонта и благоустройства зданий» и «Прорыв года» 
+						.reviews__contacts
+							.reviews__contacts__text
+								a.reviews__contacts__phone(href="tel:+7 (351) 750 39 51") +7 (351) 750 39 51
+								.reviews__contacts__city г. Челябинск
+								.reviews__contacts__street ул. Университетская
+									br 
+									span набережная, 88
+								.reviews__contacts__worktime пн-пт с 10 до 19:00, сб с 10 до 16:00
+								a.reviews__contacts__email(href="mailto:mail@vtiho.ru") 
+									.reviews__contacts__email__icon 
+									span mail@vtiho.ru
+							.reviews__contacts__map#reviews__contacts__map
+			//-========END REVIEWS==============
+
+			//-========FOOTER==============
+			footer
+				.container
+					a.footer__logo(href="")
+						img(data-src="img/footer__logo.png", alt="")
+					.footer__navs
+						ul.footer__navs__citys
+							li 
+								a(href="") Москва
+							li 
+								a(href="") Екатеринбург
+							li 
+								a(href="") Челябинск
+						ul.footer__navs__menu
+							li 
+								a(href="") Статьи
+							li 
+								a(href="") Магазин
+							li 
+								a(href="") Способы оплаты
+							li 
+								a(href="") Реквизиты
+					.footer__contacts
+						a.footer__phone(href="tel:+7 (351) 750 39 51") +7 (351) 750 39 51
+						.footer__social
+							a(href="")
+								img(data-src="img/footer__fb.svg", alt="")
+							a(href="")
+								img(data-src="img/footer__vk.svg", alt="")
+							a(href="")
+								img(data-src="img/footer__inst.svg", alt="")
+							a(href="")
+								img(data-src="img/footer__youtube.svg", alt="")
+			//-========END FOOTER==============
+
+			//-========COPYRIGHT==============
+			.copyright
+				.container
+					.copyright__text © Все права защищены.
+			//-========END COPYRIGHT==============
+			
+
+			//-========MOBILE SELECT CITY==============
+			.mobile__select__city
+				a(href="") Москва
+				a(href="") Укатеринбург
+			//-========END MOBILE SELECT CITY==============
+			
+			//-========MOBILE NAV==============
+			.mobile__nav
+				ul.mobile__nav__links
 					li
 						a(href="") Решения
 					li
@@ -19,691 +706,58 @@ html(lang="en")
 						a(href="") Статьи
 					li
 						a(href="") Звукоизоляционные материалы
-				//-END head__nav
+				button.btn__border(data-modal-link data-modal="1") Заказать звонок
+				.mobile__nav__contacts
+					.mobile__nav__contacts__title Мы находимся по адресу
+					.mobile__nav__contacts__adress
+						.mobile__nav__contacts__adress__icon
+							img(data-src="img/head__location.svg", alt="")
+						.mobile__nav__contacts__adress__text Университетская 
+							br 
+							span набережная, 88
+					.mobile__nav__contacts__worktime
+						.mobile__nav__contacts__worktime__icon
+							img(data-src="img/mobile__nav__clock.svg", alt="")
+						.mobile__nav__contacts__worktime__text с 10 до 19:00 (пн-пт);
+							br
+							span до 16:00 (сб)
+			//-========END MOBILE NAV==============
 
-				//-head__location
-				.head__location
-					img(src="img/head__location.svg", alt="")
-					.head__location__title Университетская набережная, 88
-
-				//-END head__location
-		//-========END HEAD==============
-
-		//-========HERO==============
-		.hero
-			.container
-				.hero__top
-					a.hero__logo(href="/")
-						img(src="img/hero__logo.webp", alt="")
-					.hero__logo__desc Продажа материалов. Подбор решения.
-						br
-						span Звукоизоляция под ключ.
-					.hero__phone
-						a(href="tel: +7 (351) 750 39 51") +7 (351) 750 39 51
-						button.btn__border(data-modal-link data-modal="1") Заказать звонок
-					.hero__city
-						.hero__city__select(data-click="select_city") Челябинск
-							.hero__city__select__arrow 
-							.hero__city__select__submenu
-								a(href="") Москва	
-								a(href="") Екатеринбург	
-						.hero__city__working
-							.hero__city__working__clock
-							.hero__city__working__title с 10 до 19:00 (пн-пт);
-								br
-								span до 16:00 (сб)
-				.hero__slider.owl-carousel
-					//-.hero__slide
-					.hero__slide
-						.hero__slide__text
-							.hero__slide__title От 45 000 Р 
-								br 
-								span за комнату *
-							hr
-							.hero__slide__desc Доступная звукоизоляция квартир.
-								br 
-								span * Средняя цена услуги под ключ, гарантия
-							button.btn(data-modal-link data-modal="2") Рассчитать для меня
-						.hero__slide__img
-							img(src="img/hero__slider__img.webp", alt="")
-					//-.hero__slide
-					.hero__slide
-						.hero__slide__text
-							.hero__slide__title От 45 000 Р 
-								br 
-								span за комнату *
-							hr
-							.hero__slide__desc Доступная звукоизоляция квартир.
-								br 
-								span * Средняя цена услуги под ключ, гарантия
-							button.btn(data-modal-link data-modal="2") Рассчитать для меня
-						.hero__slide__img
-							img(src="img/hero__slider__img.webp", alt="")
-					//-.hero__slide
-					.hero__slide
-						.hero__slide__text
-							.hero__slide__title От 45 000 Р 
-								br 
-								span за комнату *
-							hr
-							.hero__slide__desc Доступная звукоизоляция квартир.
-								br 
-								span * Средняя цена услуги под ключ, гарантия
-							button.btn(data-modal-link data-modal="2") Рассчитать для меня
-						.hero__slide__img
-							img(src="img/hero__slider__img.webp", alt="")
-		//-========END HERO==============
-		
-		//-========SECTION-1==============
-		.section-1
-			.container
-				img(src="img/section-1.svg", alt="")
-				p Мы «ЗА» спокойную жизнь «В тишине», где приходя домой Вы наконец сможете расслабиться, 
-					br 
-					span выспаться и отдохнуть от суеты и повседневных забот.
-				p Звукоизоляция - ключ к решению в вопросах тишины.
-		//-========END SECTION-1==============
-
-		//-========SECTION-2==============
-		.section-2
-			.container
-				.section-2__title Люди ценят нас ЗА
-				.section-2__mainimg__wrapper
-					img.section-2__mainimg(src="img/section-2__bg.webp", alt="")
-					//-section-2__item
-					.section-2__item.section-2__item-1
-						img.section-2__item__img(src="img/section-2__item__img.svg", alt="")
-						.section-2__item__title Качество
-						.section-2__item__desc звукоизолировано за 3 года
-						.section-2__item__num > 15 000 кв.м.
-					//-section-2__item
-					.section-2__item.section-2__item-2
-						img.section-2__item__img(src="img/section-2__item__img.svg", alt="")
-						.section-2__item__title Опыт
-						.section-2__item__desc произведено работ на
-						.section-2__item__num > 700 объектах
-					//-section-2__item
-					.section-2__item.section-2__item-3
-						img.section-2__item__img(src="img/section-2__item__img.svg", alt="")
-						.section-2__item__title Надежность
-						.section-2__item__desc Работаем по договору с гарантией
-						.section-2__item__num 1,5 года
-		//-========END SECTION-2==============
-
-		//-========SECTION-3==============
-		.section-3
-			.container
-				.section__title Решим любые проблемы 
-					br
-					span с неприятными источниками шума 
-				.section-3__lists
-					.section-3__list
-						.section-3__list__title У соседей
-						hr
-						ul
-							li лай собаки
-							li перфоратор
-							li плач грудного ребёнка	
-							li топот, крики, ругань, застолья за стенкой
-							li звук работающего телевизора
-							li игра на пианино и др. музыкальных инструментах
-							li стоны, скрипы, звуки секса
-							li звуки при уборке, от работы пылесоса
-							li вечный ремонт
-					.section-3__list
-						.section-3__list__title В своей квартире
-						hr
-						ul
-							li звуки от стояка
-							li домашний кинотеатр в другой комнате
-							li звуки из ванной комнаты
-							li звуки из туалета
-				.alert 
-					.alert__icon
-					.alert__text Если правильно подобрать «пирог» из современных материалов,  эффективность звукоизоляции возрастает от 45 до 90%.
-						br
-						span Обычно достаточно снизить громкость звуков в 2-3 раза, чтобы Вы перестали их замечать. 
-				img.section-3__img.section-3__img-1(src="img/section-3__img-1.svg")
-				img.section-3__img.section-3__img-2(src="img/section-3__img-2.svg")
-				img.section-3__img.section-3__img-3(src="img/section-3__img-3.svg")
-		//-========END SECTION-3==============
-
-		//-========SECTION-4==============
-		.section-4
-			.container
-				.section__title Звукоизоляция - дело тонкое
-				.section__desc лучше довериться профи для максимального результата
-				.section-4__wrapper
-					.section-4__video
-						iframe(width="560" height="315" src="https://www.youtube.com/embed/bZNFRIwlQxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-					.section-4__form
-						p Мы построили 4 комнаты, соответствующие обычной квартире, а также создали имитацию шума, как в многоквартирных домах.
-						p Заходя в комнату, Вы сами слышите какое из решений Вам подходит. Посмотрите видео, как это работает.
-						.section-4__form__title Запишитесь на демонстрацию заранее, чтобы не ждать в очереди
-						form(action="")
-							.section-4__form__inputgroup
-								.section-4__form__input
-									input(type="text" placeholder="Укажите телефон")
-								.section-4__form__input
-									input(type="text" placeholder="Удобное время")
-									span пн-пт с 10 до 19, сб с 10 до 16
-							button.btn Хочу на демонстрацию
-
-		//-========END SECTION-4==============
-
-		//-========SECTION-5==============
-		.section-5
-			.container
-				.section__title Обращайтесь за советом
-				.section__desc и мы подберем оптимальное решение
-				.section-5__tabs
-					.section-5__tab__wrapper.section-5__tab__wrapper__active(data-tab-link="soundproofing")
-						.section-5__tab Звукоизолируемые поверхности
-					.section-5__tab__wrapper(data-tab-link="pirog")
-						.section-5__tab «Пирог» материалов
-					.section-5__tab__wrapper(data-tab-link="zamer")
-						.section-5__tab Выезд замерщика
-					.section-5__tab__wrapper(data-tab-link="primer")
-						.section-5__tab Пример готового решения
-				.section-5__tabs__content
-					.section-5__tabs__content__item.section-5__tabs__content-1(data-tab="soundproofing")
-						.section-5__tabs__content-1__items
-							//-section-5__tabs__content-1__item
-							.section-5__tabs__content-1__item
-								.section-5__tabs__content__title Звукоизоляция пола
-									img(src="img/tabs__content__title__icon-1.svg", alt="")
-								.section-5__tabs__content-1__item__content
-									.section-5__tabs__content-1__item__img(style="background-image: url(img/soundproofing-1.webp)")
-									ul.section-5__tabs__content-1__item__list
-										li
-											strong Избавит Вас от высокочастотного шума:
-										li детский плач, лай маленькой собаки, стоны, скрипы
-										li
-											strong Толщина:
-										li 3-5 см
-										li
-											strong Эффективность:
-										li 45-55 %
-							//-section-5__tabs__content-1__item
-							.section-5__tabs__content-1__item
-								.section-5__tabs__content__title Звукоизоляция потолка
-									img(src="img/tabs__content__title__icon-2.svg", alt="")
-								.section-5__tabs__content-1__item__content
-									.section-5__tabs__content-1__item__img(style="background-image: url(img/soundproofing-2.webp)")
-									ul.section-5__tabs__content-1__item__list
-										li
-											strong Избавит Вас от среднечастотного шума:
-										li звуки телевизора, крики женщин, фортепиано
-										li
-											strong Толщина:
-										li 8,5 см
-										li
-											strong Эффективность:
-										li 65-70 %
-							//-section-5__tabs__content-1__item
-							.section-5__tabs__content-1__item
-								.section-5__tabs__content__title Звукоизоляция стен
-									img(src="img/tabs__content__title__icon-3.svg", alt="")
-								.section-5__tabs__content-1__item__content
-									.section-5__tabs__content-1__item__img(style="background-image: url(img/soundproofing-3.webp)")
-									ul.section-5__tabs__content-1__item__list
-										li
-											strong Избавит Вас от среднечастотного шума:
-										li лай собаки, басгитара, вечеринки соседей
-										li
-											strong Толщина:
-										li 6,5 см
-										li
-											strong Эффективность:
-										li 85 - 90%
-						br
-						p В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.
-						p В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.				
-					.section-5__tabs__content__item.section-5__tabs__content__pirog(data-tab="pirog" style="display: none;")
-						.section-5__tabs__content__pirog__items
-							//-.section-5__tabs__content__pirog__item
-							.section-5__tabs__content__pirog__item
-								.section-5__tabs__content__pirog__item__img
-								.section-5__tabs__content__pirog__item__title Профилактика
-								ul.section-5__tabs__content__pirog__item__specifications
-									li Толщина:
-										span 3-5 см (в видео 6,5 см)
-									li Эффективность:
-										span 45-55 %
-									li Цена:
-										span 387 Р / м2 (в видео 700)
-									li Улучшение изоляции:
-										span ~ 8Дб
-							//-.section-5__tabs__content__pirog__item
-							.section-5__tabs__content__pirog__item
-								.section-5__tabs__content__pirog__item__img
-								.section-5__tabs__content__pirog__item__title Профилактика
-								ul.section-5__tabs__content__pirog__item__specifications
-									li Толщина:
-										span 3-5 см (в видео 6,5 см)
-									li Эффективность:
-										span 45-55 %
-									li Цена:
-										span 387 Р / м2 (в видео 700)
-									li Улучшение изоляции:
-										span ~ 8Дб
-							//-.section-5__tabs__content__pirog__item
-							.section-5__tabs__content__pirog__item
-								.section-5__tabs__content__pirog__item__img
-								.section-5__tabs__content__pirog__item__title Профилактика
-								ul.section-5__tabs__content__pirog__item__specifications
-									li Толщина:
-										span 3-5 см (в видео 6,5 см)
-									li Эффективность:
-										span 45-55 %
-									li Цена:
-										span 387 Р / м2 (в видео 700)
-									li Улучшение изоляции:
-										span ~ 8Дб
-						.alert
-							.alert__icon
-							.alert__text В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.
-								br
-								br
-								span При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.
-						p В большинстве случаев достаточно выявить и точечно звукоизолировать проблемные поверхности, а при звукоизоляции на этапе ремонта-смежные стены c cоседями и потолки в спальных зонах . Если вы делаете ремонт, достаточно добавить 1-2 слоя материалов и несколько дополнительных операций-это в 2-3 раза выгоднее , чем в последствии делать звукоизоляцию заново. В квартирах с ремонтом применяем инструмент с минимальным пыли образованием и заберем мусор после монтажа, предварительно согласовав.
-					.section-5__tabs__content__item.section-5__tabs__content__zamer(data-tab="zamer" style="display: none;")
-						.section-5__tabs__content__zamer__main
-							.section-5__tabs__content__zamer__galery.owl-carousel
-								.section-5__tabs__content__zamer__galery__big(style="background-image: url(img/zamer__galery-1.webp)" data-thumb="img/zamer__galery-1.webp")
-								.section-5__tabs__content__zamer__galery__big(style="background-image: url(img/zamer__galery-2.webp)" data-thumb="img/zamer__galery-2.webp")
-								.section-5__tabs__content__zamer__galery__big(style="background-image: url(img/zamer__galery-3.webp)" data-thumb="img/zamer__galery-3.webp")
-							.section-5__tabs__content__zamer__text
-								.section-5__tabs__content__zamer__bold Цель выезда:
-								.section-5__tabs__content__zamer__p визуальный осмотр , определение материалов и конструкций здания , стресс-тест звукопроизводящих поверхностей , замеры помещений, чертежи и фотофиксация . Уточняющие вопросы по планировке , размещению розеток и люстр , финишной отделки . Составление сметы всех материалов . Согласование доп. услуг по доставке стройматериалов , вывозу мусора и так далее.
-								.section-5__tabs__content__zamer__form
-									.section-5__tabs__content__zamer__form__title Записаться на замер
-									form(action="")
-										input.input__border(type="text" placeholder="Ваше имя")
-										input.input__border(type="text" placeholder="Телефон")
-										input.input__border(type="text" placeholder="Удобное время")
-										button.btn Отправить
-										.alert * Мы не рассылаем спам и номер никому не передаем
-						.zamershiki
-							.zamershiki__title Наши замерщики
-							.zamershiki__items
-								//-zamershiki__item
-								.zamershiki__item
-									.zamershiki__item__img(style="background-image: url(../img/comand__slider_1.webp)")
-									.zamershiki__item__name Александр
-									.zamershiki__item__experience опыт 11 лет
-								//-zamershiki__item
-								.zamershiki__item
-									.zamershiki__item__img(style="background-image: url(../img/comand__slider_2.webp)")
-									.zamershiki__item__name Александр
-									.zamershiki__item__experience опыт 11 лет
-								//-zamershiki__item
-								.zamershiki__item
-									.zamershiki__item__img(style="background-image: url(../img/comand__slider_4.webp)")
-									.zamershiki__item__name Александр
-									.zamershiki__item__experience опыт 11 лет
-						.alert.border
-							.alert__icon
-							.alert__text В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.
-								br
-								br
-								span При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.
-					.section-5__tabs__content__item.section-5__tabs__content__primer(data-tab="primer" style="display: none;")
-						.title Детали кейса
-						.top
-							.top__left
-								img(src="img/primer__img.webp", alt="")
-								ul.top__left__list
-									li 
-										.top__left__list__icon(style="background-image: url(../img/primer__icon-1.svg)")
-										.top__left__list__text Звукоизоляция стены решением «Стандарт»
-									li 
-										.top__left__list__icon(style="background-image: url(../img/primer__icon-2.svg)")
-										.top__left__list__text Звукоизоляция стены решением «Профилактика»
-									li 
-										.top__left__list__icon(style="background-image: url(../img/primer__icon-3.svg)")
-										.top__left__list__text Звукоизоляция потолка решением «Стандарт»
-									li 
-										.top__left__list__icon(style="background-image: url(../img/primer__icon-4.svg)")
-										.top__left__list__text Звукоизоляция потолка решением «Профилактика»
-							.top__right
-								ul
-									li История обращения:
-										span В апреле 2019г. к нам обратилась девушка Кристина, купившая квартиру в ЖК Ньютон. Она с мужем и ребенком прибрели квартиру в монолитно-каркасном доме на этапе строительства у одного из топовых застройщиков. Жалобы на хорошую «слышимость соседей».
-									li Проблема:
-										span детский крик, телевизор , негромкая музыка.
-									li Выполнены работы по звукоизоляции:
-										span стена с соседями и потолок в детской , потолок в спальне, стояки канализации
-									li По согласованию сделан шеф-монтаж потолка и выдан сертификат о звукоизоляции квартиры.
-									li Адрес объекта: 
-										span ул . Героя России Е. Родионова, г. Челябинск
-									li Планировка квартиры:
-										span 3 комнаты + коридор + кухня + 2 ванные (82 м2)
-									li Отзыв клиента:
-										span «Ожидания оправдались, но сейчас сделали бы стену между нашей спальней и соседей, а то по ночам быват шумно»
-						.alert.border
-							.alert__icon
-							.alert__text В данном ЖК  застройщик производит заполнение пространства между кирпичной стеной и потолком с помощью пены. Важно уделить звукоизоляции этого соединения особенное внимание.
-								br
-								br
-								span При использовании натяжного потолка и последующем монтаже люстры необходимо использовать короткие саморезы, чтобы после вкручивания они не оттягивали листы от потолка.
-						.tables
-							.table
-								.table__title Стены
-								table
-									tr
-										td 
-											span Материал стен:
-										td кирпич
-									tr
-										td 
-											span Особенности:
-										td пластиковые канализац. трубы
-									tr
-										td 
-											span Площадь:
-										td 16 м2
-									tr
-										td 
-											span Звукоизоляция:
-										td Эксперт
-									tr
-										td 
-											span Толщина пирога:
-										td 8 см
-									tr
-										td 
-											span Сумма:
-										td 45 000 Р
-									tr
-										td 
-											span Доп. работы:
-										td подрозетники, закладные под телевизор
-							.table
-								.table__title Потолок
-								table
-									tr
-										td 
-											span Вид потолков:
-										td натяжные
-									tr
-										td 
-											span Площадь:
-										td 39 м2
-									tr
-										td 
-											span Звукоизоляция:
-										td Стандарт
-									tr
-										td 
-											span Сумма:
-										td 67 000 Р
-									tr
-										td 
-											span Доп. работы:
-										td закладные под люстру
-						.primer__footer
-							//-primer__footer__item
-							.primer__footer__item
-								.primer__footer__item__icon(style="background-image: url(../img/primer__footer-1.svg);")
-								.primer__footer__item__text 
-									.primer__footer__item__title общая — 55 м2
-							//-primer__footer__item
-							.primer__footer__item
-								.primer__footer__item__icon(style="background-image: url(../img/primer__footer-2.svg);")
-								.primer__footer__item__text 
-									.primer__footer__item__title общая — 112 000 Р
-							//-primer__footer__item
-							.primer__footer__item
-								.primer__footer__item__icon(style="background-image: url(../img/primer__footer-3.svg);")
-								.primer__footer__item__text 
-									.primer__footer__item__title монтаж — 3 дня
-									.primer__footer__item__desc с 8.00 до 18.00
-							//-primer__footer__item
-							.primer__footer__item
-								.primer__footer__item__icon(style="background-image: url(../img/primer__footer-4.svg);")
-								.primer__footer__item__text 
-									.primer__footer__item__title доставка — 2 500 Р
-									.primer__footer__item__desc и подъем материалов
-							//-primer__footer__item
-							.primer__footer__item
-								.primer__footer__item__icon(style="background-image: url(../img/primer__footer-5.svg);")
-								.primer__footer__item__text 
-									.primer__footer__item__title оценка качества — 5
-									.primer__footer__item__desc и звукоизоляции
-
-
-		//-========END SECTION-5==============
-
-		//-========CALC==============
-		.calc
-			.container
-				.section__title Расчитайте стоимость звукоизоляции под ключ
-				.calc__form
-					.calc__form__img
-						img(src="img/calc__form__bg.webp", alt="")
-					label(for="") Вид дома
-						select(name="type__build" id="")
-							option(value="1.05") Монолит
-							option(value="0.95") Панельный
-							option(value="1") Кирпичный
-					label(for="") Состояние ремонта
-						select(name="remont")
-							option(value="1") Ремонт сделан
-							option(value="1") Буду делать капитальный ремонт
-							option(value="1") Ремонт только будем делать (новостройка)
-					label(for="") Что беспокоит
-						select(name="type__sound")
-							option(value="0.8") Телевизор
-							option(value="1") Ргуаются / громкие разговоры / плач ребенка
-							option(value="1.4") Громкая музыка / резкте громкие звуки / лай собаки
-							option(value="2") Топот
-							option(value="3") Перфоратор
-					label(for="") Какой приоритет
-						select(name="type__priority")
-							option(value="1.05") Минимальная толщина
-							option(value="1") Минимальная стоимость
-							option(value="1.15") Максимальное качество
-					label(for="") Общая площадь квартиры
-						input(name="s" type="number" placeholder="100 кв.м." value="0")
-					input(type="hidden" name="k" value="42000")
-					.calc__form__price__title Предварительная стоимость:
-					.calc__form__price(data-calc-result) 0 Р
-					.calc__form__checkbox__wrapper
-						label(for="1") 
-							input(type="checkbox" id="1")
-							.calc__form__box
-							span Хочу сэкономить, монтаж буду делать сам
-						label(for="2") 
-							input(type="checkbox" id="2")
-							.calc__form__box
-							span Хочу получить рассрочку 0% на 6 месяцев
-						label(for="3") 
-							input(type="checkbox" id="3")
-							.calc__form__box
-							span Требуется выезд замерщика
-					.btn__wrapper
+			//-modal__call__order
+			.modal__wrapper(data-modal="1")
+				.modal
+					.modal__close
+					.modal__title Заказать звонок
+					form(action="")
+						input.input__border(type="text" placeholder="Ваше имя")
+						input.input__border(type="text" placeholder="Телефон")
 						button.btn Получить консультацию
-					.calc__form__alert * Мы не рассылаем спам и номер никому не передаем
-		//-========END CALC==============
-		
-		//-========COMAND==============
-		.comand 
-			.container
-				.section__title С Вами работает команда профессионалов
-				.comand__slider.owl-carousel
-					//-comand__slider__item
-					.comand__slider__item
-						.comand__slider__item__img(style="background-image: url(img/comand__slider_1.webp);")
-						.comand__slider__item__name Павел Таксубаев
-						.comand__slider__item__role Генеральный директор
-						.comand__slider__item__desc 
-							.alert__icon
-							.alert__text Обладает огромным практическим опытом
-					//-comand__slider__item
-					.comand__slider__item
-						.comand__slider__item__img(style="background-image: url(img/comand__slider_2.webp);")
-						.comand__slider__item__name Александр Некрасов
-						.comand__slider__item__role Технический директор
-						.comand__slider__item__desc 
-							.alert__icon
-							.alert__text Соединяет теорию и практику
-					//-comand__slider__item
-					.comand__slider__item
-						.comand__slider__item__img(style="background-image: url(img/comand__slider_1.webp);")
-						.comand__slider__item__name Татьяна Некрасова
-						.comand__slider__item__role Консультант
-						.comand__slider__item__desc 
-							.alert__icon
-							.alert__text Объясняет сложное простым языком
-					//-comand__slider__item
-					.comand__slider__item
-						.comand__slider__item__img(style="background-image: url(img/comand__slider_4.webp);")
-						.comand__slider__item__name Мария Звездина
-						.comand__slider__item__role Представитель клиента
-						.comand__slider__item__desc 
-							.alert__icon
-							.alert__text Обеспечивает максимум пользы клиенту
-					//-comand__slider__item
-					.comand__slider__item
-						.comand__slider__item__img(style="background-image: url(img/comand__slider_4.webp);")
-						.comand__slider__item__name Мария Звездина
-						.comand__slider__item__role Представитель клиента
-						.comand__slider__item__desc 
-							.alert__icon
-							.alert__text Обеспечивает максимум пользы клиенту
-		//-========END COMAND==============
-
-		//-========OBJECTS==============
-		.objects
-			.container
-				.section__title Выполненные объекты и отзывы
-				.objects__filter
-					.objects__filter__colors
-						//-objects__filter__color
-						.objects__filter__color
-							.objects__filter__color__circle.objects__filter__color__circle_1
-							.objects__filter__color__title наши объекты
-						//-objects__filter__color
-						.objects__filter__color
-							.objects__filter__color__circle.objects__filter__color__circle_2
-							.objects__filter__color__title с отзывом
-						//-objects__filter__color
-						.objects__filter__color
-							.objects__filter__color__circle.objects__filter__color__circle_3
-							.objects__filter__color__title проведена экспертиза
-					select#objects__filter__select(name="")
-						option(value="1") Все
-						option(value="2") Наши объекты
-						option(value="3") С отзывом
-						option(value="4") Проведена экспертиза
-				.objects__map#map
-		//-========END OBJECTS==============
-
-		//-========REVIEWS==============
-		.reviews
-			.container
-				.reviews__left
-					.reviews__flamp
-						a(class="flamp-widget" href="//chelyabinsk.flamp.ru/firm/tikho_74_salon_magazin_po_zvukoizolyacii-70000001029785965"  data-flamp-widget-type="responsive-new" data-flamp-widget-id="70000001029785965" data-flamp-widget-width="100%" data-flamp-widget-count="1")Отзывы о нас на Флампе
-						script.
-							!function(d,s){var js,fjs=d.getElementsByTagName(s)[0];js=d.createElement(s);js.async=1;js.src="//widget.flamp.ru/loader.js";fjs.parentNode.insertBefore(js,fjs);}(document,"script")
-				.reviews__right
-					.reviews__smi
-						.reviews__smi__title СМИ о нас
-						hr 
-						.reviews__smi__content
-							a(href="") Финалист конкурса “Сделано в Челябинске 2018” от “ЭХО Москвы”
-							p Победитель конкурса от газеты Комсомольская Правда “Лучший строитель Южного Урала 2018” в номинациях: «Лучшая компания, оказывающая услуги в сфере ремонта и благоустройства зданий» и «Прорыв года» 
-					.reviews__contacts
-						.reviews__contacts__text
-							a.reviews__contacts__phone(href="tel:+7 (351) 750 39 51") +7 (351) 750 39 51
-							.reviews__contacts__city г. Челябинск
-							.reviews__contacts__street ул. Университетская
-								br 
-								span набережная, 88
-							.reviews__contacts__worktime пн-пт с 10 до 19:00, сб с 10 до 16:00
-							a.reviews__contacts__email(href="mailto:mail@vtiho.ru") 
-								.reviews__contacts__email__icon 
-								span mail@vtiho.ru
-						.reviews__contacts__map#reviews__contacts__map
-		//-========END REVIEWS==============
-
-		//-========FOOTER==============
-		footer
-			.container
-				a.footer__logo(href="")
-					img(src="img/footer__logo.webp", alt="")
-				.footer__navs
-					ul.footer__navs__citys
-						li 
-							a(href="") Москва
-						li 
-							a(href="") Екатеринбург
-						li 
-							a(href="") Челябинск
-					ul.footer__navs__menu
-						li 
-							a(href="") Статьи
-						li 
-							a(href="") Магазин
-						li 
-							a(href="") Способы оплаты
-						li 
-							a(href="") Реквизиты
-				.footer__contacts
-					a.footer__phone(href="tel:+7 (351) 750 39 51") +7 (351) 750 39 51
-					.footer__social
-						a(href="")
-							img(src="img/footer__fb.svg", alt="")
-						a(href="")
-							img(src="img/footer__vk.svg", alt="")
-						a(href="")
-							img(src="img/footer__inst.svg", alt="")
-						a(href="")
-							img(src="img/footer__youtube.svg", alt="")
-		//-========END FOOTER==============
-
-		//-========COPYRIGHT==============
-		.copyright
-			.container
-				.copyright__text © Все права защищены.
-		//-========END COPYRIGHT==============
+						.modal__form__alert * Мы не рассылаем спам и номер никому не передаем
+			//-END modal__call__order
 
 
-		//-modal__call__order
-		.modal__wrapper(data-modal="1")
-			.modal
-				.modal__close
-				.modal__title Заказать звонок
-				form(action="")
-					input.input__border(type="text" placeholder="Ваше имя")
-					input.input__border(type="text" placeholder="Телефон")
-					button.btn Получить консультацию
-					.modal__form__alert * Мы не рассылаем спам и номер никому не передаем
-		//-END modal__call__order
+			//-modal__raschet
+			.modal__wrapper(data-modal="2")
+				.modal
+					.modal__close
+					.modal__title Расчет решения
+					form(action="")
+						input.input__border(type="text" placeholder="Ваше имя")
+						input.input__border(type="text" placeholder="Телефон")
+						button.btn Получить консультацию
+						.modal__form__alert * Мы не рассылаем спам и номер никому не передаем
+			//-END modal__raschet
 
+			
+			block content
+			
 
-		//-modal__raschet
-		.modal__wrapper(data-modal="2")
-			.modal
-				.modal__close
-				.modal__title Расчет решения
-				form(action="")
-					input.input__border(type="text" placeholder="Ваше имя")
-					input.input__border(type="text" placeholder="Телефон")
-					button.btn Получить консультацию
-					.modal__form__alert * Мы не рассылаем спам и номер никому не передаем
-		//-END modal__raschet
-
-		
-		block content
-		
-
-		
-		
-		script(src="https://code.jquery.com/jquery-3.4.1.min.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
-		script(src="js/main.js?v4")
-		script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")
-		script(src="js/mapbasics.js?v4")
+			
+			
+			script(src="js/jquery-3.4.1.min.js")
+			script(src="js/owl.carousel.min.js")
+			script(src="js/jquery.lazy.min.js")
+			script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")
+			script(src="js/mapbasics.js?v9")
+			script(src="js/main.js?v9")
+			

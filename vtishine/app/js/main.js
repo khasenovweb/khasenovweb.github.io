@@ -1,8 +1,10 @@
 $(document).ready(function(){
+	$('img').Lazy();
 	$('.hero__slider').owlCarousel({
 		items: 1,
 		autoplay: true,
-		loop: true
+		loop: true,
+		lazyLoad: true
 	});
 
 	$('.comand__slider').owlCarousel({
@@ -10,7 +12,15 @@ $(document).ready(function(){
 		margin: 30,
 		nav: true,
 		loop: true,
-		navText: ["<img src=\"img/comand__slider__prev.svg\">","<img src=\"img/comand__slider__next.svg\" >"]
+		navText: ["<img src=\"img/comand__slider__prev.svg\">","<img src=\"img/comand__slider__next.svg\" >"],
+		responsive: {
+			0: {
+				items: 1
+			},
+			900: {
+				items: 4
+			}
+		}
 	});
 
 	$('.section-5__tabs__content__zamer__galery').owlCarousel({
@@ -61,13 +71,16 @@ $(document).ready(function(){
 		var remont = $('.calc__form select[name="remont"]').val();
 		var type__sound = $('.calc__form select[name="type__sound"]').val();
 		var type__priority = $('.calc__form select[name="type__priority"]').val();
+		var type__problem = $('.calc__form select[name="type__problem"]').val();
 		var s = $('.calc__form input[name="s"]').val();
 		var k = $('.calc__form input[name="k"]').val();
-		var sum = type__build * remont * type__sound * type__priority * s * k;
+		//var sum = type__build * remont * type__sound * type__priority * type__problem * s * k;
+		var sum = Number(type__build) * Number(remont) * Number(type__sound) * Number(type__priority) * Number(type__problem) * Number(s) * Number(k);
 		console.log(sum);
-		$('[data-calc-result]').text(String(parseInt(sum)).replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ')+' P');
+		$('[data-calc-result]').text(String(Math.round(parseInt(sum) / 1000) * 1000).replace(/(\d{1,3}(?=(?:\d\d\d)+(?!\d)))/g, "$1" + ' ')+' P');
 
 	}
+
 	calc();
 
 	$('.calc__form select').on('change', function(){
@@ -79,4 +92,13 @@ $(document).ready(function(){
 	});
 
 	//END Calc
+
+	$('.mobile__head__hamburger').click(function(){
+		$(this).toggleClass('mobile__head__hamburger__active');
+		$('.mobile__nav').toggleClass('mobile__nav__show');
+	});
+
+	$('.mobile__head__sity').click(function(){
+		$('.mobile__select__city').toggleClass('mobile__select__city__show');
+	});
 });

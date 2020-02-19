@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width")
+		title Vtishine 2
+		//-link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/owl.carousel.min.css")
+		link(rel="stylesheet", href="css/main.css?v9")
+		link(rel="stylesheet", href="css/media.css?v9")
+	body
+		.global__wapper
+			//-========MOBILE HEAD==============
+			.mobile__head
+				a.mobile__head__logo(href="")
+				.mobile__head__sity Челябинск
+				a.mobile__head__phone(href="tel:89514518479")
+				.mobile__head__hamburger
+			//-========END MOBILE HEAD==============
+
+			//-========MOBILE SELECT CITY==============
+			.mobile__select__city
+				a(href="") Москва
+				a(href="") Укатеринбург
+			//-========END MOBILE SELECT CITY==============
+
+			
+
+			//-========HEAD==============
+			.head
+				.container
+					//-head__nav
+					ul.head__nav
+						li
+							a(href="") Решения
+						li
+							a(href="") Кейсы
+						li
+							a(href="") Статьи
+						li
+							a(href="") Звукоизоляционные материалы
+					//-END head__nav
+
+					//-head__location
+					.head__location
+						img(data-src="img/head__location.svg", alt="")
+						.head__location__title Университетская набережная, 88
+
+					//-END head__location
+			//-========END HEAD==============
+
+			//-========HERO==============
+			.hero.page__hero
+				.container
+					.hero__top
+						a.hero__logo(href="/")
+							img(data-src="img/hero__logo.png", alt="")
+						.hero__logo__desc Продажа материалов. Подбор решения.
+							br
+							span Звукоизоляция под ключ.
+						.hero__phone
+							a(href="tel: +7 (351) 750 39 51") +7 (351) 750 39 51
+							button.btn__border(data-modal-link data-modal="1") Заказать звонок
+						.hero__city
+							.hero__city__select(data-click="select_city") Челябинск
+								.hero__city__select__arrow 
+								.hero__city__select__submenu
+									a(href="") Москва	
+									a(href="") Екатеринбург	
+							.hero__city__working
+								.hero__city__working__clock
+								.hero__city__working__title с 10 до 19:00 (пн-пт);
+									br
+									span до 16:00 (сб)
+
+
+
+			//-========FOOTER==============
+			footer
+				.container
+					a.footer__logo(href="")
+						img(data-src="img/footer__logo.png", alt="")
+					.footer__navs
+						ul.footer__navs__citys
+							li 
+								a(href="") Москва
+							li 
+								a(href="") Екатеринбург
+							li 
+								a(href="") Челябинск
+						ul.footer__navs__menu
+							li 
+								a(href="") Статьи
+							li 
+								a(href="") Магазин
+							li 
+								a(href="") Способы оплаты
+							li 
+								a(href="") Реквизиты
+					.footer__contacts
+						a.footer__phone(href="tel:+7 (351) 750 39 51") +7 (351) 750 39 51
+						.footer__social
+							a(href="")
+								img(data-src="img/footer__fb.svg", alt="")
+							a(href="")
+								img(data-src="img/footer__vk.svg", alt="")
+							a(href="")
+								img(data-src="img/footer__inst.svg", alt="")
+							a(href="")
+								img(data-src="img/footer__youtube.svg", alt="")
+			//-========END FOOTER==============
+
+			//-========COPYRIGHT==============
+			.copyright
+				.container
+					.copyright__text © Все права защищены.
+			//-========END COPYRIGHT==============
+
+			//-========MOBILE NAV==============
+			.mobile__nav
+				ul.mobile__nav__links
+					li
+						a(href="") Решения
+					li
+						a(href="") Кейсы
+					li
+						a(href="") Статьи
+					li
+						a(href="") Звукоизоляционные материалы
+				button.btn__border(data-modal-link data-modal="1") Заказать звонок
+				.mobile__nav__contacts
+					.mobile__nav__contacts__title Мы находимся по адресу
+					.mobile__nav__contacts__adress
+						.mobile__nav__contacts__adress__icon
+							img(data-src="img/head__location.svg", alt="")
+						.mobile__nav__contacts__adress__text Университетская 
+							br 
+							span набережная, 88
+					.mobile__nav__contacts__worktime
+						.mobile__nav__contacts__worktime__icon
+							img(data-src="img/mobile__nav__clock.svg", alt="")
+						.mobile__nav__contacts__worktime__text с 10 до 19:00 (пн-пт);
+							br
+							span до 16:00 (сб)
+			//-========END MOBILE NAV==============
+			
+
+			//-modal__call__order
+			.modal__wrapper(data-modal="1")
+				.modal
+					.modal__close
+					.modal__title Заказать звонок
+					form(action="")
+						input.input__border(type="text" placeholder="Ваше имя")
+						input.input__border(type="text" placeholder="Телефон")
+						button.btn Получить консультацию
+						.modal__form__alert * Мы не рассылаем спам и номер никому не передаем
+			//-END modal__call__order
+
+
+			//-modal__raschet
+			.modal__wrapper(data-modal="2")
+				.modal
+					.modal__close
+					.modal__title Расчет решения
+					form(action="")
+						input.input__border(type="text" placeholder="Ваше имя")
+						input.input__border(type="text" placeholder="Телефон")
+						button.btn Получить консультацию
+						.modal__form__alert * Мы не рассылаем спам и номер никому не передаем
+			//-END modal__raschet
+
+			
+			block content
+			
+
+			
+			
+			script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+			//-script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+			script(src="js/owl.carousel.min.js")
+			script(src="js/jquery.lazy.min.js")
+			script(src="js/main.js?v9")
+			//script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")

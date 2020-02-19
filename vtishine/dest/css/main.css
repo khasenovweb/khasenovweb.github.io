@@ -66,10 +66,13 @@
 }
 body {
   background-color: #FAFAFA;
-  overflow-x: hidden;
 }
 html {
   font-size: 17px;
+}
+.global__wapper {
+  position: relative;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1140px;
@@ -773,6 +776,7 @@ select {
   background-size: 50%;
 }
 .calc__form__box {
+  min-width: 18px;
   width: 18px;
   height: 18px;
   border: 0.75px solid #BD6B2A;
@@ -1398,6 +1402,169 @@ footer * {
   margin-top: 8px;
   font-style: italic;
 }
-.test {
-  color: white;
+.mobile__head {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  z-index: 5;
+  position: relative;
+  background-color: #FBFBFB;
+  display: none;
+}
+.mobile__head__logo {
+  width: 54px;
+  height: 54px;
+  background-image: url(../img/mobile__head__logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+}
+.mobile__head__sity {
+  font-weight: bold;
+  font-size: 17px;
+  color: #BD6B2A;
+  text-decoration: underline;
+  margin-left: 20px;
+  height: 54px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.mobile__head__phone {
+  width: 54px;
+  height: 54px;
+  background-image: url(../img/mobile__head__phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  margin-left: auto;
+}
+.mobile__head__hamburger {
+  width: 54px;
+  height: 54px;
+  background-image: url(../img/mobile__head__hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+.mobile__head__hamburger__active {
+  background-image: url(../img/mobile__head__hamburger__active.svg);
+}
+.mobile__nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  z-index: 9;
+  background-color: #FBFBFB;
+  box-shadow: -5px 2px 7px rgba(0, 0, 0, 0.290729);
+  padding: 20px;
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.mobile__nav .btn__border {
+  margin-top: 30px;
+  color: #4C4C4C;
+}
+.mobile__nav__show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.mobile__nav__links {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+}
+.mobile__nav__links a {
+  border-bottom: 1px solid #F2CB9C;
+  display: block;
+  padding: 13px 20px;
+}
+.mobile__nav__links a:hover {
+  color: #D27C37;
+}
+.mobile__nav__contacts {
+  margin-top: 30px;
+}
+.mobile__nav__contacts__title {
+  font-weight: bold;
+  font-size: 17px;
+}
+.mobile__nav__contacts__adress {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+.mobile__nav__contacts__adress__icon {
+  margin-right: 10px;
+}
+.mobile__nav__contacts__adress__text {
+  color: #5E7F9C;
+  font-weight: normal;
+}
+.mobile__nav__contacts__adress__text span {
+  color: #5E7F9C;
+  font-weight: normal;
+}
+.mobile__nav__contacts__worktime {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+}
+.mobile__nav__contacts__worktime__icon {
+  margin-right: 10px;
+}
+.mobile__nav__contacts__worktime__text {
+  font-size: 13px;
+  font-weight: 300;
+}
+.section-5__tabs__content__item {
+  display: none;
+}
+.section-5__tabs__content-1 {
+  display: block;
+}
+.mobile__select__city {
+  position: absolute;
+  top: 54px;
+  left: 54px;
+  background-color: #FBFBFB;
+  z-index: 4;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.mobile__select__city a {
+  padding: 13px 20px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #BD6B2A;
+  border-bottom: 1px solid #F2CB9C;
+}
+.mobile__select__city a:last-child {
+  border-bottom: none;
+}
+.mobile__select__city a:hover {
+  text-decoration: underline;
+}
+.mobile__select__city__show {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }

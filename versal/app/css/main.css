@@ -456,6 +456,8 @@ footer {
 }
 .map {
   margin-top: 60px;
+  height: 500px;
+  width: 100%;
 }
 .modal__wrapper {
   position: fixed;

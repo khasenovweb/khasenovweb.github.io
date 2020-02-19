@@ -6,9 +6,9 @@ head
 	title Versal
 	link(rel="icon" href="img/favicon.png" type="image/png")
 	link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css")
-	link(rel="stylesheet", href="fonts/stylesheet.css?v6")
-	link(rel="stylesheet", href="css/main.css?v6")
-	link(rel="stylesheet", href="css/media.css?v6")
+	link(rel="stylesheet", href="fonts/stylesheet.css?v8")
+	link(rel="stylesheet", href="css/main.css?v8")
+	link(rel="stylesheet", href="css/media.css?v8")
 body
 	.modal__wrapper(data-modal-id="1")
 		.modal
@@ -28,7 +28,7 @@ body
 					img(src="img/logo.svg", alt="")
 				.head__contact.head__contact__adress
 					.head__contact__title г. Москва, ул. Московская 24
-					a.head__contact__title__link(href="#map") Показать на карте
+					a.head__contact__title__link(href="#map" data-role='scroll') Показать на карте
 				.head__contact.head__contact__email
 					.head__contact__title waripov@gmail.com
 					a.head__contact__title__link(href="mailto:waripov@gmail.com") Написать
@@ -153,10 +153,11 @@ body
 				.services__content
 					.services__tabs__wrapper
 						.services__tabs
-							a(href="#services" data-tab="1").services__tab.services__tab__active Буквы и логотипы из пластика, металла, дерева
 							a(href="#services" data-tab="2").services__tab Буквы не световые
-							a(href="#services" data-tab="3").services__tab Буквы с комбинированным свечением
+							
 							a(href="#services" data-tab="4").services__tab Буквы с лицевым свечением
+							a(href="#services" data-tab="3").services__tab Буквы с комбинированным свечением
+							a(href="#services" data-tab="1").services__tab.services__tab__active Буквы и логотипы из пластика, металла, дерева
 							a(href="#services" data-tab="5").services__tab Изделия по индивидуальным эскизам
 							a(href="#services" data-tab="6").services__tab Информационные таблички и стенды
 							a(href="#services" data-tab="7").services__tab Композитный короб с инкрустацией
@@ -166,92 +167,115 @@ body
 							a(href="#services" data-tab="11").services__tab Неон, гибкий и из стекла
 							a(href="#services" data-tab="12").services__tab Оформление витрин и интерьера
 							a(href="#services" data-tab="13").services__tab Световые короба
+					//-services__items
 					.services__items(data-tab="1")
-						-for(i=1;i<=4;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/1/"+i+".jpeg)" href="img/services/1/"+i+".jpeg" data-fancybox="1")
+						.services__item
+								a.services__item__img(style="background-image: url(img/services/1/1.jpeg)" href="img/services/1/1.jpeg" data-fancybox="1")
 								.services__item__text
 									.services__item__title Буквы и логотипы из пластика, металла, дерева
-						-}
+								a.services__item__img(style="background-image: url(img/services/1/2.jpeg); display:none;" href="img/services/1/2.jpeg" data-fancybox="1")
+								a.services__item__img(style="background-image: url(img/services/1/3.jpeg); display:none;" href="img/services/1/3.jpeg" data-fancybox="1")
+								a.services__item__img(style="background-image: url(img/services/1/4.jpeg); display:none;" href="img/services/1/4.jpeg" data-fancybox="1")
+					//-services__items
 					.services__items(data-tab="2")
-						-for(i=1;i<=3;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/2/"+i+".jpeg)" href="img/services/2/"+i+".jpeg" data-fancybox="2")
+						.services__item
+								a.services__item__img(style="background-image: url(img/services/2/2.jpeg)" href="img/services/2/2.jpeg" data-fancybox="2")
 								.services__item__text
 									.services__item__title Буквы не световые
-						-}
-					
+								a.services__item__img(style="background-image: url(img/services/2/1.jpeg); display:none;" href="img/services/2/1.jpeg" data-fancybox="2")
+								a.services__item__img(style="background-image: url(img/services/2/3.jpeg); display:none;" href="img/services/2/3.jpeg" data-fancybox="2")
+					//-services__items
 					.services__items(data-tab="3")
-						-for(i=1;i<=2;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/3/"+i+".jpeg)" href="img/services/3/"+i+".jpeg" data-fancybox="3")
+						.services__item
+								a.services__item__img(style="background-image: url(img/services/3/1.jpeg)" href="img/services/3/1.jpeg" data-fancybox="3")
 								.services__item__text
 									.services__item__title Буквы с комбинированным свечением
-						-}
+								a.services__item__img(style="background-image: url(img/services/3/2.jpeg); display:none;" href="img/services/3/2.jpeg" data-fancybox="3")
+					//-services__items
 					.services__items(data-tab="4")
-						-for(i=1;i<=6;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/4/"+i+".jpeg)" href="img/services/4/"+i+".jpeg" data-fancybox="4")
-								.services__item__text
-									.services__item__title Буквы с лицевым свечением
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/4/1.jpeg)" href="img/services/4/1.jpeg" data-fancybox="4")
+							.services__item__text
+								.services__item__title Буквы с лицевым свечением
+							a.services__item__img(style="background-image: url(img/services/4/2.jpeg); display:none;" href="img/services/4/2.jpeg" data-fancybox="4")
+							a.services__item__img(style="background-image: url(img/services/4/3.jpeg); display:none;" href="img/services/4/3.jpeg" data-fancybox="4")
+							a.services__item__img(style="background-image: url(img/services/4/4.jpeg); display:none;" href="img/services/4/4.jpeg" data-fancybox="4")
+							a.services__item__img(style="background-image: url(img/services/4/5.jpeg); display:none;" href="img/services/4/5.jpeg" data-fancybox="4")
+							a.services__item__img(style="background-image: url(img/services/4/6.jpeg); display:none;" href="img/services/4/6.jpeg" data-fancybox="4")
+					//-services__items
 					.services__items(data-tab="5")
-						-for(i=1;i<=8;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/5/"+i+".jpeg)" href="img/services/5/"+i+".jpeg" data-fancybox="5")
-								.services__item__text
-									.services__item__title Изделия по индивидуальным эскизам
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/5/1.jpeg)" href="img/services/5/1.jpeg" data-fancybox="5")
+							.services__item__text
+								.services__item__title Изделия по индивидуальным эскизам
+							a.services__item__img(style="background-image: url(img/services/5/2.jpeg); display:none;" href="img/services/5/2.jpeg" data-fancybox="5")
+							a.services__item__img(style="background-image: url(img/services/5/3.jpeg); display:none;" href="img/services/5/3.jpeg" data-fancybox="5")
+							a.services__item__img(style="background-image: url(img/services/5/4.jpeg); display:none;" href="img/services/5/4.jpeg" data-fancybox="5")
+							a.services__item__img(style="background-image: url(img/services/5/5.jpeg); display:none;" href="img/services/5/5.jpeg" data-fancybox="5")
+							a.services__item__img(style="background-image: url(img/services/5/6.jpeg); display:none;" href="img/services/5/6.jpeg" data-fancybox="5")
+							a.services__item__img(style="background-image: url(img/services/5/7.jpeg); display:none;" href="img/services/5/7.jpeg" data-fancybox="5")
+							a.services__item__img(style="background-image: url(img/services/5/8.jpeg); display:none;" href="img/services/5/8.jpeg" data-fancybox="5")
+					//-services__items
 					.services__items(data-tab="6")
+					//-services__items
 					.services__items(data-tab="7")
-						-for(i=1;i<=3;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/7/"+i+".jpeg)" href="img/services/7/"+i+".jpeg" data-fancybox="7")
+						.services__item
+								a.services__item__img(style="background-image: url(img/services/7/1.jpeg)" href="img/services/7/1.jpeg" data-fancybox="7")
 								.services__item__text
 									.services__item__title Композитный короб с инкрустацией
-						-}
+								a.services__item__img(style="background-image: url(img/services/7/2.jpeg); display:none;" href="img/services/7/2.jpeg" data-fancybox="7")
+								a.services__item__img(style="background-image: url(img/services/7/3.jpeg); display:none;" href="img/services/7/3.jpeg" data-fancybox="7")
+					//-services__items
 					.services__items(data-tab="8")
-						-for(i=1;i<=1;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/8/"+i+".jpeg)" href="img/services/8/"+i+".jpeg" data-fancybox="8")
-								.services__item__text
-									.services__item__title Крышные конструкции
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/8/1.jpeg)" href="img/services/8/1.jpeg" data-fancybox="8")
+							.services__item__text
+								.services__item__title Крышные конструкции
+					//-services__items
 					.services__items(data-tab="9")
-						-for(i=1;i<=3;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/9/"+i+".jpeg)" href="img/services/9/"+i+".jpeg" data-fancybox="9")
-								.services__item__text
-									.services__item__title Монтаж и согласование
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/9/1.jpeg)" href="img/services/9/1.jpeg" data-fancybox="9")
+							.services__item__text
+								.services__item__title Монтаж и согласование
+							a.services__item__img(style="background-image: url(img/services/9/2.jpeg); display:none;" href="img/services/9/2.jpeg" data-fancybox="9")
+							a.services__item__img(style="background-image: url(img/services/9/3.jpeg); display:none;" href="img/services/9/3.jpeg" data-fancybox="9")
+					//-services__items
 					.services__items(data-tab="10")
-						-for(i=1;i<=2;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/10/"+i+".jpeg)" href="img/services/10/"+i+".jpeg" data-fancybox="10")
-								.services__item__text
-									.services__item__title Навигация
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/10/1.jpeg)" href="img/services/10/1.jpeg" data-fancybox="10")
+							.services__item__text
+								.services__item__title Навигация
+							a.services__item__img(style="background-image: url(img/services/10/2.jpeg); display:none;" href="img/services/10/2.jpeg" data-fancybox="10")
+					//-services__items
 					.services__items(data-tab="11")
-						-for(i=1;i<=6;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/11/"+i+".jpeg)" href="img/services/11/"+i+".jpeg" data-fancybox="11")
-								.services__item__text
-									.services__item__title Неон, гибкий и из стекла
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/11/1.jpeg)" href="img/services/11/1.jpeg" data-fancybox="11")
+							.services__item__text
+								.services__item__title Неон, гибкий и из стекла
+							a.services__item__img(style="background-image: url(img/services/11/2.jpeg); display:none;" href="img/services/11/2.jpeg" data-fancybox="11")
+							a.services__item__img(style="background-image: url(img/services/11/3.jpeg); display:none;" href="img/services/11/3.jpeg" data-fancybox="11")
+							a.services__item__img(style="background-image: url(img/services/11/4.jpeg); display:none;" href="img/services/11/4.jpeg" data-fancybox="11")
+							a.services__item__img(style="background-image: url(img/services/11/5.jpeg); display:none;" href="img/services/11/5.jpeg" data-fancybox="11")
+							a.services__item__img(style="background-image: url(img/services/11/6.jpeg); display:none;" href="img/services/11/6.jpeg" data-fancybox="11")
+					//-services__items
 					.services__items(data-tab="12")
-						-for(i=1;i<=4;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/12/"+i+".jpeg)" href="img/services/12/"+i+".jpeg" data-fancybox="12")
-								.services__item__text
-									.services__item__title Оформление витрин и интерьера
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/12/1.jpeg)" href="img/services/12/1.jpeg" data-fancybox="12")
+							.services__item__text
+								.services__item__title Оформление витрин и интерьера
+							a.services__item__img(style="background-image: url(img/services/12/2.jpeg); display:none;" href="img/services/12/2.jpeg" data-fancybox="12")
+							a.services__item__img(style="background-image: url(img/services/12/3.jpeg); display:none;" href="img/services/12/3.jpeg" data-fancybox="12")
+							a.services__item__img(style="background-image: url(img/services/12/4.jpeg); display:none;" href="img/services/12/4.jpeg" data-fancybox="12")
+					//-services__items
 					.services__items(data-tab="13")
-						-for(i=1;i<=5;i++){
-							.services__item
-								a.services__item__img(style="background-image: url(img/services/13/"+i+".jpeg)" href="img/services/13/"+i+".jpeg" data-fancybox="13")
-								.services__item__text
-									.services__item__title Световые короба
-						-}
+						.services__item
+							a.services__item__img(style="background-image: url(img/services/13/1.jpeg)" href="img/services/13/1.jpeg" data-fancybox="13")
+							.services__item__text
+								.services__item__title Световые короба
+							a.services__item__img(style="background-image: url(img/services/13/2.jpeg); display:none;" href="img/services/13/2.jpeg" data-fancybox="13")
+							a.services__item__img(style="background-image: url(img/services/13/3.jpeg); display:none;" href="img/services/13/3.jpeg" data-fancybox="13")
+							a.services__item__img(style="background-image: url(img/services/13/4.jpeg); display:none;" href="img/services/13/4.jpeg" data-fancybox="13")
+							a.services__item__img(style="background-image: url(img/services/13/5.jpeg); display:none;" href="img/services/13/5.jpeg" data-fancybox="13")
 		section.soglasovanie
 			.container
 				.section__title Узнайте необходимо ли согласовывать вывеску по вашему адресу
@@ -262,8 +286,8 @@ body
 		section.formula
 			.container
 				.section__title Формула успешной рекламы
-				.section__desc «Первая рекламная компания» компания основана в 2011 г.
-				p.formula__text Мы занимаемся изготовлением и монтажом наружной рекламы в Москве и Московской области, придерживаясь самых эффективных инструментов в области маркетинга. Производим продукцию только из качественных европейских комплектующих и ипользуем современное инновационное оборудование. За долгие годы работы у нас сформировалась команда настоящих профессионалов, способных реализовать любую вашу идею.
+				//.section__desc «Первая рекламная компания» компания основана в 2011 г.
+				p.formula__text Мы занимаемся изготовлением и монтажом наружной рекламы в Москве и Московской области, ,а так же территории РФ, придерживаясь самых эффективных инструментов в области маркетинга. Производим продукцию только из качественных европейских комплектующих и ипользуем современное инновационное оборудование. За долгие годы работы у нас сформировалась команда настоящих профессионалов, способных реализовать любую вашу идею.
 		section.catalog
 			.container
 				.section__title Примеры наших работ
@@ -280,12 +304,13 @@ body
 					li waripov@gmail.com
 					li Г. Москва варшавское шоссе д. 125 к 3
 		section.map#map
-			iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3A0597d0d13411030e201851f6493133df98edb220e33dc151d78fc90da7ea7380&amp;source=constructor" width="100%" height="500" frameborder="0")
 
 
 
 	script(src="https://code.jquery.com/jquery-3.4.1.min.js")
 	script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
 	script(src="js/scroll.js")
-	script(src="js/main.js?v6")
+	script(src="https://api-maps.yandex.ru/2.1/?apikey=<fed58e3e-122a-4b9a-9b1c-60d19ebb0a39>&lang=ru_RU")
+	script(src="js/mapbasics.js")
+	script(src="js/main.js?v8")
 
