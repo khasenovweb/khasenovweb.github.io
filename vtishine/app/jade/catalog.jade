@@ -1,0 +1,25 @@
+extends layouts/_page.jade
+block content
+	.catalog
+		.container
+			.catalog__head
+				.page__title Каталог материалов
+				ul.catalog__head__nav
+					li.catalog__head__nav__active 
+						a(href="") Все
+					li 
+						a(href="") Панели
+					li 
+						a(href="") Мембраны
+					li 
+						a(href="") Минвата
+					li 
+						a(href="") Комплектующие
+			.catalog__products
+				.catalog__product
+					.catalog__product__img
+					.catalog__product__title ТермоЗвукоИзол Стандарт
+					.catalog__product__desc (10м х 1.5м х 14мм) 15м2
+					.catalog__product__bottom
+						.catalog__product__price 5 510 Р
+						button.btn__border Заказать

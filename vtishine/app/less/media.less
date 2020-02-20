@@ -83,6 +83,44 @@
 }
 
 @media screen and(max-width: 900px) {
+
+    .article__content {
+        padding: 15px;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-top: 30px;
+    }
+    .article__nav__all {
+        display: none;
+    }
+    .article__nav__all__mobile {
+        display: flex;
+        margin-top: 30px;
+    }
+    .article__imgul {
+        grid-template-columns: 100%;
+    }
+    .article__expert__footer {
+        flex-direction: column;
+        align-items: flex-start;
+        .btn {
+            margin-top: 15px;
+            float: left;
+        }
+    }
+    .article img[data-device="desctop"] {
+        display: none;
+    }
+    .article img[data-device="mobile"] {
+        display: block;
+    }
+    .page__hero__logo__desc {
+        display: none;
+    }
+    .hero.page__hero {
+        padding: 0;
+        height: 8px;
+    }
     .section-5__tabs__content__zamer .zamershiki__items {
         width: 100%;
         grid-template-columns: repeat(auto-fill, minmax(110px, auto));
@@ -413,7 +451,24 @@
         font-size: 17px;
     }
 }
-
+@media screen and(max-width: 700px) {
+    .articles__items {
+        margin-top: 30px;
+    }
+    .articles__pagenav {
+        margin-top: 30px;
+    }
+    .articles__item {
+        grid-template-columns: 100%;
+    }
+    .articles__item__text {
+        padding: 20px;
+    }
+    .page__title {
+        font-size: 17px;
+        margin-top: 30px;
+    }
+}
 
 @media screen and(max-width: 400px) {
     .section-5__tabs__content__primer table td {

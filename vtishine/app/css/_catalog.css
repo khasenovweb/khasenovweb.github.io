@@ -1,0 +1,24 @@
+.catalog__head {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.catalog__head__nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 30px;
+  font-weight: 300;
+}
+.catalog__head__nav a {
+  margin-left: 20px;
+}
+.catalog__head__nav__active a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #D27C37;
+}
