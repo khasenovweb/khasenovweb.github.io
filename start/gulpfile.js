@@ -58,24 +58,24 @@ gulp.task('watch',watch);
 //=======================Сборка====================//
 function html__build() {
 	return gulp.src('app/*.html')
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('docs'));
 }
 
 function js__build() {
 	return gulp.src('app/js/*.js')
-		.pipe(gulp.dest('dist/js'));
+		.pipe(gulp.dest('docs/js'));
 }
 function css__build() {
 	return gulp.src('app/css/*.css')
-		.pipe(gulp.dest('dist/css'));
+		.pipe(gulp.dest('docs/css'));
 }
 function img__build() {
 	return gulp.src('app/img/*.*')
-		.pipe(gulp.dest('dist/img'));
+		.pipe(gulp.dest('docs/img'));
 }
 function fonts__build() {
 	return gulp.src('app/fonts/*.*')
-		.pipe(gulp.dest('dist/fonts'));
+		.pipe(gulp.dest('docs/fonts'));
 }
 function build__func() {
 	html__build();
@@ -91,7 +91,7 @@ gulp.task('build', build__func);
 
 //=======================Деплой=========================//
 gulp.task('deploy', function () {
-    return gulp.src('dist/**/*.*')
+    return gulp.src('docs/**/*.*')
         .pipe(ftp({
             host: 'hasenorf.beget.tech',
             user: 'hasenorf_test',
@@ -100,6 +100,6 @@ gulp.task('deploy', function () {
         // you need to have some kind of stream after gulp-ftp to make sure it's flushed
         // this can be a gulp plugin, gulp.dest, or any kind of stream
         // here we use a passthrough stream
-        .pipe(gulp.dest('dest'));
+        .pipe(gulp.dest('deploy'));
 });
 //=======================END Деплой=========================//
