@@ -37,7 +37,7 @@
   outline: none;
   box-sizing: border-box;
 }
-body {
+.global__wrapper {
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -98,7 +98,7 @@ a {
   margin: 0 auto;
 }
 .head {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .head .container {
   display: -webkit-box;

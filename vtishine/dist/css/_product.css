@@ -1,0 +1,114 @@
+.product__content {
+  margin-top: 70px;
+}
+.product__content__top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 40px;
+}
+.product__content__galery {
+  width: 100%;
+}
+.product__content__galery__item {
+  width: 100%;
+  padding-bottom: 78%;
+  background-image: url(../img/product.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.product__content__galery .owl-stage-outer {
+  border-radius: 24px;
+  overflow: hidden;
+}
+.product__content__galery .owl-dots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+  grid-gap: 11px;
+  margin-top: 24px;
+}
+.product__content__galery button.owl-dot {
+  width: 100%;
+  padding-bottom: 80% !important;
+  background-image: url(../img/zamer__galery-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 9px;
+  display: block;
+}
+.product__content__galery button.owl-dot.active {
+  box-shadow: inset 0 0 0 2px #D27C37;
+}
+.product__content__size {
+  font-weight: bold;
+}
+.product__content__price {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+.product__content__price span {
+  font-weight: bold;
+  font-size: 38px;
+  color: #BD6B2A;
+  margin-right: 70px;
+}
+.product__content__specifications {
+  margin-top: 30px;
+}
+.product__content__specifications * {
+  font-weight: 300;
+}
+.product__content__specifications ul {
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.product__content__specifications p {
+  margin-top: 14px;
+}
+.product__content__oblasti {
+  margin-top: 30px;
+  border-top: 1px solid #F2CB9C;
+  border-bottom: 1px solid #F2CB9C;
+  padding: 30px 0;
+}
+.product__content__oblasti * {
+  font-weight: 300;
+}
+.product__content__oblasti ul {
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.product__content__oblasti p {
+  margin-top: 14px;
+}
+.product__content__oblasti__title {
+  font-weight: bold;
+}
+.product__content__specifications__title {
+  font-weight: bold;
+}
+.product__content__back {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.product__content__back * {
+  font-weight: 300;
+}
+.product__content__back img {
+  margin-top: 0;
+  margin-right: 15px;
+}
+.product__content__back__mobile {
+  display: none;
+}

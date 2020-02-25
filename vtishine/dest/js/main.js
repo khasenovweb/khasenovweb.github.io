@@ -1,6 +1,16 @@
 $(document).ready(function(){
+
+
+
 	$('img').Lazy();
 	$('.hero__slider').owlCarousel({
+		items: 1,
+		autoplay: true,
+		loop: true,
+		lazyLoad: true
+	});
+
+	$('.product__content__galery ').owlCarousel({
 		items: 1,
 		autoplay: true,
 		loop: true,
@@ -40,6 +50,13 @@ $(document).ready(function(){
 		$('.section-5__tabs__content__zamer__galery .owl-dot').eq(i).css('background-image','url('+$(el).attr('data-thumb')+')');
 	});
 	//END Миниатюры галереи
+
+	//Миниатюры галереи в карточке товара
+	$('.product__content__galery__item').each(function(i, el){
+		console.log($(el).attr('data-thumb'));
+		$('.product__content__galery .owl-dot').eq(i).css('background-image','url('+$(el).attr('data-thumb')+')');
+	});
+	//END Миниатюры галереи в карточке товара
 
 	//tabs
 	$('.section-5__tab__wrapper').click(function(){

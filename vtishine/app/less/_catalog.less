@@ -4,12 +4,19 @@
 		color: @black;
 	}
 }
-.catalog__head {
+.page__head {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	select {
+		border: 1px solid #DBDBDB;
+	}
 }
-.catalog__head__nav {
+.page__head__nav__mobile {
+	display: none;
+	margin-top: 30px;
+}
+.page__head__nav {
 	display: flex;
 	align-items: center;
 	margin-top: 30px;	
@@ -18,7 +25,7 @@
 		margin-left: 20px;
 	}
 }
-.catalog__head__nav__active {
+.page__head__nav__active {
 	a {
 		text-decoration-line: underline;
 		color: #D27C37;
@@ -65,3 +72,8 @@
 	text-transform: uppercase;
 	color: #BD6B2A;
 }
+
+
+
+
+

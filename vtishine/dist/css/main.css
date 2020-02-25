@@ -269,7 +269,7 @@ html {
 .hero__slider.active {
   opacity: 1;
 }
-.owl-carousel .owl-stage-outer {
+.hero__slider .owl-stage-outer {
   overflow: inherit;
 }
 .hero__slide {
@@ -1836,5 +1836,197 @@ footer * {
   font-weight: 300;
 }
 .article__nav__all__mobile {
+  display: none;
+}
+.catalog .btn__border {
+  color: #4C4C4C;
+}
+.page__head {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.page__head select {
+  border: 1px solid #DBDBDB;
+}
+.page__head__nav__mobile {
+  display: none;
+  margin-top: 30px;
+}
+.page__head__nav {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 30px;
+  font-weight: 300;
+}
+.page__head__nav a {
+  margin-left: 20px;
+}
+.page__head__nav__active a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #D27C37;
+}
+.catalog__products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 70px;
+  margin-top: 70px;
+}
+.catalog__product__img {
+  width: 100%;
+  padding-bottom: 80%;
+  background-image: url(../img/product.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+.catalog__product__title {
+  font-weight: bold;
+  margin-top: 17px;
+  display: block;
+}
+.catalog__product__title:hover {
+  color: #BD6B2A;
+}
+.catalog__product__desc {
+  font-size: 14px;
+  opacity: 0.3;
+  margin-top: 6px;
+}
+.catalog__product__bottom {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.catalog__product__price {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #BD6B2A;
+}
+.product__content {
+  margin-top: 70px;
+}
+.product__content__top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 40px;
+}
+.product__content__galery {
+  width: 100%;
+}
+.product__content__galery__item {
+  width: 100%;
+  padding-bottom: 78%;
+  background-image: url(../img/product.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.product__content__galery .owl-stage-outer {
+  border-radius: 24px;
+  overflow: hidden;
+}
+.product__content__galery .owl-dots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, auto));
+  grid-gap: 11px;
+  margin-top: 24px;
+}
+.product__content__galery button.owl-dot {
+  width: 100%;
+  padding-bottom: 80% !important;
+  background-image: url(../img/zamer__galery-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 9px;
+  display: block;
+}
+.product__content__galery button.owl-dot.active {
+  box-shadow: inset 0 0 0 2px #D27C37;
+}
+.product__content__size {
+  font-weight: bold;
+}
+.product__content__price {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+.product__content__price span {
+  font-weight: bold;
+  font-size: 38px;
+  color: #BD6B2A;
+  margin-right: 70px;
+}
+.product__content__specifications {
+  margin-top: 30px;
+}
+.product__content__specifications * {
+  font-weight: 300;
+}
+.product__content__specifications ul {
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.product__content__specifications p {
+  margin-top: 14px;
+}
+.product__content__oblasti {
+  margin-top: 30px;
+  border-top: 1px solid #F2CB9C;
+  border-bottom: 1px solid #F2CB9C;
+  padding: 30px 0;
+}
+.product__content__oblasti * {
+  font-weight: 300;
+}
+.product__content__oblasti ul {
+  font-weight: 300;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+.product__content__oblasti p {
+  margin-top: 14px;
+}
+.product__content__oblasti__title {
+  font-weight: bold;
+}
+.product__content__specifications__title {
+  font-weight: bold;
+}
+.product__content__back {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+.product__content__back * {
+  font-weight: 300;
+}
+.product__content__back img {
+  margin-top: 0;
+  margin-right: 15px;
+}
+.product__content__back__mobile {
   display: none;
 }

@@ -2,10 +2,10 @@ extends layouts/_page.jade
 block content
 	.catalog
 		.container
-			.catalog__head
+			.page__head
 				.page__title Каталог материалов
-				ul.catalog__head__nav
-					li.catalog__head__nav__active 
+				ul.page__head__nav
+					li.page__head__nav__active 
 						a(href="") Все
 					li 
 						a(href="") Панели
@@ -15,6 +15,12 @@ block content
 						a(href="") Минвата
 					li 
 						a(href="") Комплектующие
+				select.page__head__nav__mobile(name="")
+					option(value="") Все
+					option(value="") Панели
+					option(value="") Мембраны
+					option(value="") Минвата
+					option(value="") Комплектующие
 			.catalog__products
 				-for(i=1;i<=12;i++){
 					//-catalog__product
@@ -26,3 +32,15 @@ block content
 							.catalog__product__price 5 510 Р
 							button.btn__border Заказать
 				-}
+
+			ul.articles__pagenav
+				li.articles__pagenav__prev
+					a(href="")
+				li.articles__pagenav__num.active
+					a(href="") 1
+				li.articles__pagenav__num
+					a(href="") 2
+				li.articles__pagenav__num
+					a(href="") 3
+				li.articles__pagenav__next
+					a(href="")
